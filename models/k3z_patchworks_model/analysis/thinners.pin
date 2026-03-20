@@ -93,7 +93,6 @@ int Patchworks_TargetInit() {
 	// Stumpage Accounts
 	control.duplicateAccount("product.Yield.managed.BA", "value.stumpage.BA" , 0.29f);
 	control.duplicateAccount("product.Yield.managed.CW", "value.stumpage.CW" , 0.47f);
-	control.duplicateAccount("product.Yield.managed.DR", "value.stumpage.DR" , 0.29f);
 	control.duplicateAccount("product.Yield.managed.FDC", "value.stumpage.FDC" , 0.29f);
 	control.duplicateAccount("product.Yield.managed.HW", "value.stumpage.HW" , 0.35f);
 	control.duplicateAccount("product.Yield.managed.PLC", "value.stumpage.PLC" , 0.29f);
@@ -102,7 +101,6 @@ int Patchworks_TargetInit() {
 	
 	control.duplicateAccount("value.stumpage.BA" , "value.stumpage.total" , 1f);
 	control.duplicateAccount("value.stumpage.CW" , "value.stumpage.total" , 1f);
-	control.duplicateAccount("value.stumpage.DR" , "value.stumpage.total" , 1f);
 	control.duplicateAccount("value.stumpage.FDC" , "value.stumpage.total" , 1f);		
 	control.duplicateAccount("value.stumpage.HW" , "value.stumpage.total" , 1f);
 	control.duplicateAccount("value.stumpage.PLC" , "value.stumpage.total" , 1f);	
@@ -117,7 +115,6 @@ int Patchworks_TargetInit() {
 	control.duplicateAccount("product.Yield.managed.BA", "value.revenue.BA", 79.87f);
 	control.duplicateAccount("product.Yield.managed.SS", "value.revenue.SS", 80.08f);
 	control.duplicateAccount("product.Yield.managed.YC", "value.revenue.YC", 164.55f);
-	control.duplicateAccount("product.Yield.managed.DR", "value.revenue.DR", 81.27f);
 	control.duplicateAccount("product.Yield.managed.PLC", "value.revenue.PLC", 71.05f);
 	
 	control.duplicateAccount("value.revenue.CW" , "value.revenue.total" , 1f);
@@ -126,7 +123,6 @@ int Patchworks_TargetInit() {
 	control.duplicateAccount("value.revenue.BA" , "value.revenue.total" , 1f);
 	control.duplicateAccount("value.revenue.SS" , "value.revenue.total" , 1f);
 	control.duplicateAccount("value.revenue.YC" , "value.revenue.total" , 1f);
-	control.duplicateAccount("value.revenue.DR" , "value.revenue.total" , 1f);
 	control.duplicateAccount("value.revenue.PLC" , "value.revenue.total" , 1f);
 
 	

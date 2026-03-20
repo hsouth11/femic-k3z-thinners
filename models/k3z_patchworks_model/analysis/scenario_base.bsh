@@ -24,6 +24,11 @@ setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(true);
 setActive(label, true, true, false);
 
+// run the scheduler for a little bit before activating the even flow constraints
+gui.click("start");
+control.waitForIterations(1000);
+gui.clickAndWait("pause");
+
 // Set total harvest volume even flow target
 label = "flow.even.product.Yield.managed.Total";
 setMinimumPeriodic(label, -1f);
@@ -46,12 +51,26 @@ setActive(label, true, true, false);
 
 // Set patch size target for 0-40 ha patches
 label = "patch.harvested.0_40.freqpercent";
-setMinimumPeriodic(label, 30f);
-setMaximumPeriodic(label, 40f);
-setMinWeight(label, 1f);
+setMinimumPeriodic(label, 100f);
+setMaximumPeriodic(label, 9999999f);
+setMinWeight(label, 100000f);
 setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(false);
-setActive(label, true, true, true);
+setActive(label, true, true, false);
+
+// Start scheduler
+gui.click("start");
+
+//END OF SCENARIO
+
+/* 
+
+//OTHER USEFUL CODE CHUNKS FROM SCENARIO WE DID IN CLASS
+
+// run the scheduler for a little bit before activating the even flow constraints
+gui.click("start");
+control.waitForIterations(100000);
+gui.clickAndWait("pause");
 
 // Set patch size target for 40-80 ha patches
 label = "patch.harvested.40_80.freqpercent";
@@ -79,20 +98,6 @@ setMinWeight(label, 1f);
 setMaxWeight(label, 1000000f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, false, true);
-
-// Start scheduler
-gui.click("start");
-
-//END OF SCENARIO
-
-/* 
-
-//OTHER USEFUL CODE CHUNKS FROM SCENARIO WE DID IN CLASS
-
-// run the scheduler for a little bit before activating the even flow constraints
-gui.click("start");
-control.waitForIterations(100000);
-gui.clickAndWait("pause");
 
 // Set target that total growing stock should not be less than initial inventory
 label = "feature.Yield.managed.Total";

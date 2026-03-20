@@ -24,6 +24,11 @@ setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(true);
 setActive(label, true, true, false);
 
+// run the scheduler for a little bit before activating the even flow constraints
+gui.click("start");
+control.waitForIterations(1000);
+gui.clickAndWait("pause");
+
 // Set total harvest volume even flow target
 label = "flow.even.product.Yield.managed.Total";
 setMinimumPeriodic(label, -1f);

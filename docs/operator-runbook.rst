@@ -7,6 +7,15 @@ Fresh Setup
 1. Initialize submodules and environment.
 2. Validate prerequisites with case preflight.
 3. Confirm Patchworks runtime config resolves correctly.
+4. On Windows, confirm native runtime prerequisites are present:
+
+- `git`
+- `git-annex`
+- DataLad (usually via `.venv\Scripts\datalad.exe`)
+- Java
+- Patchworks
+- bundled native `VDYP7Console.exe`
+- ArcGIS Pro Python for the SiteProd fallback path
 
 .. code-block:: bash
 
@@ -20,6 +29,18 @@ Rebuild Workflow
 .. code-block:: bash
 
    femic run --run-config config/run_profile.k3z.yaml --run-id k3z_full_rebuild
+
+At this point FEMIC is expected to stop at the BatchTIPSY freshness boundary.
+The canonical handoff files are:
+
+- `data/02_input-tsak3z.dat`
+- `data/tipsy_params_tsak3z.xlsx`
+
+Run BatchTIPSY manually on Windows, refresh `data/04_output-tsak3z.out`, then resume:
+
+.. code-block:: bash
+
+   femic tsa post-tipsy --run-config config/run_profile.k3z.yaml --tsa k3z --run-id k3z_full_rebuild
    femic patchworks build-blocks --config config/patchworks.runtime.windows.yaml
    femic patchworks matrix-build --config config/patchworks.runtime.windows.yaml --run-id k3z_full_rebuild
 
@@ -29,6 +50,7 @@ Diagnostics Workflow
 .. code-block:: bash
 
    femic run --run-config config/run_profile.k3z.yaml --run-id k3z_reprocheck
+   femic tsa post-tipsy --run-config config/run_profile.k3z.yaml --tsa k3z --run-id k3z_reprocheck
    femic patchworks matrix-build --config config/patchworks.runtime.windows.yaml --run-id k3z_reprocheck
 
 Review:
@@ -124,3 +146,14 @@ Publication Checklist
      python -m sphinx -b html docs docs/_build/html -W
 
 - Parent docs contracts and full validation gates pass before release.
+
+Baseline K3Z Policy Checks
+--------------------------
+
+Confirm the current baseline assumptions are still true after rebuild:
+
+- managed curves come from real BatchTIPSY output
+- `CWHvm_CW+YC` and `CWHvm_CW+PLC` do not appear in the treated/TIPSY handoff
+- those low-yield strata are retained out of THLB via `RETENTION = 1.0`
+- remaining treated AUs follow the simplified teaching planting logic in
+  `config/tipsy/tsak3z.yaml`

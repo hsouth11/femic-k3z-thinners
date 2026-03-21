@@ -56,6 +56,9 @@ Key Invariants
 - Block joins must remain 1:1 between ``tracks/blocks.csv`` and ``blocks/blocks.shp``.
 - Seral accounts must exist in ``tracks/accounts.csv``.
 - Required managed species yields must remain non-zero (except explicitly allowed species).
+- `CWHvm_CW+YC` and `CWHvm_CW+PLC` should remain excluded from the treated/TIPSY path.
+- Matching low-yield fragments should remain fully retained (`RETENTION = 1.0`).
+- Remaining treated AUs should reflect the simplified teaching species-mix logic from `config/tipsy/tsak3z.yaml`.
 
 Baseline Workflow
 -----------------
@@ -97,3 +100,4 @@ Variant-specific expectations:
   - ``cc_pl_pct_ct``
 - Live Patchworks smoke should show that pulling on a minimum ``CT``
   treated-area target induces upstream ``PCT`` and ``CC`` in earlier periods.
+

@@ -1,4 +1,4 @@
-﻿.. _k3z-figure-appendix:
+.. _k3z-figure-appendix:
 
 Figure Appendix
 ===============
@@ -246,92 +246,88 @@ VDYP Fit Diagnostics
 
    VDYP fit diagnostic for stratum/SI bin ``08-CWHvm_CW+PLC-M`` (source: ``plots/vdyp_fitdiag_tsak3z-08-CWHvm_CW+PLC-M.png``).
 
-Treated \(Scaled-VDYP\) Curve Overlays
-----------------------------------------------------------
+Treated (TIPSY vs VDYP) Curve Overlays
+--------------------------------------
+
+.. note::
+
+   The low-yield ``CWHvm_CW+YC`` and ``CWHvm_CW+PLC`` strata are intentionally
+   excluded from the treated/TIPSY pathway in the current K3Z teaching
+   baseline. Their area is retained out of THLB via ``RETENTION = 1.0``, so
+   there are no current treated TIPSY-vs-VDYP overlay figures for AUs
+   ``22006`` and ``22008``.
 
 .. figure:: ../plots/tipsy_vdyp_tsak3z-21000.png
    :alt: tipsy_vdyp_tsak3z-21000.png
    :width: 90%
 
-   Treated (scaled-VDYP) curve overlay for AU ``21000`` (source: ``plots/tipsy_vdyp_tsak3z-21000.png``).
+   Treated (TIPSY vs VDYP) curve overlay for AU ``21000`` (source: ``plots/tipsy_vdyp_tsak3z-21000.png``).
 
 .. figure:: ../plots/tipsy_vdyp_tsak3z-21001.png
    :alt: tipsy_vdyp_tsak3z-21001.png
    :width: 90%
 
-   Treated (scaled-VDYP) curve overlay for AU ``21001`` (source: ``plots/tipsy_vdyp_tsak3z-21001.png``).
+   Treated (TIPSY vs VDYP) curve overlay for AU ``21001`` (source: ``plots/tipsy_vdyp_tsak3z-21001.png``).
 
 .. figure:: ../plots/tipsy_vdyp_tsak3z-21003.png
    :alt: tipsy_vdyp_tsak3z-21003.png
    :width: 90%
 
-   Treated (scaled-VDYP) curve overlay for AU ``21003`` (source: ``plots/tipsy_vdyp_tsak3z-21003.png``).
+   Treated (TIPSY vs VDYP) curve overlay for AU ``21003`` (source: ``plots/tipsy_vdyp_tsak3z-21003.png``).
 
 .. figure:: ../plots/tipsy_vdyp_tsak3z-22001.png
    :alt: tipsy_vdyp_tsak3z-22001.png
    :width: 90%
 
-   Treated (scaled-VDYP) curve overlay for AU ``22001`` (source: ``plots/tipsy_vdyp_tsak3z-22001.png``).
+   Treated (TIPSY vs VDYP) curve overlay for AU ``22001`` (source: ``plots/tipsy_vdyp_tsak3z-22001.png``).
 
 .. figure:: ../plots/tipsy_vdyp_tsak3z-22002.png
    :alt: tipsy_vdyp_tsak3z-22002.png
    :width: 90%
 
-   Treated (scaled-VDYP) curve overlay for AU ``22002`` (source: ``plots/tipsy_vdyp_tsak3z-22002.png``).
+   Treated (TIPSY vs VDYP) curve overlay for AU ``22002`` (source: ``plots/tipsy_vdyp_tsak3z-22002.png``).
 
 .. figure:: ../plots/tipsy_vdyp_tsak3z-22003.png
    :alt: tipsy_vdyp_tsak3z-22003.png
    :width: 90%
 
-   Treated (scaled-VDYP) curve overlay for AU ``22003`` (source: ``plots/tipsy_vdyp_tsak3z-22003.png``).
+   Treated (TIPSY vs VDYP) curve overlay for AU ``22003`` (source: ``plots/tipsy_vdyp_tsak3z-22003.png``).
 
 .. figure:: ../plots/tipsy_vdyp_tsak3z-22004.png
    :alt: tipsy_vdyp_tsak3z-22004.png
    :width: 90%
 
-   Treated (scaled-VDYP) curve overlay for AU ``22004`` (source: ``plots/tipsy_vdyp_tsak3z-22004.png``).
+   Treated (TIPSY vs VDYP) curve overlay for AU ``22004`` (source: ``plots/tipsy_vdyp_tsak3z-22004.png``).
 
 .. figure:: ../plots/tipsy_vdyp_tsak3z-22005.png
    :alt: tipsy_vdyp_tsak3z-22005.png
    :width: 90%
 
-   Treated (scaled-VDYP) curve overlay for AU ``22005`` (source: ``plots/tipsy_vdyp_tsak3z-22005.png``).
-
-.. figure:: ../plots/tipsy_vdyp_tsak3z-22006.png
-   :alt: tipsy_vdyp_tsak3z-22006.png
-   :width: 90%
-
-   Treated (scaled-VDYP) curve overlay for AU ``22006`` (source: ``plots/tipsy_vdyp_tsak3z-22006.png``).
+   Treated (TIPSY vs VDYP) curve overlay for AU ``22005`` (source: ``plots/tipsy_vdyp_tsak3z-22005.png``).
 
 .. figure:: ../plots/tipsy_vdyp_tsak3z-22007.png
    :alt: tipsy_vdyp_tsak3z-22007.png
    :width: 90%
 
-   Treated (scaled-VDYP) curve overlay for AU ``22007`` (source: ``plots/tipsy_vdyp_tsak3z-22007.png``).
-
-.. figure:: ../plots/tipsy_vdyp_tsak3z-22008.png
-   :alt: tipsy_vdyp_tsak3z-22008.png
-   :width: 90%
-
-   Treated (scaled-VDYP) curve overlay for AU ``22008`` (source: ``plots/tipsy_vdyp_tsak3z-22008.png``).
+   Treated (TIPSY vs VDYP) curve overlay for AU ``22007`` (source: ``plots/tipsy_vdyp_tsak3z-22007.png``).
 
 .. figure:: ../plots/tipsy_vdyp_tsak3z-23000.png
    :alt: tipsy_vdyp_tsak3z-23000.png
    :width: 90%
 
-   Treated (scaled-VDYP) curve overlay for AU ``23000`` (source: ``plots/tipsy_vdyp_tsak3z-23000.png``).
+   Treated (TIPSY vs VDYP) curve overlay for AU ``23000`` (source: ``plots/tipsy_vdyp_tsak3z-23000.png``).
 
 .. figure:: ../plots/tipsy_vdyp_tsak3z-23001.png
    :alt: tipsy_vdyp_tsak3z-23001.png
    :width: 90%
 
-   Treated (scaled-VDYP) curve overlay for AU ``23001`` (source: ``plots/tipsy_vdyp_tsak3z-23001.png``).
+   Treated (TIPSY vs VDYP) curve overlay for AU ``23001`` (source: ``plots/tipsy_vdyp_tsak3z-23001.png``).
 
 .. figure:: ../plots/tipsy_vdyp_tsak3z-23003.png
    :alt: tipsy_vdyp_tsak3z-23003.png
    :width: 90%
 
-   Treated (scaled-VDYP) curve overlay for AU ``23003`` (source: ``plots/tipsy_vdyp_tsak3z-23003.png``).
+   Treated (TIPSY vs VDYP) curve overlay for AU ``23003`` (source: ``plots/tipsy_vdyp_tsak3z-23003.png``).
 
 Full Plot Inventory
 -------------------
@@ -347,9 +343,7 @@ Rendered figures are sourced from these plot artifacts:
 - ``plots/tipsy_vdyp_tsak3z-22003.png``
 - ``plots/tipsy_vdyp_tsak3z-22004.png``
 - ``plots/tipsy_vdyp_tsak3z-22005.png``
-- ``plots/tipsy_vdyp_tsak3z-22006.png``
 - ``plots/tipsy_vdyp_tsak3z-22007.png``
-- ``plots/tipsy_vdyp_tsak3z-22008.png``
 - ``plots/tipsy_vdyp_tsak3z-23000.png``
 - ``plots/tipsy_vdyp_tsak3z-23001.png``
 - ``plots/tipsy_vdyp_tsak3z-23003.png``

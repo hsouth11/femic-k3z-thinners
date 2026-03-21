@@ -53,7 +53,18 @@ Quickstart
 
    .. code-block:: bash
 
-      femic run --run-config config/run_profile.k3z.yaml
+      femic run --run-config config/run_profile.k3z.yaml --run-id k3z_stage01a
+
+3. Run BatchTIPSY manually on Windows using the freshly generated:
+
+   - `data/02_input-tsak3z.dat`
+   - `data/tipsy_params_tsak3z.xlsx` (or the current timestamped fallback workbook if Excel had the canonical workbook locked)
+
+4. Resume downstream from the fresh BatchTIPSY output:
+
+   .. code-block:: bash
+
+      femic tsa post-tipsy --run-config config/run_profile.k3z.yaml --tsa k3z --run-id k3z_stage01a
 
 3. Run the baseline Patchworks matrix build:
 
@@ -119,3 +130,12 @@ Authoritative Paths
   ``models/k3z_patchworks_model/tracks_pctct/``
 - Runtime logs/manifests:
   ``vdyp_io/logs/``
+
+Baseline K3Z Policy Notes
+-------------------------
+
+- Managed curves now come from real BatchTIPSY output.
+- `CWHvm_CW+YC` and `CWHvm_CW+PLC` are intentionally excluded from the
+  treated/TIPSY path and retained out of THLB with `RETENTION = 1.0`.
+- Remaining treated AUs use the simplified teaching planting rules documented
+  in `config/tipsy/tsak3z.yaml`.

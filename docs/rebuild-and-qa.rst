@@ -73,3 +73,27 @@ Validate against baseline:
 
    femic run --run-config config/run_profile.k3z.yaml --run-id k3z_compare
    femic patchworks matrix-build --config config/patchworks.runtime.windows.yaml --run-id k3z_compare
+
+
+Optional PCT->CT Variant QA
+---------------------------
+
+These checks apply only to the PCT->CT variant (``config/patchworks.variant.pctct.yaml``, ``analysis/pctct.pin``).
+
+Variant command pattern:
+
+.. code-block:: bash
+
+   femic patchworks matrix-build --config config/patchworks.runtime.pctct.windows.yaml --run-id k3z_pctct
+
+Variant-specific expectations:
+
+- ``tracks_pctct/treatments.csv`` includes ``PCT`` and ``CT``.
+- ``tracks_pctct/accounts.csv`` includes ``product.Treated.managed.PCT`` and ``product.Treated.managed.CT``.
+- ``tracks_pctct/products.csv`` includes the matching treated-product surface.
+- ``tracks_pctct`` does not materialize ``F1``, ``F2``, or ``F3``.
+- ``SILV_STATE``-specific tracknames/strata materialize for:
+  - ``cc_pl_pct``
+  - ``cc_pl_pct_ct``
+- Live Patchworks smoke should show that pulling on a minimum ``CT``
+  treated-area target induces upstream ``PCT`` and ``CC`` in earlier periods.

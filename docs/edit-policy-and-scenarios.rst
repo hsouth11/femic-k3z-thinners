@@ -34,6 +34,7 @@ Compare scenarios using consistent metrics and reporting windows:
 - managed total/product yields,
 - species-wise managed products,
 - seral-stage area and treatment-shift trajectories,
+- old-growth area trajectories from ``og1`` / ``og2``,
 - key constraints/targets and infeasibility indicators.
 
 Interpretation Workflow
@@ -43,12 +44,28 @@ Interpretation Workflow
 2. Compare account trajectories period-by-period.
 3. Flag differences caused by assumption changes vs data/build drift.
 
+Optional CT/Fert Branch Guidance
+--------------------------------
+
+The CT/QMD/fert work is intentionally isolated as a variant spec/runtime/PIN set so only some student groups need to
+pull it.
+
+Recommended workflow:
+
+1. Start from a clean, accepted ``main`` baseline.
+2. If your group needs CT/fert, use the CT/fert variant spec and launch ``analysis/ctfert.pin``.
+3. If your group needs the PCT->CT teaching scaffold, use the ``pctct`` variant spec and launch ``analysis/pctct.pin``.
+4. Rebuild before interpreting any optional-variant surfaces.
+5. Keep variant choice explicit in reports, screenshots, and classroom notes.
+
 Classroom Use Guidance
 ----------------------
 
 - Start from reproducible baseline before exploring policy changes.
 - Change one assumption family at a time when teaching sensitivity.
 - Preserve run manifests/reports for each scenario to support auditability.
+- Treat the optional CT/fert variant as a teaching/scenario scaffold, not a
+  polished silviculture prescription package.
 
 How to Validate Reruns
 ----------------------
@@ -56,3 +73,7 @@ How to Validate Reruns
 1. Confirm matrix-build manifest success.
 2. Confirm rebuild report invariants pass.
 3. Confirm scenario deltas are explainable by intentional config edits.
+4. On the optional variant, confirm compiled tracks and live Patchworks behavior
+   agree about the ``CT`` -> ``F1`` -> ``F2`` -> ``F3`` chain.
+5. On the ``pctct`` variant, confirm compiled tracks and live Patchworks
+   behavior agree about the ``PCT`` -> ``CT`` -> ``CC`` chain.

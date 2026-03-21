@@ -35,12 +35,71 @@ Review:
 
 - ``vdyp_io/logs/patchworks_matrixbuilder_manifest-<run_id>.json``
 
+Optional CT/Fert Variant Workflow
+---------------------------------
+
+Use this only if you intentionally want the teaching variant with commercial
+thinning, provisional QMD, and provisional ``F1`` / ``F2`` / ``F3``
+fertilization.
+
+.. code-block:: bash
+
+   femic patchworks matrix-build --config config/patchworks.runtime.ctfert.windows.yaml --run-id k3z_ctfert
+
+Variant review points:
+
+- ``config/patchworks.variant.ctfert.yaml`` is the variant spec.
+- ``config/silviculture.k3z.ctfert.yaml`` controls the optional treatment scaffold.
+- ``models/k3z_patchworks_model/analysis/ctfert.pin`` is the Patchworks launch entrypoint.
+- ``models/k3z_patchworks_model/tracks_ctfert/treatments.csv`` should materialize ``CT``, ``F1``, ``F2``, and ``F3``.
+- ``models/k3z_patchworks_model/tracks_ctfert/accounts.csv`` / ``products.csv`` should include
+  ``product.Treated.managed.{CT,F1,F2,F3}``.
+- Patchworks smoke expectation: pulling on the ``F3`` treated-area target should
+  induce the upstream chain ``F2`` -> ``F1`` -> ``CT`` -> ``CC``.
+
+Optional PCT->CT Variant Workflow
+---------------------------------
+
+Use this only if you intentionally want the teaching variant with
+pre-commercial thinning ahead of CT, but no fertilization.
+
+.. code-block:: bash
+
+   femic patchworks matrix-build --config config/patchworks.runtime.pctct.windows.yaml --run-id k3z_pctct
+
+Variant review points:
+
+- ``config/patchworks.variant.pctct.yaml`` is the variant spec.
+- ``config/silviculture.k3z.pctct.yaml`` controls the optional PCT->CT scaffold.
+- ``models/k3z_patchworks_model/analysis/pctct.pin`` is the Patchworks launch entrypoint.
+- ``models/k3z_patchworks_model/tracks_pctct/treatments.csv`` should materialize ``PCT`` and ``CT``.
+- ``models/k3z_patchworks_model/tracks_pctct/accounts.csv`` / ``products.csv`` should include
+  ``product.Treated.managed.PCT`` and ``product.Treated.managed.CT``.
+- Patchworks smoke expectation: pulling on the ``CT`` treated-area target should
+  induce the upstream chain ``PCT`` -> ``CC``.
+
+Old-Growth Review Workflow
+--------------------------
+
+After a normal baseline rebuild on ``main``, confirm the old-growth surfaces are
+present in compiled accounts:
+
+- ``feature.Area.og1.<au_id>``
+- ``feature.Area.og2.<au_id>``
+- ``feature.Area.og1.total``
+- ``feature.Area.og2.total``
+
 Troubleshooting Workflow
 ------------------------
 
 1. Preflight failure: fix runtime paths/license prerequisites first.
 2. Block join mismatch: rebuild blocks and rerun matrix builder.
 3. Account anomalies: trace curves -> attributes/products -> accounts.
+4. Optional variant anomalies: confirm you launched the intended PIN/runtime pair and that
+   ``config/silviculture.k3z.ctfert.yaml`` matches the expected treatment-path build.
+5. On the ``pctct`` variant, confirm ``config/silviculture.k3z.pctct.yaml``
+   matches the expected treatment-path build and that ``tracks_pctct`` is the
+   active compiled surface.
 
 Release Checklist
 -----------------
@@ -49,6 +108,11 @@ Release Checklist
 - Invariant report passes baseline checks.
 - Required docs pages and contract tests pass.
 - Published docs navigation resolves and includes current pages.
+- If releasing the optional CT/fert variant, confirm the variant spec, runtime config,
+  and ``ctfert.pin`` launch instructions are documented for student groups.
+- If releasing the optional PCT->CT variant, confirm the variant spec, runtime
+  config, and ``pctct.pin`` launch instructions are documented for student
+  groups.
 
 Publication Checklist
 ---------------------

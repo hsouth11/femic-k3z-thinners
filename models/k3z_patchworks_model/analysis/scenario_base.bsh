@@ -68,6 +68,19 @@ setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);
 
+// Activate revenue accounts in so they open in user interface (but don't set targets on them)
+label = "value.grevenue.total";
+setActive(label, true, false, false);
+
+label = "value.nrevenue.total";
+setActive(label, true, false, false);
+
+label = "value.stumpage.total";
+setActive(label, true, false, false);
+
+label = "value.harvcost.total";
+setActive(label, true, false, false);
+
 // Start scheduler
 gui.click("start");
 

@@ -91,7 +91,7 @@ int Patchworks_TargetInit() {
     * Summary accounts here
     */
 
-	// Stumpage Accounts
+	// Stumpage accounts
 	control.duplicateAccount("product.Yield.managed.BA", "value.stumpage.BA" , 0.29f);
 	control.duplicateAccount("product.Yield.managed.CW", "value.stumpage.CW" , 0.47f);
 	control.duplicateAccount("product.Yield.managed.FDC", "value.stumpage.FDC" , 0.29f);
@@ -108,23 +108,32 @@ int Patchworks_TargetInit() {
 	control.duplicateAccount("value.stumpage.SS" , "value.stumpage.total" , 1f);	
 	control.duplicateAccount("value.stumpage.YC" , "value.stumpage.total" , 1f);	
 	
+	// Logging costs
+    control.duplicateAccount("product.Yield.managed.Total", "value.harvcost.total", 87.5f);
+
+	// Gross log revenue
+	control.duplicateAccount("product.Yield.managed.CW", "value.grevenue.CW", 254.15f);
+	control.duplicateAccount("product.Yield.managed.FDC", "value.grevenue.FDC", 113.24f);	
+	control.duplicateAccount("product.Yield.managed.HW", "value.grevenue.HW", 79.87f);
+	control.duplicateAccount("product.Yield.managed.BA", "value.grevenue.BA", 79.87f);
+	control.duplicateAccount("product.Yield.managed.SS", "value.grevenue.SS", 80.08f);
+	control.duplicateAccount("product.Yield.managed.YC", "value.grevenue.YC", 164.55f);
+	control.duplicateAccount("product.Yield.managed.PLC", "value.grevenue.PLC", 71.05f);
 	
-	// Log Revenue
-	control.duplicateAccount("product.Yield.managed.CW", "value.revenue.CW", 254.15f);
-	control.duplicateAccount("product.Yield.managed.FDC", "value.revenue.FDC", 113.24f);	
-	control.duplicateAccount("product.Yield.managed.HW", "value.revenue.HW", 79.87f);
-	control.duplicateAccount("product.Yield.managed.BA", "value.revenue.BA", 79.87f);
-	control.duplicateAccount("product.Yield.managed.SS", "value.revenue.SS", 80.08f);
-	control.duplicateAccount("product.Yield.managed.YC", "value.revenue.YC", 164.55f);
-	control.duplicateAccount("product.Yield.managed.PLC", "value.revenue.PLC", 71.05f);
-	
-	control.duplicateAccount("value.revenue.CW" , "value.revenue.total" , 1f);
-	control.duplicateAccount("value.revenue.FDC" , "value.revenue.total" , 1f);
-	control.duplicateAccount("value.revenue.HW" , "value.revenue.total" , 1f);
-	control.duplicateAccount("value.revenue.BA" , "value.revenue.total" , 1f);
-	control.duplicateAccount("value.revenue.SS" , "value.revenue.total" , 1f);
-	control.duplicateAccount("value.revenue.YC" , "value.revenue.total" , 1f);
-	control.duplicateAccount("value.revenue.PLC" , "value.revenue.total" , 1f);
+	control.duplicateAccount("value.grevenue.CW" , "value.grevenue.total" , 1f);
+	control.duplicateAccount("value.grevenue.FDC" , "value.grevenue.total" , 1f);
+	control.duplicateAccount("value.grevenue.HW" , "value.grevenue.total" , 1f);
+	control.duplicateAccount("value.grevenue.BA" , "value.grevenue.total" , 1f);
+	control.duplicateAccount("value.grevenue.SS" , "value.grevenue.total" , 1f);
+	control.duplicateAccount("value.grevenue.YC" , "value.grevenue.total" , 1f);
+	control.duplicateAccount("value.grevenue.PLC" , "value.grevenue.total" , 1f);
+
+    // Net revenue
+	control.addMetaAccount("value.nrevenue.total",
+	new String [] {"value.grevenue.total",
+	"value.harvcost.total",
+	"value.stumpage.total"},
+	new double [] {1, -1, -1});
 
 	
    /*

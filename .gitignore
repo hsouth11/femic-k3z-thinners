@@ -29,3 +29,7 @@ models/k3z_patchworks_model/patchworksLog.csv
 models/k3z_patchworks_model/tracks/accounts_backup_*.csv
 models/k3z_patchworks_model/yield/*_backup_*.xml
 output/patchworks_k3z_validated/*_backup_*.xml
+
+# Generated validated-output XML copies are not source of truth
+output/patchworks_k3z_validated/forestmodel.xml
+output/patchworks_k3z_ctfert_validated/forestmodel.xml

@@ -48,6 +48,7 @@ control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);
 
 //END OF UNCONSTRAINED SCENARIO
+//START OF BASE SCENARIO
 
 // Set patch size target for 0-40 ha patches
 label = "patch.harvested.0_40.freqpercent";
@@ -57,6 +58,28 @@ setMinWeight(label, 100000f);
 setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);
+
+// Reserve all existing old growth stands from future harvest
+label = "feature.Area.og2.existing";
+setMinimumPeriodic(label, 251f);
+setMaximumPeriodic(label, 9999999f);
+setMinWeight(label, 100000f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, false);
+
+// Activate revenue accounts in so they open in user interface (but don't set targets on them)
+label = "value.grevenue.total";
+setActive(label, true, false, false);
+
+label = "value.nrevenue.total";
+setActive(label, true, false, false);
+
+label = "value.stumpage.total";
+setActive(label, true, false, false);
+
+label = "value.harvcost.total";
+setActive(label, true, false, false);
 
 // Start scheduler
 gui.click("start");

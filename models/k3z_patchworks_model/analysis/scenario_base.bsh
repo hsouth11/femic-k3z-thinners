@@ -48,10 +48,20 @@ control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);
 
 //END OF UNCONSTRAINED SCENARIO
+//START OF BASE SCENARIO
 
 // Set patch size target for 0-40 ha patches
 label = "patch.harvested.0_40.freqpercent";
 setMinimumPeriodic(label, 100f);
+setMaximumPeriodic(label, 9999999f);
+setMinWeight(label, 100000f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, false);
+
+// Reserve all existing old growth stands from future harvest
+label = "feature.Area.og2.existing";
+setMinimumPeriodic(label, 251f);
 setMaximumPeriodic(label, 9999999f);
 setMinWeight(label, 100000f);
 setMaxWeight(label, 1f);

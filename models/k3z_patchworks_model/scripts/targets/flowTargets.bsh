@@ -7,10 +7,10 @@
  *
  *************************************************************/
 
-_resolveAccountsFile() {
+_resolveAccountsFile(String tracksPathPrefix) {
    String accountsPath = "../tracks/accounts.csv";
-   if (this.interpreter != null && this.interpreter.get("tracks_path_prefix") != null) {
-      accountsPath = (String)this.interpreter.get("tracks_path_prefix") + "accounts.csv";
+   if (tracksPathPrefix != null) {
+      accountsPath = tracksPathPrefix + "accounts.csv";
    }
 
    File accountsFile = AttributeStore.absoluteFile(accountsPath);
@@ -20,9 +20,9 @@ _resolveAccountsFile() {
    return accountsFile;
 }
 
-_collectAccounts(String prefix) {
+_collectAccounts(String prefix, String tracksPathPrefix) {
    TreeSet out = new TreeSet();
-   File accountsFile = _resolveAccountsFile();
+   File accountsFile = _resolveAccountsFile(tracksPathPrefix);
    if (!accountsFile.exists()) {
       throw new IllegalStateException("Missing tracks/accounts.csv: "+accountsFile.getPath());
    }
@@ -53,12 +53,16 @@ _collectAccounts(String prefix) {
 }
 
 setupYieldFlowTargets(control, int periods) {
+   setupYieldFlowTargets(control, periods, null);
+}
+
+setupYieldFlowTargets(control, int periods, String tracksPathPrefix) {
    FlowSpec evenflow = new FlowSpec().even();
    int ndyStart = Math.max(1, periods - 9);
    FlowSpec ndyflow = new FlowSpec().ndy(ndyStart, periods, -1);
 
-   TreeSet productAccounts = _collectAccounts("product.Yield.managed.");
-   TreeSet featureAccounts = _collectAccounts("feature.Yield.managed.");
+   TreeSet productAccounts = _collectAccounts("product.Yield.managed.", tracksPathPrefix);
+   TreeSet featureAccounts = _collectAccounts("feature.Yield.managed.", tracksPathPrefix);
 
    for (Iterator it = productAccounts.iterator(); it.hasNext();) {
       String account = (String)it.next();

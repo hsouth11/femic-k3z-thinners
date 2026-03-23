@@ -1,0 +1,6 @@
+/*
+ * Basecase sum RETENTION overlay wrapper.
+ */
+
+String tracks_path_prefix = "../tracks_overlay_basecase_sum/";
+sourceRelative("base_variant_common.bsh");

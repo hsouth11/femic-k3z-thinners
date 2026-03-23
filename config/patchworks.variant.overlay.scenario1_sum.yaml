@@ -1,0 +1,22 @@
+variant_id: overlay_scenario1_sum
+label: "K3Z baseline overlay: scenario 1 sum"
+description: "Baseline-derived K3Z overlay subvariant using the student's scenario1_sum RETENTION field."
+overlay:
+  source_table: tmp/k3z_student_overlay_retention_join.csv
+  source_key: FEATURE_ID
+  fragments_join_bridge: BLOCK via models/k3z_patchworks_model/blocks/blocks.shp
+  retention_column: scenario1_sum
+patchworks:
+  runtime_config: config/patchworks.runtime.overlay.scenario1_sum.windows.yaml
+  analysis_pin: models/k3z_patchworks_model/analysis/overlay_scenario1_sum.pin
+  tracks_dir: models/k3z_patchworks_model/tracks_overlay_scenario1_sum
+  forestmodel_xml: models/k3z_patchworks_model/yield/forestmodel.xml
+  fragments_shapefile: output/patchworks_k3z_overlay_scenario1_sum_validated/fragments/fragments.shp
+build:
+  matrix_build_command: >-
+    femic patchworks matrix-build --instance-root external/femic-k3z-instance
+    --config config/patchworks.runtime.overlay.scenario1_sum.windows.yaml
+    --run-id k3z_overlay_scenario1_sum
+notes:
+  - "This subvariant should differ from baseline only by fragment RETENTION values."
+  - "Patchworks launch entrypoint: analysis/overlay_scenario1_sum.pin"

@@ -1,0 +1,22 @@
+variant_id: overlay_basecase_riparian
+label: "K3Z baseline overlay: basecase riparian"
+description: "Baseline-derived K3Z overlay subvariant using the student's basecase_riparian RETENTION field."
+overlay:
+  source_table: tmp/k3z_student_overlay_retention_join.csv
+  source_key: FEATURE_ID
+  fragments_join_bridge: BLOCK via models/k3z_patchworks_model/blocks/blocks.shp
+  retention_column: basecase_riparian
+patchworks:
+  runtime_config: config/patchworks.runtime.overlay.basecase_riparian.windows.yaml
+  analysis_pin: models/k3z_patchworks_model/analysis/overlay_basecase_riparian.pin
+  tracks_dir: models/k3z_patchworks_model/tracks_overlay_basecase_riparian
+  forestmodel_xml: models/k3z_patchworks_model/yield/forestmodel.xml
+  fragments_shapefile: output/patchworks_k3z_overlay_basecase_riparian_validated/fragments/fragments.shp
+build:
+  matrix_build_command: >-
+    femic patchworks matrix-build --instance-root external/femic-k3z-instance
+    --config config/patchworks.runtime.overlay.basecase_riparian.windows.yaml
+    --run-id k3z_overlay_basecase_riparian
+notes:
+  - "This subvariant should differ from baseline only by fragment RETENTION values."
+  - "Patchworks launch entrypoint: analysis/overlay_basecase_riparian.pin"

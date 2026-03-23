@@ -93,9 +93,6 @@ succession,0,,985501001,managed,planted,cc_pl,0.1771
 succession,0,,985502002,unmanaged,natural,baseline,0.8811
 succession,0,,985502002,managed,natural,baseline,0.8811
 succession,1,,985502002,managed,planted,cc_pl,0.8811
-succession,0,,985502002,unmanaged,natural,baseline,0.9999
-succession,0,,985502002,managed,natural,baseline,0.9999
-succession,1,,985502002,managed,planted,cc_pl,0.9999
 succession,0,,985502008,unmanaged,natural,baseline,1.0
 succession,0,,985503000,unmanaged,natural,baseline,0.709685794471195
 succession,0,,985503000,managed,natural,baseline,0.709685794471195

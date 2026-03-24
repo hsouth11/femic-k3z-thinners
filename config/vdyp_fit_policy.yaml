@@ -1,0 +1,39 @@
+version: 1
+tsa_overrides:
+  "k3z":
+    - stratum: "CWHvm_DR+HW"
+      si: "L"
+      kwargs:
+        body_c_min: -40
+        toe_shift_years: 0
+        tail_linear_min_r2: 0.05
+        tail_linear_max_nrmse: 0.8
+        tail_linear_prefer_min_age: 50
+        tail_linear_flat_slope_abs: 0.35
+        tail_linear_min_span_years: 5
+        tail_blend_years: 150
+        tail_linear_allow_quantile_fallback: true
+    - stratum: "CWHvm_DR+HW"
+      si: "M"
+      kwargs:
+        body_c_min: -40
+        toe_shift_years: 0
+        tail_linear_min_r2: 0.05
+        tail_linear_max_nrmse: 0.8
+        tail_linear_prefer_min_age: 50
+        tail_linear_flat_slope_abs: 0.35
+        tail_linear_min_span_years: 5
+        tail_blend_years: 150
+        tail_linear_allow_quantile_fallback: true
+    - stratum: "CWHvm_DR+HW"
+      si: "H"
+      kwargs:
+        body_c_min: -40
+        toe_shift_years: 0
+        tail_linear_min_r2: 0.05
+        tail_linear_max_nrmse: 0.8
+        tail_linear_prefer_min_age: 50
+        tail_linear_flat_slope_abs: 0.35
+        tail_linear_min_span_years: 5
+        tail_blend_years: 150
+        tail_linear_allow_quantile_fallback: true

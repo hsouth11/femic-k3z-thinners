@@ -182,4 +182,7 @@ Baseline K3Z Policy Notes
   treated/TIPSY path and retained out of THLB with `RETENTION = 1.0`.
 - Remaining treated AUs use the simplified teaching planting rules documented
   in `config/tipsy/tsak3z.yaml`.
+- The accepted K3Z-specific VDYP smoothing exceptions for ``CWHvm_DR+HW`` now
+  live in ``config/vdyp_fit_policy.yaml`` beside the instance rather than in
+  parent FEMIC source code.
 - ``og1`` / ``og2`` semantics are documented in :doc:`old-growth-attributes`.

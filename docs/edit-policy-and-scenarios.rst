@@ -59,6 +59,9 @@ Recommended workflow:
 5. Keep variant choice explicit in reports, screenshots, and classroom notes.
 6. Use the overlay subvariants only when the question is about retained-area
    sensitivity on top of baseline.
+7. Keep any K3Z-specific VDYP fit exceptions in ``config/vdyp_fit_policy.yaml``
+   so DR+HW tail-policy changes remain auditable and do not require parent
+   source edits.
 
 Classroom Use Guidance
 ----------------------

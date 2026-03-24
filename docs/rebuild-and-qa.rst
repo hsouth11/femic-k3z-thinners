@@ -126,16 +126,22 @@ Variant command pattern:
 
 Variant-specific expectations:
 
-- ``tracks_pctct/treatments.csv`` includes ``PCT`` and ``CT``.
-- ``tracks_pctct/accounts.csv`` includes ``product.Treated.managed.PCT`` and ``product.Treated.managed.CT``.
+- ``tracks_pctct/treatments.csv`` includes ``PCT_LIGHT``, ``PCT_MODERATE``,
+  ``PCT_HEAVY``, and ``CT``.
+- ``tracks_pctct/accounts.csv`` includes
+  ``product.Treated.managed.PCT_LIGHT``,
+  ``product.Treated.managed.PCT_MODERATE``,
+  ``product.Treated.managed.PCT_HEAVY``, and
+  ``product.Treated.managed.CT``.
 - ``tracks_pctct/products.csv`` includes the matching treated-product surface.
 - the issue-14 `pctct` footprint is centered on medium/high SI ``HW+FDC`` and
   ``FDC+HW`` AUs ``985502000``, ``985503000``, ``985502001``, and
   ``985503001``.
 - ``tracks_pctct`` does not materialize ``F1``, ``F2``, or ``F3``.
 - ``SILV_STATE``-specific tracknames/strata materialize for:
-  - ``cc_pl_pct``
-  - ``cc_pl_pct_ct``
+  - ``cc_pl_pct_light`` / ``cc_pl_pct_light_ct``
+  - ``cc_pl_pct_moderate`` / ``cc_pl_pct_moderate_ct``
+  - ``cc_pl_pct_heavy`` / ``cc_pl_pct_heavy_ct``
 - The accepted PCT->CT fragments surface preserves the baseline 218-fragment
   geometry footprint exactly.
 - PCT->CT fragment differences are limited to treatment-path consequences in
@@ -148,7 +154,8 @@ Variant-specific expectations:
 - ``tracks_pctct`` retains species-wise managed yield / harvested-volume
   accounts in addition to the ``Total`` surfaces.
 - Live Patchworks smoke should show that pulling on a minimum ``CT``
-  treated-area target induces upstream ``PCT`` and ``CC`` in earlier periods.
+  treated-area target induces upstream ``PCT_LIGHT`` / ``PCT_MODERATE`` /
+  ``PCT_HEAVY`` and ``CC`` in earlier periods.
 
 Deep reference: :doc:`silviculture-logic`
 

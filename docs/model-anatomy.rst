@@ -137,21 +137,25 @@ Additional state/config artifacts for that variant:
 - treatment-path states:
   - ``baseline``
   - ``cc_pl``
-  - ``cc_pl_pct``
-  - ``cc_pl_pct_ct``
+  - ``cc_pl_pct_light`` / ``cc_pl_pct_light_ct``
+  - ``cc_pl_pct_moderate`` / ``cc_pl_pct_moderate_ct``
+  - ``cc_pl_pct_heavy`` / ``cc_pl_pct_heavy_ct``
 
 Optional treatment surfaces for that variant:
 
 - ``PCT`` / ``CT`` eligibility retargeted to medium/high SI ``HW+FDC`` and
   ``FDC+HW`` AUs ``985502000``, ``985503000``, ``985502001``, and
   ``985503001``
-- ``PCT`` at age 10 by default on the planted path
+- three age-10 PCT choices on the planted path:
+  ``PCT_LIGHT``, ``PCT_MODERATE``, and ``PCT_HEAVY``
 - planted regen mix for those eligible AUs prepared as ``900 CW + 3100 HW``
-- post-PCT managed species proportions with the ``HW`` species component
-  removed
+- post-PCT managed mixtures of ``900 CW + 2100 HW``, ``900 CW + 1100 HW``, and
+  ``900 CW + 100 HW``
 - ``CT`` available only after ``PCT``
 - matching compiled treatment products/accounts such as:
-  - ``product.Treated.managed.PCT``
+  - ``product.Treated.managed.PCT_LIGHT``
+  - ``product.Treated.managed.PCT_MODERATE``
+  - ``product.Treated.managed.PCT_HEAVY``
   - ``product.Treated.managed.CT``
 
 This variant is intended as a teaching scaffold for ``PCT`` -> ``CT`` path

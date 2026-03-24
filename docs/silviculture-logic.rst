@@ -106,17 +106,17 @@ Treatment parameter table:
    * - State transition field
      - ``SILV_STATE``
    * - PCT transition
-     - ``cc_pl -> cc_pl_pct``
+     - ``cc_pl -> cc_pl_pct_light`` / ``cc_pl_pct_moderate`` / ``cc_pl_pct_heavy``
    * - PCT age
      - age ``10`` for all eligible AUs
    * - Planted regen mix
      - ``900 CW + 3100 HW`` for all eligible AUs
-   * - Residual stems
-     - ``900`` stems/ha
-   * - Species removal rule
-     - ``remove_species = HW``
+   * - PCT options
+     - ``PCT_LIGHT`` removes ``1000`` HW stems/ha, ``PCT_MODERATE`` removes ``2000``, and ``PCT_HEAVY`` removes ``3000``
+   * - Post-PCT managed mixes
+     - ``900 CW + 2100 HW``, ``900 CW + 1100 HW``, and ``900 CW + 100 HW``
    * - CT transition
-     - ``cc_pl_pct -> cc_pl_pct_ct``
+     - ``cc_pl_pct_* -> cc_pl_pct_*_ct``
    * - CT age
      - age ``40`` for all eligible AUs
    * - CT removal
@@ -131,10 +131,12 @@ Treatment parameter table:
 Sequencing logic:
 
 1. ``CC`` establishes the planted path.
-2. ``PCT`` is available only on the planted eligible AUs.
-3. ``PCT`` removes the ``HW`` species component (Western Hemlock) from the
-   planted path and leaves the residual post-PCT managed composition.
-4. ``CT`` is available only after the ``PCT`` gate is satisfied.
+2. Three age-10 PCT options are available on the planted eligible AUs:
+   ``PCT_LIGHT``, ``PCT_MODERATE``, and ``PCT_HEAVY``.
+3. Each ``PCT_*`` option removes a different amount of ``HW`` (Western
+   Hemlock) from the planted path and leaves its own residual managed
+   composition.
+4. ``CT`` is available only after one of the ``PCT_*`` gates is satisfied.
 5. No ``F1`` / ``F2`` / ``F3`` chain is compiled in this variant.
 
 State Machines
@@ -153,8 +155,12 @@ State Machines
 
 - ``baseline``
 - ``cc_pl``
-- ``cc_pl_pct``
-- ``cc_pl_pct_ct``
+- ``cc_pl_pct_light``
+- ``cc_pl_pct_light_ct``
+- ``cc_pl_pct_moderate``
+- ``cc_pl_pct_moderate_ct``
+- ``cc_pl_pct_heavy``
+- ``cc_pl_pct_heavy_ct``
 
 Interpretation Notes
 --------------------

@@ -170,6 +170,7 @@ _MANAGED_,product.HarvestedVolume.managed.CW.CT,product.HarvestedVolume.managed.
 _MANAGED_,product.HarvestedVolume.managed.FDC.CC,product.HarvestedVolume.managed.FDC.CC,1
 _MANAGED_,product.HarvestedVolume.managed.FDC.CT,product.HarvestedVolume.managed.FDC.CT,1
 _MANAGED_,product.HarvestedVolume.managed.HW.CC,product.HarvestedVolume.managed.HW.CC,1
+_MANAGED_,product.HarvestedVolume.managed.HW.CT,product.HarvestedVolume.managed.HW.CT,1
 _MANAGED_,product.HarvestedVolume.managed.PLC.CC,product.HarvestedVolume.managed.PLC.CC,1
 _MANAGED_,product.HarvestedVolume.managed.SS.CC,product.HarvestedVolume.managed.SS.CC,1
 _MANAGED_,product.HarvestedVolume.managed.Total.CC,product.HarvestedVolume.managed.Total.CC,1
@@ -254,7 +255,9 @@ _MANAGED_,product.SpeciesProp.managed.SS,product.SpeciesProp.managed.SS,1
 _MANAGED_,product.SpeciesProp.managed.YC,product.SpeciesProp.managed.YC,1
 _MANAGED_,product.Treated.managed.CC,product.Treated.managed.CC,1
 _MANAGED_,product.Treated.managed.CT,product.Treated.managed.CT,1
-_MANAGED_,product.Treated.managed.PCT,product.Treated.managed.PCT,1
+_MANAGED_,product.Treated.managed.PCT_HEAVY,product.Treated.managed.PCT_HEAVY,1
+_MANAGED_,product.Treated.managed.PCT_LIGHT,product.Treated.managed.PCT_LIGHT,1
+_MANAGED_,product.Treated.managed.PCT_MODERATE,product.Treated.managed.PCT_MODERATE,1
 _MANAGED_,product.Yield.managed.BA,product.Yield.managed.BA,1
 _MANAGED_,product.Yield.managed.CW,product.Yield.managed.CW,1
 _MANAGED_,product.Yield.managed.FDC,product.Yield.managed.FDC,1

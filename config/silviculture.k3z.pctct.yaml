@@ -1,28 +1,48 @@
 pre_commercial_thinning:
   enabled: true
   state_field: "SILV_STATE"
-  from_state: "cc_pl"
-  to_state: "cc_pl_pct"
   eligible_au_ids:
     - 985502000  # HW+FDC-M
     - 985503000  # HW+FDC-H
     - 985502001  # FDC+HW-M
     - 985503001  # FDC+HW-H
   min_origin: "planted"
+  source_total_stems_per_ha: 4000
   age_by_au:
     985502000: 10
     985503000: 10
     985502001: 10
     985503001: 10
   residual_stems_per_ha: 900
-  remove_species:
-    - "HW"
+  treatments:
+    - label: "PCT_LIGHT"
+      from_state: "cc_pl"
+      to_state: "cc_pl_pct_light"
+      ct_to_state: "cc_pl_pct_light_ct"
+      remove_species:
+        - "HW"
+      remove_stems_per_ha:
+        HW: 1000
+    - label: "PCT_MODERATE"
+      from_state: "cc_pl"
+      to_state: "cc_pl_pct_moderate"
+      ct_to_state: "cc_pl_pct_moderate_ct"
+      remove_species:
+        - "HW"
+      remove_stems_per_ha:
+        HW: 2000
+    - label: "PCT_HEAVY"
+      from_state: "cc_pl"
+      to_state: "cc_pl_pct_heavy"
+      ct_to_state: "cc_pl_pct_heavy_ct"
+      remove_species:
+        - "HW"
+      remove_stems_per_ha:
+        HW: 3000
 
 commercial_thinning:
   enabled: true
   state_field: "SILV_STATE"
-  from_state: "cc_pl_pct"
-  to_state: "cc_pl_pct_ct"
   eligible_au_ids:
     - 985502000  # HW+FDC-M
     - 985503000  # HW+FDC-H

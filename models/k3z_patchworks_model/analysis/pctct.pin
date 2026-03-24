@@ -168,9 +168,15 @@ int PatchWorks_Init() {
     currTreatTheme.addElement(new ThemeElement("CC",
         new PolygonSymbol(new Color(200, 60, 60))),
         "CC");
-    currTreatTheme.addElement(new ThemeElement("PCT",
+    currTreatTheme.addElement(new ThemeElement("PCT_LIGHT",
+        new PolygonSymbol(new Color(120, 170, 235))),
+        "PCT_LIGHT");
+    currTreatTheme.addElement(new ThemeElement("PCT_MODERATE",
         new PolygonSymbol(new Color(80, 140, 220))),
-        "PCT");
+        "PCT_MODERATE");
+    currTreatTheme.addElement(new ThemeElement("PCT_HEAVY",
+        new PolygonSymbol(new Color(35, 95, 180))),
+        "PCT_HEAVY");
     currTreatTheme.addElement(new ThemeElement("CT",
         new PolygonSymbol(new Color(80, 170, 110))),
         "CT");
@@ -189,9 +195,15 @@ int PatchWorks_Init() {
     latestTreatTheme.addElement(new ThemeElement("CC",
         new PolygonSymbol(new Color(200, 60, 60))),
         "CC");
-    latestTreatTheme.addElement(new ThemeElement("PCT",
+    latestTreatTheme.addElement(new ThemeElement("PCT_LIGHT",
+        new PolygonSymbol(new Color(120, 170, 235))),
+        "PCT_LIGHT");
+    latestTreatTheme.addElement(new ThemeElement("PCT_MODERATE",
         new PolygonSymbol(new Color(80, 140, 220))),
-        "PCT");
+        "PCT_MODERATE");
+    latestTreatTheme.addElement(new ThemeElement("PCT_HEAVY",
+        new PolygonSymbol(new Color(35, 95, 180))),
+        "PCT_HEAVY");
     latestTreatTheme.addElement(new ThemeElement("CT",
         new PolygonSymbol(new Color(80, 170, 110))),
         "CT");

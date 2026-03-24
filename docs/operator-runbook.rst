@@ -112,13 +112,17 @@ Variant review points:
 - ``config/patchworks.variant.pctct.yaml`` is the variant spec.
 - ``config/silviculture.k3z.pctct.yaml`` controls the optional PCT->CT scaffold.
 - ``models/k3z_patchworks_model/analysis/pctct.pin`` is the Patchworks launch entrypoint.
-- ``models/k3z_patchworks_model/tracks_pctct/treatments.csv`` should materialize ``PCT`` and ``CT``.
+- ``models/k3z_patchworks_model/tracks_pctct/treatments.csv`` should materialize
+  ``PCT_LIGHT``, ``PCT_MODERATE``, ``PCT_HEAVY``, and ``CT``.
 - ``models/k3z_patchworks_model/tracks_pctct/accounts.csv`` / ``products.csv`` should include
-  ``product.Treated.managed.PCT`` and ``product.Treated.managed.CT``.
+  ``product.Treated.managed.PCT_LIGHT``,
+  ``product.Treated.managed.PCT_MODERATE``,
+  ``product.Treated.managed.PCT_HEAVY``, and
+  ``product.Treated.managed.CT``.
 - ``output/patchworks_k3z_pctct_validated/fragments/`` should preserve the
   accepted baseline 218-fragment geometry footprint exactly.
 - Patchworks smoke expectation: pulling on the ``CT`` treated-area target should
-  induce the upstream chain ``PCT`` -> ``CC``.
+  induce the upstream chain ``PCT_*`` -> ``CC``.
 - ``models/k3z_patchworks_model/tracks_pctct/accounts.csv`` / ``products.csv``
   should also retain species-wise managed yield / harvest-volume surfaces,
   not just ``Total``.

@@ -145,10 +145,12 @@ The PCT->CT variant YAML controls:
 - PCT eligibility AUs,
 - current issue-14 target cohort: medium/high SI ``HW+FDC`` and ``FDC+HW``
   AUs ``985502000``, ``985503000``, ``985502001``, and ``985503001``,
-- PCT default age (currently 10),
+- three coexisting age-10 PCT treatments in the same variant:
+  ``PCT_LIGHT`` (remove ``1000`` HW stems/ha), ``PCT_MODERATE`` (remove
+  ``2000``), and ``PCT_HEAVY`` (remove ``3000``),
 - planted regen mix for those eligible AUs: ``900 CW + 3100 HW``,
-- post-PCT removal of the ``HW`` species component (Western Hemlock) from the
-  planted path,
+- post-PCT managed mixes of ``900 CW + 2100 HW``, ``900 CW + 1100 HW``, and
+  ``900 CW + 100 HW`` respectively,
 - CT eligibility only after the PCT gate,
 - CT age and removal assumptions without any fertilization chain.
 - deep reference: :doc:`silviculture-logic`

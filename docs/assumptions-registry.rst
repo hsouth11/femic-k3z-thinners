@@ -21,8 +21,16 @@ Growth and Yield Assumptions
 ----------------------------
 
 - Untreated/treated curve-source terminology is used consistently.
-- Treated curves currently use scaled-from-VDYP behavior for K3Z until a new
-  approved treated-curve method replaces it.
+- K3Z baseline managed curves now use real BatchTIPSY output driven by
+  VDYP-derived SI, not the older scaled-from-VDYP fallback.
+- ``CWHvm_CW+YC`` and ``CWHvm_CW+PLC`` are intentionally excluded from the
+  BatchTIPSY treated path and retained out of THLB with ``RETENTION = 1.0``.
+- Remaining treated AUs use the simplified teaching planting logic:
+  - FD-pair AUs: ``900 FD + 3100 HW``
+  - CW-pair AUs: ``900 CW + 3100 HW``
+  - all other remaining treated AUs: ``600 CW + 300 FD + 3100 HW``
+- Current unmanaged smoothing baseline is the accepted relaxed toe/tail policy
+  plus extra DR+HW-specific overrides recorded in the Phase 23 notes.
 
 Natural Disturbance Assumptions
 -------------------------------

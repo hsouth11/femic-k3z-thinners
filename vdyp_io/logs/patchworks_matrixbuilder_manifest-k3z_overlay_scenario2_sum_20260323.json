@@ -1,0 +1,48 @@
+{
+  "run_id": "k3z_overlay_scenario2_sum_20260323",
+  "timestamp_utc": "2026-03-23T22:12:14.483190+00:00",
+  "interactive": false,
+  "command": [
+    "C:\\Program Files\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin\\java.EXE",
+    "-Djava.library.path=C:\\Program Files\\Spatial Planning Systems\\Patchworks\\lib",
+    "-jar",
+    "patchworks.jar",
+    "ca.spatial.tracks.builder.Process",
+    "C:\\Users\\gep\\projects\\femic\\external\\femic-k3z-instance\\output\\patchworks_k3z_overlay_scenario2_sum_validated\\fragments\\fragments.dbf",
+    "C:\\Users\\gep\\projects\\femic\\external\\femic-k3z-instance\\models\\k3z_patchworks_model\\tracks_overlay_scenario2_sum",
+    "C:\\Users\\gep\\projects\\femic\\external\\femic-k3z-instance\\models\\k3z_patchworks_model\\yield\\forestmodel.xml"
+  ],
+  "command_string": "'C:\\Program Files\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin\\java.EXE' '-Djava.library.path=C:\\Program Files\\Spatial Planning Systems\\Patchworks\\lib' -jar patchworks.jar ca.spatial.tracks.builder.Process 'C:\\Users\\gep\\projects\\femic\\external\\femic-k3z-instance\\output\\patchworks_k3z_overlay_scenario2_sum_validated\\fragments\\fragments.dbf' 'C:\\Users\\gep\\projects\\femic\\external\\femic-k3z-instance\\models\\k3z_patchworks_model\\tracks_overlay_scenario2_sum' 'C:\\Users\\gep\\projects\\femic\\external\\femic-k3z-instance\\models\\k3z_patchworks_model\\yield\\forestmodel.xml'",
+  "raw_returncode": 31168205,
+  "returncode": 0,
+  "runtime": {
+    "launcher_executable": "C:\\Program Files\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin\\java.EXE",
+    "host_mode": "windows",
+    "jar_path": "C:\\Program Files\\Spatial Planning Systems\\Patchworks\\patchworks.jar",
+    "license_env": "SPS_LICENSE_SERVER",
+    "license_value": "frst424@auth.spatial.ca",
+    "spshome": "C:\\Program Files\\Spatial Planning Systems\\Patchworks",
+    "use_xvfb": false,
+    "wine_prefix": null
+  },
+  "inputs": {
+    "fragments_path": "C:\\Users\\gep\\projects\\femic\\external\\femic-k3z-instance\\output\\patchworks_k3z_overlay_scenario2_sum_validated\\fragments\\fragments.dbf",
+    "matrix_output_dir": "C:\\Users\\gep\\projects\\femic\\external\\femic-k3z-instance\\models\\k3z_patchworks_model\\tracks_overlay_scenario2_sum",
+    "forestmodel_xml_path": "C:\\Users\\gep\\projects\\femic\\external\\femic-k3z-instance\\models\\k3z_patchworks_model\\yield\\forestmodel.xml"
+  },
+  "accounts_sync": {
+    "status": "synced",
+    "protoaccounts_path": "C:\\Users\\gep\\projects\\femic\\external\\femic-k3z-instance\\models\\k3z_patchworks_model\\tracks_overlay_scenario2_sum\\protoaccounts.csv",
+    "accounts_path": "C:\\Users\\gep\\projects\\femic\\external\\femic-k3z-instance\\models\\k3z_patchworks_model\\tracks_overlay_scenario2_sum\\accounts.csv",
+    "backup_path": null,
+    "excluded_patterns": [
+      "\\.PL(\\.|$)"
+    ],
+    "excluded_row_count": 0
+  },
+  "logs": {
+    "stdout": "C:\\Users\\gep\\projects\\femic\\external\\femic-k3z-instance\\vdyp_io\\logs\\patchworks_matrixbuilder_stdout-k3z_overlay_scenario2_sum_20260323.log",
+    "stderr": "C:\\Users\\gep\\projects\\femic\\external\\femic-k3z-instance\\vdyp_io\\logs\\patchworks_matrixbuilder_stderr-k3z_overlay_scenario2_sum_20260323.log"
+  },
+  "failures": []
+}

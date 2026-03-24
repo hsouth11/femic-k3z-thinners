@@ -1,0 +1,6 @@
+/*
+ * Scenario 2 sum RETENTION overlay wrapper.
+ */
+
+String tracks_path_prefix = "../tracks_overlay_scenario2_sum/";
+sourceRelative("base_variant_common.bsh");

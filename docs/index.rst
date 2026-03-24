@@ -9,6 +9,10 @@ This documentation site is the standalone operator guide for the
    :caption: Guide
 
    getting-started
+   variants-and-subvariants
+   overlay-subvariants-workflow
+   silviculture-logic
+   old-growth-attributes
    model-anatomy
    data-package-crosswalk
    land-base-and-netdown

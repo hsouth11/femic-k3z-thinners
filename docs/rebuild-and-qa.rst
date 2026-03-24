@@ -101,3 +101,27 @@ Variant-specific expectations:
 - Live Patchworks smoke should show that pulling on a minimum ``CT``
   treated-area target induces upstream ``PCT`` and ``CC`` in earlier periods.
 
+Deep reference: :doc:`silviculture-logic`
+
+Baseline Overlay Subvariant QA
+------------------------------
+
+These checks apply only to the four baseline-derived overlay subvariants.
+
+Variant command pattern:
+
+.. code-block:: bash
+
+   femic patchworks matrix-build --config config/patchworks.runtime.overlay.basecase_riparian.windows.yaml --run-id k3z_overlay_basecase_riparian
+
+Variant-specific expectations:
+
+- overlay builds still use baseline ``yield/forestmodel.xml``;
+- only fragment ``RETENTION`` and resulting managed/unmanaged area balance
+  should differ from baseline;
+- the student join contract still resolves through ``blocks.shp`` without nulls
+  on the selected retention field;
+- higher-retention overlays can legitimately drop some managed species
+  accounts if that species no longer appears on the managed side.
+
+Deep reference: :doc:`variants-and-subvariants`

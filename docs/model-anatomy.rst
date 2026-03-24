@@ -61,6 +61,8 @@ Current old-growth curve semantics:
   peak-yield age (1.0)
 - ``og2``: policy-step curve with ``249 -> 0.0`` and ``250 -> 1.0``
 
+Deep reference: :doc:`old-growth-attributes`
+
 These are inventory-state feature surfaces, not treatment-consequence products.
 They should appear automatically in compiled Patchworks accounts after Matrix
 Builder regenerates ``protoaccounts.csv`` / ``accounts.csv``.
@@ -149,3 +151,10 @@ Optional treatment surfaces for that variant:
 
 This variant is intended as a teaching scaffold for ``PCT`` -> ``CT`` path
 logic without the added complexity of fertilization.
+
+Deep references
+---------------
+
+- full launch matrix: :doc:`variants-and-subvariants`
+- treatment/state-machine details: :doc:`silviculture-logic`
+- old-growth attribute logic: :doc:`old-growth-attributes`

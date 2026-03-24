@@ -13,7 +13,7 @@ instance checkout.
 Current variants:
 
 - baseline teaching variant
-  - variant spec: ``config/patchworks.variant.baseline.yaml``
+  - no separate variant spec file; baseline is the default runtime surface
   - runtime config: ``config/patchworks.runtime.windows.yaml``
   - Patchworks PIN: ``models/k3z_patchworks_model/analysis/base.pin``
 - optional CT/QMD/fert variant
@@ -25,6 +25,13 @@ Current variants:
   - runtime config: ``config/patchworks.runtime.pctct.windows.yaml``
   - Patchworks PIN: ``models/k3z_patchworks_model/analysis/pctct.pin``
 
+Baseline-derived overlay subvariants:
+
+- ``basecase_riparian``
+- ``basecase_sum``
+- ``scenario1_sum``
+- ``scenario2_sum``
+
 Students should choose a variant by config/PIN, not by switching git branches.
 
 The intended launch pairings are:
@@ -32,6 +39,8 @@ The intended launch pairings are:
 - baseline: ``config/patchworks.runtime.windows.yaml`` + ``analysis/base.pin``
 - CT/fert variant: ``config/patchworks.runtime.ctfert.windows.yaml`` + ``analysis/ctfert.pin``
 - PCT->CT variant: ``config/patchworks.runtime.pctct.windows.yaml`` + ``analysis/pctct.pin``
+
+For the full launch matrix, use :doc:`variants-and-subvariants`.
 
 Prerequisites
 -------------
@@ -89,7 +98,9 @@ Variant-Specific Operator Inputs
 
 Baseline teaching variant:
 
-- ``config/patchworks.variant.baseline.yaml``
+- ``config/patchworks.runtime.windows.yaml``
+- ``models/k3z_patchworks_model/analysis/base.pin``
+- deep reference: :doc:`variants-and-subvariants`
 
 Optional CT/fert variant:
 
@@ -103,6 +114,7 @@ The CT/fert variant YAML controls:
 - provisional BA:volume conversion,
 - fertilization response window and speedup fraction,
 - ``F1`` / ``F2`` / ``F3`` timing rules.
+- deep reference: :doc:`silviculture-logic`
 
 Optional PCT->CT variant:
 
@@ -116,6 +128,15 @@ The PCT->CT variant YAML controls:
 - post-PCT removal of HW ingress from the planted path,
 - CT eligibility only after the PCT gate,
 - CT age and removal assumptions without any fertilization chain.
+- deep reference: :doc:`silviculture-logic`
+
+Baseline overlay subvariants:
+
+- ``config/patchworks.runtime.overlay.basecase_riparian.windows.yaml``
+- ``config/patchworks.runtime.overlay.basecase_sum.windows.yaml``
+- ``config/patchworks.runtime.overlay.scenario1_sum.windows.yaml``
+- ``config/patchworks.runtime.overlay.scenario2_sum.windows.yaml``
+- deep reference: :doc:`variants-and-subvariants`
 
 Authoritative Paths
 -------------------
@@ -139,3 +160,4 @@ Baseline K3Z Policy Notes
   treated/TIPSY path and retained out of THLB with `RETENTION = 1.0`.
 - Remaining treated AUs use the simplified teaching planting rules documented
   in `config/tipsy/tsak3z.yaml`.
+- ``og1`` / ``og2`` semantics are documented in :doc:`old-growth-attributes`.

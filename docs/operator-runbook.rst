@@ -78,6 +78,7 @@ Variant review points:
   ``product.Treated.managed.{CT,F1,F2,F3}``.
 - Patchworks smoke expectation: pulling on the ``F3`` treated-area target should
   induce the upstream chain ``F2`` -> ``F1`` -> ``CT`` -> ``CC``.
+- Deep reference: :doc:`silviculture-logic`
 
 Optional PCT->CT Variant Workflow
 ---------------------------------
@@ -99,6 +100,31 @@ Variant review points:
   ``product.Treated.managed.PCT`` and ``product.Treated.managed.CT``.
 - Patchworks smoke expectation: pulling on the ``CT`` treated-area target should
   induce the upstream chain ``PCT`` -> ``CC``.
+- Deep reference: :doc:`silviculture-logic`
+
+Baseline Overlay Subvariant Workflow
+------------------------------------
+
+Use these only when the exercise is specifically about alternative retained
+area on top of the accepted baseline surface.
+
+.. code-block:: bash
+
+   femic patchworks matrix-build --config config/patchworks.runtime.overlay.basecase_riparian.windows.yaml --run-id k3z_overlay_basecase_riparian
+   femic patchworks matrix-build --config config/patchworks.runtime.overlay.basecase_sum.windows.yaml --run-id k3z_overlay_basecase_sum
+   femic patchworks matrix-build --config config/patchworks.runtime.overlay.scenario1_sum.windows.yaml --run-id k3z_overlay_scenario1_sum
+   femic patchworks matrix-build --config config/patchworks.runtime.overlay.scenario2_sum.windows.yaml --run-id k3z_overlay_scenario2_sum
+
+Review points:
+
+- confirm the intended overlay runtime config and overlay PIN are paired;
+- confirm only fragment ``RETENTION`` differs from baseline;
+- confirm managed/unmanaged area shifts are explainable from the selected
+  overlay retention column;
+- confirm any missing managed species accounts are consistent with high
+  retained area, not with a bad tracks surface.
+
+Deep reference: :doc:`variants-and-subvariants`
 
 Old-Growth Review Workflow
 --------------------------
@@ -110,6 +136,8 @@ present in compiled accounts:
 - ``feature.Area.og2.<au_id>``
 - ``feature.Area.og1.total``
 - ``feature.Area.og2.total``
+
+Deep reference: :doc:`old-growth-attributes`
 
 Troubleshooting Workflow
 ------------------------

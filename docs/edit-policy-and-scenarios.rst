@@ -57,6 +57,8 @@ Recommended workflow:
 3. If your group needs the PCT->CT teaching scaffold, use the ``pctct`` variant spec and launch ``analysis/pctct.pin``.
 4. Rebuild before interpreting any optional-variant surfaces.
 5. Keep variant choice explicit in reports, screenshots, and classroom notes.
+6. Use the overlay subvariants only when the question is about retained-area
+   sensitivity on top of baseline.
 
 Classroom Use Guidance
 ----------------------
@@ -77,3 +79,12 @@ How to Validate Reruns
    agree about the ``CT`` -> ``F1`` -> ``F2`` -> ``F3`` chain.
 5. On the ``pctct`` variant, confirm compiled tracks and live Patchworks
    behavior agree about the ``PCT`` -> ``CT`` -> ``CC`` chain.
+6. On overlay subvariants, confirm the only intended behavioral change is the
+   managed-vs-unmanaged split driven by fragment ``RETENTION``.
+
+Deep references
+---------------
+
+- launch matrix and overlay provenance: :doc:`variants-and-subvariants`
+- treatment parameter tables and state machines: :doc:`silviculture-logic`
+- old-growth semantics: :doc:`old-growth-attributes`

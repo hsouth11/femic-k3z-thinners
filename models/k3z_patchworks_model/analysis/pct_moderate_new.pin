@@ -13,7 +13,7 @@ boolean usePatches = false;
 sourceRelative("../scripts/targets/flowTargets.bsh");
 sourceRelative("../scripts/targets/seralStages.bsh");
 
-String tracks_path_prefix = "../tracks_pct_moderate/";
+String tracks_path_prefix = "../tracks_pct_moderate_newmodel/";
 
 blocks = tracks_path_prefix+"blocks.csv";
 curves = tracks_path_prefix+"curves.csv";

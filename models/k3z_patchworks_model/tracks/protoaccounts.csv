@@ -124,7 +124,6 @@ _MANAGED_,feature.Yield.managed.BA,feature.Yield.managed.BA,1
 _MANAGED_,feature.Yield.managed.CW,feature.Yield.managed.CW,1
 _MANAGED_,feature.Yield.managed.FDC,feature.Yield.managed.FDC,1
 _MANAGED_,feature.Yield.managed.HW,feature.Yield.managed.HW,1
-_MANAGED_,feature.Yield.managed.PLC,feature.Yield.managed.PLC,1
 _MANAGED_,feature.Yield.managed.SS,feature.Yield.managed.SS,1
 _MANAGED_,feature.Yield.managed.Total,feature.Yield.managed.Total,1
 _MANAGED_,feature.Yield.managed.YC,feature.Yield.managed.YC,1
@@ -140,7 +139,6 @@ _MANAGED_,product.HarvestedVolume.managed.BA.CC,product.HarvestedVolume.managed.
 _MANAGED_,product.HarvestedVolume.managed.CW.CC,product.HarvestedVolume.managed.CW.CC,1
 _MANAGED_,product.HarvestedVolume.managed.FDC.CC,product.HarvestedVolume.managed.FDC.CC,1
 _MANAGED_,product.HarvestedVolume.managed.HW.CC,product.HarvestedVolume.managed.HW.CC,1
-_MANAGED_,product.HarvestedVolume.managed.PLC.CC,product.HarvestedVolume.managed.PLC.CC,1
 _MANAGED_,product.HarvestedVolume.managed.SS.CC,product.HarvestedVolume.managed.SS.CC,1
 _MANAGED_,product.HarvestedVolume.managed.Total.CC,product.HarvestedVolume.managed.Total.CC,1
 _MANAGED_,product.HarvestedVolume.managed.YC.CC,product.HarvestedVolume.managed.YC.CC,1
@@ -226,7 +224,6 @@ _MANAGED_,product.Yield.managed.BA,product.Yield.managed.BA,1
 _MANAGED_,product.Yield.managed.CW,product.Yield.managed.CW,1
 _MANAGED_,product.Yield.managed.FDC,product.Yield.managed.FDC,1
 _MANAGED_,product.Yield.managed.HW,product.Yield.managed.HW,1
-_MANAGED_,product.Yield.managed.PLC,product.Yield.managed.PLC,1
 _MANAGED_,product.Yield.managed.SS,product.Yield.managed.SS,1
 _MANAGED_,product.Yield.managed.Total,product.Yield.managed.Total,1
 _MANAGED_,product.Yield.managed.YC,product.Yield.managed.YC,1

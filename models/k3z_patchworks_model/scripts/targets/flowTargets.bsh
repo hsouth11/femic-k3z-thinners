@@ -5,6 +5,7 @@
  * - Even flow on all product.Yield.managed.* accounts.
  * - NDY flow on all feature.Yield.managed.* accounts.
  *
+ *
  *************************************************************/
 
 _resolveAccountsFile(String tracksPathPrefix) {
@@ -58,7 +59,7 @@ setupYieldFlowTargets(control, int periods) {
 
 setupYieldFlowTargets(control, int periods, String tracksPathPrefix) {
    FlowSpec evenflow = new FlowSpec().even();
-   int ndyStart = Math.max(1, periods - 9);
+   int ndyStart = 1;
    FlowSpec ndyflow = new FlowSpec().ndy(ndyStart, periods, -1);
 
    TreeSet productAccounts = _collectAccounts("product.Yield.managed.", tracksPathPrefix);
@@ -74,5 +75,9 @@ setupYieldFlowTargets(control, int periods, String tracksPathPrefix) {
       control.addFlowRatioAccount("flow.ndy."+account, account, ndyflow, 100);
    }
 
-   print("Configured flow targets: even="+productAccounts.size()+" ndy="+featureAccounts.size());
+   String revenueAccount = "value.nrevenue.total";
+   control.addFlowRatioAccount("flow.even."+revenueAccount, revenueAccount, evenflow, 100);
+   control.addFlowRatioAccount("flow.ndy."+revenueAccount, revenueAccount, ndyflow, 100);
+
+   print("Configured flow targets: even="+(productAccounts.size()+1)+" ndy="+(featureAccounts.size()+1));
 }

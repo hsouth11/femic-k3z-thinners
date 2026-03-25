@@ -31,8 +31,8 @@ gui.clickAndWait("pause");
 
 // Set total harvest volume even flow target
 label = "flow.even.product.Yield.managed.Total";
-setMinimumPeriodic(label, -1f);
-setMaximumPeriodic(label, +1f);
+setMinimumPeriodic(label, -15f);
+setMaximumPeriodic(label, +15f);
 setMinWeight(label, 1000f);
 setMaxWeight(label, 1000f);
 control.getTarget(label).setLinear(false);
@@ -42,7 +42,7 @@ setActive(label, true, true, true);
 label = "flow.ndy.feature.Yield.managed.Total";
 setMinimumPeriodic(label, 0f);
 setMaximumPeriodic(label, 999999999f);
-setMinWeight(label, 10000f);
+setMinWeight(label, 1000f);
 setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);

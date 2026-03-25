@@ -45,9 +45,83 @@ if (useRoutes) {
 int Patchworks_TargetInit() {
    control.calculateGroups("AU");
    control.calculateGroups("IFM");
+   control.inputGroups("../groups_thinners.csv");
    setupYieldFlowTargets(control, periods, tracks_path_prefix);
    validateSeralStageAttributes();
    control.inputTopology("../blocks/topology_blocks_200r.csv", 100d);
+
+   /*
+    * Summary accounts here
+    */
+
+	// Stumpage accounts
+	control.duplicateAccount("product.Yield.managed.BA", "value.stumpage.BA" , 0.29f);
+	control.duplicateAccount("product.Yield.managed.CW", "value.stumpage.CW" , 0.47f);
+	control.duplicateAccount("product.Yield.managed.FDC", "value.stumpage.FDC" , 0.29f);
+	control.duplicateAccount("product.Yield.managed.HW", "value.stumpage.HW" , 0.35f);
+	control.duplicateAccount("product.Yield.managed.PLC", "value.stumpage.PLC" , 0.29f);
+	control.duplicateAccount("product.Yield.managed.SS", "value.stumpage.SS" , 0.25f);
+	control.duplicateAccount("product.Yield.managed.YC", "value.stumpage.YC" , 0.55f);
+	
+	control.duplicateAccount("value.stumpage.BA" , "value.stumpage.total" , 1f);
+	control.duplicateAccount("value.stumpage.CW" , "value.stumpage.total" , 1f);
+	control.duplicateAccount("value.stumpage.FDC" , "value.stumpage.total" , 1f);		
+	control.duplicateAccount("value.stumpage.HW" , "value.stumpage.total" , 1f);
+	control.duplicateAccount("value.stumpage.PLC" , "value.stumpage.total" , 1f);	
+	control.duplicateAccount("value.stumpage.SS" , "value.stumpage.total" , 1f);	
+	control.duplicateAccount("value.stumpage.YC" , "value.stumpage.total" , 1f);	
+	
+	// Logging costs
+    control.duplicateAccount("product.Yield.managed.Total", "value.harvcost.total", 87.5f);
+
+	// PCT Costs
+	control.duplicateAccount("product.Treated.managed.PCT", "value.PCT.total", 3000f);
+
+	// Gross log revenue
+	control.duplicateAccount("product.Yield.managed.CW", "value.grevenue.CW", 254.15f);
+	control.duplicateAccount("product.Yield.managed.FDC", "value.grevenue.FDC", 113.24f);	
+	control.duplicateAccount("product.Yield.managed.HW", "value.grevenue.HW", 79.87f);
+	control.duplicateAccount("product.Yield.managed.BA", "value.grevenue.BA", 79.87f);
+	control.duplicateAccount("product.Yield.managed.SS", "value.grevenue.SS", 80.08f);
+	control.duplicateAccount("product.Yield.managed.YC", "value.grevenue.YC", 164.55f);
+	control.duplicateAccount("product.Yield.managed.PLC", "value.grevenue.PLC", 71.05f);
+	
+	control.duplicateAccount("value.grevenue.CW" , "value.grevenue.total" , 1f);
+	control.duplicateAccount("value.grevenue.FDC" , "value.grevenue.total" , 1f);
+	control.duplicateAccount("value.grevenue.HW" , "value.grevenue.total" , 1f);
+	control.duplicateAccount("value.grevenue.BA" , "value.grevenue.total" , 1f);
+	control.duplicateAccount("value.grevenue.SS" , "value.grevenue.total" , 1f);
+	control.duplicateAccount("value.grevenue.YC" , "value.grevenue.total" , 1f);
+	control.duplicateAccount("value.grevenue.PLC" , "value.grevenue.total" , 1f);
+
+
+    // Net revenue
+	control.addMetaAccount("value.nrevenue.total",
+	new String [] {"value.grevenue.total",
+	"value.harvcost.total",
+	"value.stumpage.total", "value.PCT.total"},
+	new double [] {1, -1, -1,-1});
+
+   /*
+    * Load patch target definitions here
+    */
+    if (usePatches) {
+    }
+
+      // Harvest patches
+       control.addPatchTarget("product.Treated.managed.CC", "patch.harvested.0_10", 0.0, 10.0);
+       control.addPatchTarget("product.Treated.managed.CC", "patch.harvested.10_20", 10.0, 20.0);
+	   control.addPatchTarget("product.Treated.managed.CC", "patch.harvested.20_40", 20.0, 40.0);
+	   control.addPatchTarget("product.Treated.managed.CC", "patch.harvested.0_40", 0.0, 40.0);
+       control.addPatchTarget("product.Treated.managed.CC", "patch.harvested.40_80", 50.0, 150.0);
+       control.addPatchTarget("product.Treated.managed.CC", "patch.harvested.80_250", 80.0, 250.0);
+       control.addPatchTarget("product.Treated.managed.CC", "patch.harvested.250_plus", 250.0, 9999999.0);
+       control.addPatchTarget("product.Treated.managed.CC", "patch.harvested.Total", 0.0, 9999999.0);
+
+
+	// Testing silviculture costs
+	// control.addMetaAccount ("value.silviculture.total" , "patch.harvested.Total.frequency", 1000f);
+
    return 1;
 }
 

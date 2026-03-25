@@ -246,16 +246,17 @@ VDYP Fit Diagnostics
 
    VDYP fit diagnostic for stratum/SI bin ``08-CWHvm_CW+PLC-M`` (source: ``plots/vdyp_fitdiag_tsak3z-08-CWHvm_CW+PLC-M.png``).
 
+.. _k3z-treated-yield-curve-overlays:
+
 Treated (TIPSY vs VDYP) Curve Overlays
 --------------------------------------
 
-.. note::
-
-   The low-yield ``CWHvm_CW+YC`` and ``CWHvm_CW+PLC`` strata are intentionally
-   excluded from the treated/TIPSY pathway in the current K3Z teaching
-   baseline. Their area is retained out of THLB via ``RETENTION = 1.0``, so
-   there are no current treated TIPSY-vs-VDYP overlay figures for AUs
-   ``22006`` and ``22008``.
+For the student-facing explanation and direct guide entry point for these
+figures, use :doc:`yield-curve-comparisons`. This appendix remains the full
+catalog and filename-traceability surface. The currently rendered treated
+overlays have been regenerated from the checked-in raw BatchTIPSY output file
+``data/04_output-tsak3z.out``; VDYP is shown in these overlays as the
+comparison/QA reference curve.
 
 .. figure:: ../plots/tipsy_vdyp_tsak3z-21000.png
    :alt: tipsy_vdyp_tsak3z-21000.png
@@ -305,11 +306,23 @@ Treated (TIPSY vs VDYP) Curve Overlays
 
    Treated (TIPSY vs VDYP) curve overlay for AU ``22005`` (source: ``plots/tipsy_vdyp_tsak3z-22005.png``).
 
+.. figure:: ../plots/tipsy_vdyp_tsak3z-22006.png
+   :alt: tipsy_vdyp_tsak3z-22006.png
+   :width: 90%
+
+   Treated (TIPSY vs VDYP) curve overlay for AU ``22006`` (source: ``plots/tipsy_vdyp_tsak3z-22006.png``).
+
 .. figure:: ../plots/tipsy_vdyp_tsak3z-22007.png
    :alt: tipsy_vdyp_tsak3z-22007.png
    :width: 90%
 
    Treated (TIPSY vs VDYP) curve overlay for AU ``22007`` (source: ``plots/tipsy_vdyp_tsak3z-22007.png``).
+
+.. figure:: ../plots/tipsy_vdyp_tsak3z-22008.png
+   :alt: tipsy_vdyp_tsak3z-22008.png
+   :width: 90%
+
+   Treated (TIPSY vs VDYP) curve overlay for AU ``22008`` (source: ``plots/tipsy_vdyp_tsak3z-22008.png``).
 
 .. figure:: ../plots/tipsy_vdyp_tsak3z-23000.png
    :alt: tipsy_vdyp_tsak3z-23000.png

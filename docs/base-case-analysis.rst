@@ -16,6 +16,8 @@ Primary evidence sources:
 - ``models/k3z_patchworks_model/tracks/*.csv``
 - ``vdyp_io/logs/patchworks_matrixbuilder_manifest-*.json``
 - run-id-specific matrix logs and manifests under ``vdyp_io/logs/``
+- :doc:`yield-curve-comparisons` for the student-facing treated TIPSY-vs-VDYP
+  figure set
 - Appendix figure catalog in :ref:`k3z-figure-appendix`
 
 Base Case Output and Interpretation
@@ -26,7 +28,7 @@ Base Case Output and Interpretation
 - Validate unexpected zeros/nulls by tracing:
   curve definitions -> attributes/products -> accounts -> targets.
 - Interpret seral inventory state primarily from
-  ``feature.Seral.<au_id>.<stage>`` accounts; keep
+  ``feature.Seral.<au_token>.<stage>`` accounts; keep
   ``feature.Seral.<stage>`` as the instance-wide compatibility/summary surface.
 
 Species Code Note (PL vs PLC)
@@ -77,6 +79,9 @@ core modeling mechanics.
 
 Figure Appendix Linkage
 -----------------------
+
+Use :doc:`yield-curve-comparisons` when the main question is how the treated
+TIPSY curves compare visually against the corresponding VDYP reference curves.
 
 Use :ref:`k3z-figure-appendix` as the canonical catalog for K3Z diagnostic and
 teaching figures. Reference specific plot files by name in interpretation notes

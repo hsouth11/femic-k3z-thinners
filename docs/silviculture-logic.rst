@@ -84,13 +84,17 @@ Retention and low-yield policy in this variant:
 - those low-yield strata stay out of the treated/TIPSY path even on the
   intensive variant.
 
-PCT->CT Variant
----------------
+PCT-Only Subvariants
+--------------------
 
 Canonical control files:
 
-- ``config/patchworks.variant.pctct.yaml``
-- ``config/silviculture.k3z.pctct.yaml``
+- ``config/patchworks.variant.pct_light.yaml`` +
+  ``config/silviculture.k3z.pct_light.yaml``
+- ``config/patchworks.variant.pct_moderate.yaml`` +
+  ``config/silviculture.k3z.pct_moderate.yaml``
+- ``config/patchworks.variant.pct_heavy.yaml`` +
+  ``config/silviculture.k3z.pct_heavy.yaml``
 
 Treatment parameter table:
 
@@ -100,7 +104,9 @@ Treatment parameter table:
    * - Element
      - Current implementation
    * - Eligible AUs
-     - ``985502001`` and ``985502002``
+     - ``985502000``, ``985503000``, ``985502001``, and ``985503001``
+   * - Subvariant names
+     - ``pct_light``, ``pct_moderate``, and ``pct_heavy``
    * - Eligibility gate
      - planted-only path (``min_origin: planted``)
    * - State transition field
@@ -108,32 +114,25 @@ Treatment parameter table:
    * - PCT transition
      - ``cc_pl -> cc_pl_pct``
    * - PCT age
-     - age ``10`` for both eligible AUs
-   * - Residual stems
-     - ``900`` stems/ha
-   * - Species removal rule
-     - ``remove_species = HW``
-   * - CT transition
-     - ``cc_pl_pct -> cc_pl_pct_ct``
-   * - CT age
-     - age ``40`` for both eligible AUs
-   * - CT removal
-     - ``basal_area_removal_fraction = 0.30``
-   * - BA:volume conversion
-     - ``basal_area_to_volume_ratio = 1.0``
-   * - Fertilization
-     - disabled
-   * - QMD source
-     - synthetic placeholder
+     - age ``10`` for all eligible AUs
+   * - Planted regen mix
+     - ``900 CW + 3100 HW`` for all eligible AUs
+   * - PCT flavors
+     - ``pct_light`` removes ``1000`` HW stems/ha, ``pct_moderate`` removes ``2000``, and ``pct_heavy`` removes ``3000``
+   * - Post-PCT managed mixes
+     - ``900 CW + 2100 HW``, ``900 CW + 1100 HW``, and ``900 CW + 100 HW``
 
 Sequencing logic:
 
 1. ``CC`` establishes the planted path.
-2. ``PCT`` is available only on the planted eligible AUs.
-3. ``PCT`` removes the ``HW`` species component (Western Hemlock) from the
-   planted path and leaves the residual post-PCT managed composition.
-4. ``CT`` is available only after the ``PCT`` gate is satisfied.
-5. No ``F1`` / ``F2`` / ``F3`` chain is compiled in this variant.
+2. One age-10 ``PCT`` option is available per selected ``pct_*``
+   subvariant.
+3. The selected subvariant controls how much ``HW`` (Western Hemlock) is
+   removed from the planted path:
+   - ``pct_light``: remove ``1000`` stems/ha
+   - ``pct_moderate``: remove ``2000`` stems/ha
+   - ``pct_heavy``: remove ``3000`` stems/ha
+4. No ``CT`` / ``F1`` / ``F2`` / ``F3`` chain is compiled in this variant.
 
 State Machines
 --------------
@@ -147,19 +146,19 @@ State Machines
 - ``cc_pl_ct_f1_f2``
 - ``cc_pl_ct_f1_f2_f3``
 
-``pctct`` states:
+``pct_*`` states:
 
 - ``baseline``
 - ``cc_pl``
 - ``cc_pl_pct``
-- ``cc_pl_pct_ct``
 
 Interpretation Notes
 --------------------
 
 - Use ``ctfert`` when the teaching question is about compounded treatment
   sequencing and fertilization response.
-- Use ``pctct`` when the teaching question is about gating CT behind an earlier
-  stand-tending treatment.
+- Use ``pct_light`` / ``pct_moderate`` / ``pct_heavy`` when the teaching
+  question is about comparing PCT intensity on an otherwise consistent
+  planted stand-tending path.
 - Do not interpret these surfaces as polished operational prescriptions; they
   are explicit teaching scaffolds built from YAML-facing assumptions.

@@ -12,8 +12,8 @@ Attribute Labels
 
 Per-AU labels:
 
-- ``feature.Area.og1.<au_id>``
-- ``feature.Area.og2.<au_id>``
+- ``feature.Area.og1.<au_token>``
+- ``feature.Area.og2.<au_token>``
 
 Instance-wide summary labels:
 
@@ -55,7 +55,8 @@ side.
 That design keeps ``og1`` interpretable across:
 
 - the baseline model,
-- treatment variants such as ``ctfert`` and ``pctct``, and
+- treatment variants such as ``ctfert``, ``pct_light``,
+  ``pct_moderate``, and ``pct_heavy``, and
 - overlay subvariants that only alter retained area.
 
 Where the Surfaces Appear

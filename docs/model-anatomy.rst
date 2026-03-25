@@ -24,7 +24,9 @@ Safe to edit directly:
 - ``config/seral.k3z.yaml``
 - ``config/tipsy/tsak3z.yaml``
 - ``config/silviculture.k3z.ctfert.yaml`` for the optional CT/fert variant
-- ``config/silviculture.k3z.pctct.yaml`` for the optional PCT->CT variant
+- ``config/silviculture.k3z.pct_light.yaml`` for the optional light PCT-only subvariant
+- ``config/silviculture.k3z.pct_moderate.yaml`` for the optional moderate PCT-only subvariant
+- ``config/silviculture.k3z.pct_heavy.yaml`` for the optional heavy PCT-only subvariant
 - fragment-level ``RETENTION`` values when/if you intentionally edit retained-area policy in the validated fragments dataset
 
 Regenerate instead of hand-edit:
@@ -45,13 +47,13 @@ Core Feature and Product Surfaces
 Seral account surfaces:
 
 - Global compatibility surface: ``feature.Seral.<stage>``
-- AU-specific inventory-state surface: ``feature.Seral.<au_id>.<stage>``
-- Treatment consequence surface: ``product.Seral.area.<stage>.<au_id>.CC``
+- AU-specific inventory-state surface: ``feature.Seral.<au_token>.<stage>``
+- Treatment consequence surface: ``product.Seral.area.<stage>.<au_token>.CC``
 
 Old-growth surfaces:
 
-- ``feature.Area.og1.<au_id>``
-- ``feature.Area.og2.<au_id>``
+- ``feature.Area.og1.<au_token>``
+- ``feature.Area.og2.<au_token>``
 - ``feature.Area.og1.total``
 - ``feature.Area.og2.total``
 
@@ -99,8 +101,8 @@ Additional state/config artifacts for that variant:
 - fragment/XML state field: ``SILV_STATE``
 - silviculture config: ``config/silviculture.k3z.ctfert.yaml``
 - provisional QMD outputs:
-  - ``feature.QMD.managed.<au_id>``
-  - ``feature.QMD.unmanaged.<au_id>``
+  - ``feature.QMD.managed.<au_token>``
+  - ``feature.QMD.unmanaged.<au_token>``
 - treatment-path states:
   - ``baseline``
   - ``cc_pl``
@@ -123,39 +125,48 @@ In this variant, ``ORIGIN`` still means natural vs planted. Treatment history is
 carried by ``SILV_STATE`` instead of overloading ``ORIGIN``.
 
 
-Optional PCT->CT Variant Surface
---------------------------------
+Optional PCT-Only Subvariant Family Surface
+-------------------------------------------
 
-The optional ``pctct`` variant adds a third coexisting upstream-distinct
-surface that keeps the baseline and CT/fert variants intact while inserting a
-pre-commercial-thinning gate ahead of CT.
+The optional ``pct_light``, ``pct_moderate``, and ``pct_heavy``
+subvariants add three coexisting upstream-distinct surfaces that keep the
+baseline and CT/fert variants intact while inserting a pre-commercial-thinning
+gate on the planted path.
 
 Additional state/config artifacts for that variant:
 
 - fragment/XML state field: ``SILV_STATE``
-- silviculture config: ``config/silviculture.k3z.pctct.yaml``
+- silviculture configs:
+  - ``config/silviculture.k3z.pct_light.yaml``
+  - ``config/silviculture.k3z.pct_moderate.yaml``
+  - ``config/silviculture.k3z.pct_heavy.yaml``
 - treatment-path states:
   - ``baseline``
   - ``cc_pl``
   - ``cc_pl_pct``
-  - ``cc_pl_pct_ct``
 
 Optional treatment surfaces for that variant:
 
-- ``PCT`` at age 10 by default on the planted path
-- post-PCT managed species proportions with the ``HW`` species component
-  removed
-- ``CT`` available only after ``PCT``
+- ``PCT`` eligibility retargeted to medium/high SI ``HW+FDC`` and
+  ``FDC+HW`` AUs ``985502000``, ``985503000``, ``985502001``, and
+  ``985503001``
+- three subvariant-specific age-10 PCT choices on the planted path:
+  - ``pct_light`` -> remove ``1000`` HW stems/ha
+  - ``pct_moderate`` -> remove ``2000`` HW stems/ha
+  - ``pct_heavy`` -> remove ``3000`` HW stems/ha
+- planted regen mix for those eligible AUs prepared as ``900 CW + 3100 HW``
+- post-PCT managed mixtures of ``900 CW + 2100 HW``, ``900 CW + 1100 HW``, and
+  ``900 CW + 100 HW`` respectively
 - matching compiled treatment products/accounts such as:
   - ``product.Treated.managed.PCT``
-  - ``product.Treated.managed.CT``
 
-This variant is intended as a teaching scaffold for ``PCT`` -> ``CT`` path
-logic without the added complexity of fertilization.
+This variant is intended as a teaching scaffold for PCT intensity comparison
+without the added complexity of CT or fertilization.
 
 Deep references
 ---------------
 
 - full launch matrix: :doc:`variants-and-subvariants`
 - treatment/state-machine details: :doc:`silviculture-logic`
+- student-facing treated curve gallery: :doc:`yield-curve-comparisons`
 - old-growth attribute logic: :doc:`old-growth-attributes`

@@ -1,0 +1,21 @@
+pre_commercial_thinning:
+  enabled: true
+  state_field: "SILV_STATE"
+  from_state: "cc_pl"
+  to_state: "cc_pl_pct"
+  eligible_au_ids:
+    - 985502000  # HW+FDC-M
+    - 985503000  # HW+FDC-H
+    - 985502001  # FDC+HW-M
+    - 985503001  # FDC+HW-H
+  min_origin: "planted"
+  source_total_stems_per_ha: 4000
+  age_by_au:
+    985502000: 10
+    985503000: 10
+    985502001: 10
+    985503001: 10
+  remove_species:
+    - "HW"
+  remove_stems_per_ha:
+    HW: 2000

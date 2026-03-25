@@ -246,8 +246,14 @@ VDYP Fit Diagnostics
 
    VDYP fit diagnostic for stratum/SI bin ``08-CWHvm_CW+PLC-M`` (source: ``plots/vdyp_fitdiag_tsak3z-08-CWHvm_CW+PLC-M.png``).
 
+.. _k3z-treated-yield-curve-overlays:
+
 Treated (TIPSY vs VDYP) Curve Overlays
 --------------------------------------
+
+For the student-facing explanation and direct guide entry point for these
+figures, use :doc:`yield-curve-comparisons`. This appendix remains the full
+catalog and filename-traceability surface.
 
 .. note::
 

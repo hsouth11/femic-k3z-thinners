@@ -168,4 +168,5 @@ Deep references
 
 - full launch matrix: :doc:`variants-and-subvariants`
 - treatment/state-machine details: :doc:`silviculture-logic`
+- student-facing treated curve gallery: :doc:`yield-curve-comparisons`
 - old-growth attribute logic: :doc:`old-growth-attributes`

@@ -54,6 +54,9 @@ The intended launch pairings are:
 
 For the full launch matrix, use :doc:`variants-and-subvariants`.
 
+For the student-facing treated yield-curve comparison figures, use
+:doc:`yield-curve-comparisons`.
+
 Quick Surface Picker
 --------------------
 
@@ -204,6 +207,9 @@ Baseline K3Z Policy Notes
 -------------------------
 
 - Managed curves now come from real BatchTIPSY output.
+- The student-facing treated TIPSY-vs-VDYP comparison figures live in
+  :doc:`yield-curve-comparisons`, with the full plot catalog retained in
+  :ref:`k3z-figure-appendix`.
 - `CWHvm_CW+YC` and `CWHvm_CW+PLC` are intentionally excluded from the
   treated/TIPSY path and retained out of THLB with `RETENTION = 1.0`.
 - Remaining treated AUs use the simplified teaching planting rules documented

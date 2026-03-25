@@ -18,6 +18,7 @@ This documentation site is the standalone operator guide for the
    land-base-and-netdown
    assumptions-registry
    base-case-analysis
+   yield-curve-comparisons
    figure-appendix
    metadata-and-lineage
    operator-runbook

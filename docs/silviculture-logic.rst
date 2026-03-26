@@ -64,6 +64,8 @@ Treatment parameter table:
      - ``basal_area_removal_fraction = 0.30``
    * - BA:volume conversion
      - ``basal_area_to_volume_ratio = 1.0``
+   * - CT final-felling gap factor
+     - ``final_felling_gap_factor = 1.0`` means the post-CT final-felling volume gap stays equal to the CT harvest volume; ``0.0`` means that gap linearly closes by ``cmai_argmax``
    * - F1 transition
      - ``cc_pl_ct -> cc_pl_ct_f1`` at ``cai_argmax``
    * - F2 transition
@@ -88,6 +90,10 @@ SI-profile notes:
    null-effect fert chain there.
 3. Both SI-profile subvariants use the curated CT/fert retention overlay in
    ``tmp/CTFert Fragments/fragments_updated3_Usedinbasecase.shp``.
+4. Both SI-profile subvariants now set ``commercial_thinning.final_felling_gap_factor``
+   to ``0.0``, so the immediate CT harvest still occurs at age 40 but the
+   residual final-felling volume gap is forced to taper to zero by
+   ``cmai_argmax`` instead of remaining fixed forever.
 
 Sequencing logic:
 

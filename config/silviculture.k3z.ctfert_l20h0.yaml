@@ -20,6 +20,7 @@ commercial_thinning:
     985503002: 40
   basal_area_removal_fraction: 0.30
   basal_area_to_volume_ratio: 1.0
+  final_felling_gap_factor: 0.0
 
 fertilization:
   enabled: true

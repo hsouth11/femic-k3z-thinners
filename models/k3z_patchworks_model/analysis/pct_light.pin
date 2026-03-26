@@ -46,9 +46,6 @@ int Patchworks_TargetInit() {
    control.calculateGroups("AU");
    control.calculateGroups("IFM");
    control.inputGroups("../groups_thinners.csv");
-   setupYieldFlowTargets(control, periods, tracks_path_prefix);
-   validateSeralStageAttributes();
-   control.inputTopology("../blocks/topology_blocks_200r.csv", 100d);
 
    // Stumpage accounts
 	control.duplicateAccount("product.Yield.managed.BA", "value.stumpage.BA" , 0.29f);
@@ -97,6 +94,10 @@ int Patchworks_TargetInit() {
 	"value.harvcost.total",
 	"value.stumpage.total", "value.PCT.total"},
 	new double [] {1, -1, -1,-1});
+
+   setupYieldFlowTargets(control, periods, tracks_path_prefix);
+   validateSeralStageAttributes();
+   control.inputTopology("../blocks/topology_blocks_200r.csv", 100d);
 
    /*
     * Load patch target definitions here

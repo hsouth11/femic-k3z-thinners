@@ -27,6 +27,7 @@ boolean useRoutes = false;
 boolean usePatches = false;
 
 sourceRelative("../scripts/targets/flowTargets.bsh");
+sourceRelative("../scripts/targets/qmdRatioAccounts.bsh");
 sourceRelative("../scripts/targets/seralStages.bsh");
 
 
@@ -84,6 +85,7 @@ int Patchworks_TargetInit() {
    control.calculateGroups("IFM");
 
    setupYieldFlowTargets(control, periods, tracks_path_prefix);
+   setupHarvestedQmdRatioAccounts(control, tracks_path_prefix);
    validateSeralStageAttributes();
 
    /*

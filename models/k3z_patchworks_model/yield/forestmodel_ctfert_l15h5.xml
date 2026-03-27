@@ -18892,6 +18892,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_HW_FDC_L_985521000" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_FDC_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_FDC_L.CC">
+        <curve idref="au_CWHvm_HW_FDC_L_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.FDC">
         <curve idref="au_CWHvm_HW_FDC_L_managed_natural_yield_FDC" />
       </attribute>
@@ -19099,6 +19105,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_HW_FDC_L_985521000" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_FDC_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_FDC_L.CC">
+        <curve idref="au_CWHvm_HW_FDC_L_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_HW_FDC_L_managed_planted_yield_CW" />
       </attribute>
@@ -19302,6 +19314,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_FDC_HW_L_985521001" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_L.CC">
+        <curve idref="au_CWHvm_FDC_HW_L_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.FDC">
         <curve idref="au_CWHvm_FDC_HW_L_managed_natural_yield_FDC" />
@@ -19518,6 +19536,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_FDC_HW_L_985521001" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_L.CC">
+        <curve idref="au_CWHvm_FDC_HW_L_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_L_managed_planted_yield_CW" />
       </attribute>
@@ -19730,6 +19754,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CT">
         <curve idref="au_CWHvm_FDC_HW_L_cc_pl_ct_harvest_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_L.CT">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_L.CT">
+        <curve idref="au_CWHvm_FDC_HW_L_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_L_cc_pl_ct_harvest_CW" />
       </attribute>
@@ -19787,6 +19817,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_FDC_HW_L_cc_pl_ct_residual_total" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_L.CC">
+        <curve idref="au_CWHvm_FDC_HW_L_managed_cc_pl_ct_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_L_managed_cc_pl_ct_yield_CW" />
@@ -20010,6 +20046,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_FDC_HW_L_fert1_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_L.CC">
+        <curve idref="au_CWHvm_FDC_HW_L_managed_cc_pl_ct_f1_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_L_managed_cc_pl_ct_f1_yield_CW" />
       </attribute>
@@ -20232,6 +20274,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_FDC_HW_L_fert2_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_L.CC">
+        <curve idref="au_CWHvm_FDC_HW_L_managed_cc_pl_ct_f1_f2_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_L_managed_cc_pl_ct_f1_f2_yield_CW" />
       </attribute>
@@ -20446,6 +20494,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_FDC_HW_L_fert3_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_L.CC">
+        <curve idref="au_CWHvm_FDC_HW_L_managed_cc_pl_ct_f1_f2_f3_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_L_managed_cc_pl_ct_f1_f2_f3_yield_CW" />
       </attribute>
@@ -20653,6 +20707,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_CW_HW_L_985501002" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_L.CC">
+        <curve idref="au_CWHvm_CW_HW_L_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_L_managed_natural_yield_CW" />
       </attribute>
@@ -20856,6 +20916,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_CW_HW_L_985501002" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_L.CC">
+        <curve idref="au_CWHvm_CW_HW_L_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_L_managed_planted_yield_CW" />
       </attribute>
@@ -21050,6 +21116,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CT">
         <curve idref="au_CWHvm_CW_HW_L_cc_pl_ct_harvest_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_L.CT">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_L.CT">
+        <curve idref="au_CWHvm_CW_HW_L_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_L_cc_pl_ct_harvest_CW" />
       </attribute>
@@ -21101,6 +21173,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_CW_HW_L_cc_pl_ct_residual_total" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_L.CC">
+        <curve idref="au_CWHvm_CW_HW_L_managed_cc_pl_ct_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_L_managed_cc_pl_ct_yield_CW" />
@@ -21309,6 +21387,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_CW_HW_L_fert1_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_L.CC">
+        <curve idref="au_CWHvm_CW_HW_L_managed_cc_pl_ct_f1_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_L_managed_cc_pl_ct_f1_yield_CW" />
       </attribute>
@@ -21516,6 +21600,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_CW_HW_L_fert2_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_L.CC">
+        <curve idref="au_CWHvm_CW_HW_L_managed_cc_pl_ct_f1_f2_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_L_managed_cc_pl_ct_f1_f2_yield_CW" />
       </attribute>
@@ -21714,6 +21804,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_CW_HW_L_fert3_total" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_L.CC">
+        <curve idref="au_CWHvm_CW_HW_L_managed_cc_pl_ct_f1_f2_f3_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_L_managed_cc_pl_ct_f1_f2_f3_yield_CW" />
@@ -21915,6 +22011,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_HW_CW_L_985521003" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_CW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_CW_L.CC">
+        <curve idref="au_CWHvm_HW_CW_L_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_HW_CW_L_managed_natural_yield_CW" />
@@ -22123,6 +22225,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_HW_CW_L_985521003" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_CW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_CW_L.CC">
+        <curve idref="au_CWHvm_HW_CW_L_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_HW_CW_L_managed_planted_yield_CW" />
       </attribute>
@@ -22327,6 +22435,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_DR_HW_L_985501004" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_DR_HW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_DR_HW_L.CC">
+        <curve idref="au_CWHvm_DR_HW_L_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.DR">
         <curve idref="au_CWHvm_DR_HW_L_managed_natural_yield_DR" />
       </attribute>
@@ -22521,6 +22635,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_DR_HW_L_985501004" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_DR_HW_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_DR_HW_L.CC">
+        <curve idref="au_CWHvm_DR_HW_L_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.DR">
         <curve idref="au_CWHvm_DR_HW_L_managed_planted_yield_DR" />
@@ -22717,6 +22837,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_HW_SS_L_985501005" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_SS_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_SS_L.CC">
+        <curve idref="au_CWHvm_HW_SS_L_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.HW">
         <curve idref="au_CWHvm_HW_SS_L_managed_natural_yield_HW" />
       </attribute>
@@ -22911,6 +23037,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_HW_SS_L_985501005" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_SS_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_SS_L.CC">
+        <curve idref="au_CWHvm_HW_SS_L_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.HW">
         <curve idref="au_CWHvm_HW_SS_L_managed_planted_yield_HW" />
@@ -23118,6 +23250,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_CW_YC_L_985501006" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_YC_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_YC_L.CC">
+        <curve idref="au_CWHvm_CW_YC_L_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_YC_L_managed_natural_yield_CW" />
@@ -23335,6 +23473,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_CW_YC_L_985501006" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_YC_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_YC_L.CC">
+        <curve idref="au_CWHvm_CW_YC_L_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_YC_L_managed_planted_yield_CW" />
       </attribute>
@@ -23539,6 +23683,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_HW_BA_L_985501007" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_BA_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_BA_L.CC">
+        <curve idref="au_CWHvm_HW_BA_L_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.BA">
         <curve idref="au_CWHvm_HW_BA_L_managed_natural_yield_BA" />
       </attribute>
@@ -23733,6 +23883,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_HW_BA_L_985501007" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_BA_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_BA_L.CC">
+        <curve idref="au_CWHvm_HW_BA_L_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.BA">
         <curve idref="au_CWHvm_HW_BA_L_managed_planted_yield_BA" />
@@ -23952,6 +24108,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_CW_PLC_L_985501008" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_PLC_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_PLC_L.CC">
+        <curve idref="au_CWHvm_CW_PLC_L_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_PLC_L_managed_natural_yield_CW" />
@@ -24190,6 +24352,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_CW_PLC_L_985501008" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_PLC_L.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_PLC_L.CC">
+        <curve idref="au_CWHvm_CW_PLC_L_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_PLC_L_managed_planted_yield_CW" />
       </attribute>
@@ -24403,6 +24571,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_HW_FDC_M_985502000" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_FDC_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_FDC_M.CC">
+        <curve idref="au_CWHvm_HW_FDC_M_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.FDC">
         <curve idref="au_CWHvm_HW_FDC_M_managed_natural_yield_FDC" />
       </attribute>
@@ -24598,6 +24772,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_HW_FDC_M_985502000" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_FDC_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_FDC_M.CC">
+        <curve idref="au_CWHvm_HW_FDC_M_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.FDC">
         <curve idref="au_CWHvm_HW_FDC_M_managed_planted_yield_FDC" />
       </attribute>
@@ -24792,6 +24972,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_FDC_HW_M_985522001" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_M.CC">
+        <curve idref="au_CWHvm_FDC_HW_M_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.FDC">
         <curve idref="au_CWHvm_FDC_HW_M_managed_natural_yield_FDC" />
@@ -25008,6 +25194,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_FDC_HW_M_985522001" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_M.CC">
+        <curve idref="au_CWHvm_FDC_HW_M_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_M_managed_planted_yield_CW" />
       </attribute>
@@ -25220,6 +25412,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CT">
         <curve idref="au_CWHvm_FDC_HW_M_cc_pl_ct_harvest_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_M.CT">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_M.CT">
+        <curve idref="au_CWHvm_FDC_HW_M_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_M_cc_pl_ct_harvest_CW" />
       </attribute>
@@ -25277,6 +25475,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_FDC_HW_M_cc_pl_ct_residual_total" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_M.CC">
+        <curve idref="au_CWHvm_FDC_HW_M_managed_cc_pl_ct_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_M_managed_cc_pl_ct_yield_CW" />
@@ -25500,6 +25704,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_FDC_HW_M_fert1_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_M.CC">
+        <curve idref="au_CWHvm_FDC_HW_M_managed_cc_pl_ct_f1_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_M_managed_cc_pl_ct_f1_yield_CW" />
       </attribute>
@@ -25722,6 +25932,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_FDC_HW_M_fert2_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_M.CC">
+        <curve idref="au_CWHvm_FDC_HW_M_managed_cc_pl_ct_f1_f2_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_M_managed_cc_pl_ct_f1_f2_yield_CW" />
       </attribute>
@@ -25936,6 +26152,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_FDC_HW_M_fert3_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_M.CC">
+        <curve idref="au_CWHvm_FDC_HW_M_managed_cc_pl_ct_f1_f2_f3_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_M_managed_cc_pl_ct_f1_f2_f3_yield_CW" />
       </attribute>
@@ -26142,6 +26364,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_CW_HW_M_985522002" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_M.CC">
+        <curve idref="au_CWHvm_CW_HW_M_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_M_managed_natural_yield_CW" />
@@ -26358,6 +26586,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_CW_HW_M_985522002" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_M.CC">
+        <curve idref="au_CWHvm_CW_HW_M_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_M_managed_planted_yield_CW" />
       </attribute>
@@ -26570,6 +26804,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CT">
         <curve idref="au_CWHvm_CW_HW_M_cc_pl_ct_harvest_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_M.CT">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_M.CT">
+        <curve idref="au_CWHvm_CW_HW_M_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_M_cc_pl_ct_harvest_CW" />
       </attribute>
@@ -26627,6 +26867,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_CW_HW_M_cc_pl_ct_residual_total" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_M.CC">
+        <curve idref="au_CWHvm_CW_HW_M_managed_cc_pl_ct_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_M_managed_cc_pl_ct_yield_CW" />
@@ -26850,6 +27096,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_CW_HW_M_fert1_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_M.CC">
+        <curve idref="au_CWHvm_CW_HW_M_managed_cc_pl_ct_f1_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_M_managed_cc_pl_ct_f1_yield_CW" />
       </attribute>
@@ -27072,6 +27324,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_CW_HW_M_fert2_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_M.CC">
+        <curve idref="au_CWHvm_CW_HW_M_managed_cc_pl_ct_f1_f2_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_M_managed_cc_pl_ct_f1_f2_yield_CW" />
       </attribute>
@@ -27286,6 +27544,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_CW_HW_M_fert3_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_M.CC">
+        <curve idref="au_CWHvm_CW_HW_M_managed_cc_pl_ct_f1_f2_f3_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_M_managed_cc_pl_ct_f1_f2_f3_yield_CW" />
       </attribute>
@@ -27492,6 +27756,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_HW_CW_M_985522003" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_CW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_CW_M.CC">
+        <curve idref="au_CWHvm_HW_CW_M_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_HW_CW_M_managed_natural_yield_CW" />
@@ -27700,6 +27970,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_HW_CW_M_985522003" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_CW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_CW_M.CC">
+        <curve idref="au_CWHvm_HW_CW_M_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_HW_CW_M_managed_planted_yield_CW" />
       </attribute>
@@ -27903,6 +28179,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_DR_HW_M_985522004" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_DR_HW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_DR_HW_M.CC">
+        <curve idref="au_CWHvm_DR_HW_M_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.DR">
         <curve idref="au_CWHvm_DR_HW_M_managed_natural_yield_DR" />
@@ -28111,6 +28393,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_DR_HW_M_985522004" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_DR_HW_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_DR_HW_M.CC">
+        <curve idref="au_CWHvm_DR_HW_M_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_DR_HW_M_managed_planted_yield_CW" />
       </attribute>
@@ -28314,6 +28602,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_HW_SS_M_985522005" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_SS_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_SS_M.CC">
+        <curve idref="au_CWHvm_HW_SS_M_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.HW">
         <curve idref="au_CWHvm_HW_SS_M_managed_natural_yield_HW" />
@@ -28521,6 +28815,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_HW_SS_M_985522005" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_SS_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_SS_M.CC">
+        <curve idref="au_CWHvm_HW_SS_M_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_HW_SS_M_managed_planted_yield_CW" />
@@ -28738,6 +29038,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_CW_YC_M_985522006" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_YC_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_YC_M.CC">
+        <curve idref="au_CWHvm_CW_YC_M_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_YC_M_managed_natural_yield_CW" />
       </attribute>
@@ -28954,6 +29260,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_CW_YC_M_985522006" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_YC_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_YC_M.CC">
+        <curve idref="au_CWHvm_CW_YC_M_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_YC_M_managed_planted_yield_CW" />
       </attribute>
@@ -29157,6 +29469,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_HW_BA_M_985522007" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_BA_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_BA_M.CC">
+        <curve idref="au_CWHvm_HW_BA_M_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.BA">
         <curve idref="au_CWHvm_HW_BA_M_managed_natural_yield_BA" />
@@ -29364,6 +29682,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_HW_BA_M_985522007" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_BA_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_BA_M.CC">
+        <curve idref="au_CWHvm_HW_BA_M_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_HW_BA_M_managed_planted_yield_CW" />
@@ -29581,6 +29905,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_CW_PLC_M_985522008" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_PLC_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_PLC_M.CC">
+        <curve idref="au_CWHvm_CW_PLC_M_managed_qmd" />
+      </attribute>
       <attribute label="product.SpeciesProp.managed.CW">
         <curve idref="unmanaged_prop_CW_CWHvm_CW_PLC_M_985502008002" />
       </attribute>
@@ -29773,6 +30103,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_CW_PLC_M_985522008" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_PLC_M.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_PLC_M.CC">
+        <curve idref="au_CWHvm_CW_PLC_M_managed_qmd" />
+      </attribute>
       <attribute label="product.SpeciesProp.managed.CW">
         <curve idref="managed_prop_CW_CWHvm_CW_PLC_M_985522008002" />
       </attribute>
@@ -29958,6 +30294,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_HW_FDC_H_985523000" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_FDC_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_FDC_H.CC">
+        <curve idref="au_CWHvm_HW_FDC_H_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.FDC">
         <curve idref="au_CWHvm_HW_FDC_H_managed_natural_yield_FDC" />
@@ -30166,6 +30508,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_HW_FDC_H_985523000" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_FDC_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_FDC_H.CC">
+        <curve idref="au_CWHvm_HW_FDC_H_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_HW_FDC_H_managed_planted_yield_CW" />
       </attribute>
@@ -30369,6 +30717,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_FDC_HW_H_985523001" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_H.CC">
+        <curve idref="au_CWHvm_FDC_HW_H_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.FDC">
         <curve idref="au_CWHvm_FDC_HW_H_managed_natural_yield_FDC" />
@@ -30585,6 +30939,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_FDC_HW_H_985523001" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_H.CC">
+        <curve idref="au_CWHvm_FDC_HW_H_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_H_managed_planted_yield_CW" />
       </attribute>
@@ -30797,6 +31157,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CT">
         <curve idref="au_CWHvm_FDC_HW_H_cc_pl_ct_harvest_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_H.CT">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_H.CT">
+        <curve idref="au_CWHvm_FDC_HW_H_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_H_cc_pl_ct_harvest_CW" />
       </attribute>
@@ -30854,6 +31220,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_FDC_HW_H_cc_pl_ct_residual_total" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_H.CC">
+        <curve idref="au_CWHvm_FDC_HW_H_managed_cc_pl_ct_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_H_managed_cc_pl_ct_yield_CW" />
@@ -31077,6 +31449,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_FDC_HW_H_fert1_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_H.CC">
+        <curve idref="au_CWHvm_FDC_HW_H_managed_cc_pl_ct_f1_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_H_managed_cc_pl_ct_f1_yield_CW" />
       </attribute>
@@ -31299,6 +31677,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_FDC_HW_H_fert2_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_H.CC">
+        <curve idref="au_CWHvm_FDC_HW_H_managed_cc_pl_ct_f1_f2_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_H_managed_cc_pl_ct_f1_f2_yield_CW" />
       </attribute>
@@ -31513,6 +31897,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_FDC_HW_H_fert3_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_FDC_HW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_FDC_HW_H.CC">
+        <curve idref="au_CWHvm_FDC_HW_H_managed_cc_pl_ct_f1_f2_f3_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_FDC_HW_H_managed_cc_pl_ct_f1_f2_f3_yield_CW" />
       </attribute>
@@ -31720,6 +32110,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_CW_HW_H_985503002" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_H.CC">
+        <curve idref="au_CWHvm_CW_HW_H_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_H_managed_natural_yield_CW" />
       </attribute>
@@ -31923,6 +32319,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_CW_HW_H_985503002" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_H.CC">
+        <curve idref="au_CWHvm_CW_HW_H_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_H_managed_planted_yield_CW" />
       </attribute>
@@ -32117,6 +32519,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CT">
         <curve idref="au_CWHvm_CW_HW_H_cc_pl_ct_harvest_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_H.CT">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_H.CT">
+        <curve idref="au_CWHvm_CW_HW_H_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_H_cc_pl_ct_harvest_CW" />
       </attribute>
@@ -32168,6 +32576,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_CW_HW_H_cc_pl_ct_residual_total" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_H.CC">
+        <curve idref="au_CWHvm_CW_HW_H_managed_cc_pl_ct_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_H_managed_cc_pl_ct_yield_CW" />
@@ -32376,6 +32790,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_CW_HW_H_fert1_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_H.CC">
+        <curve idref="au_CWHvm_CW_HW_H_managed_cc_pl_ct_f1_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_H_managed_cc_pl_ct_f1_yield_CW" />
       </attribute>
@@ -32583,6 +33003,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_CW_HW_H_fert2_total" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_H.CC">
+        <curve idref="au_CWHvm_CW_HW_H_managed_cc_pl_ct_f1_f2_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_H_managed_cc_pl_ct_f1_f2_yield_CW" />
       </attribute>
@@ -32781,6 +33207,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="au_CWHvm_CW_HW_H_fert3_total" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_HW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_HW_H.CC">
+        <curve idref="au_CWHvm_CW_HW_H_managed_cc_pl_ct_f1_f2_f3_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_HW_H_managed_cc_pl_ct_f1_f2_f3_yield_CW" />
@@ -32982,6 +33414,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_HW_CW_H_985523003" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_CW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_CW_H.CC">
+        <curve idref="au_CWHvm_HW_CW_H_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_HW_CW_H_managed_natural_yield_CW" />
@@ -33190,6 +33628,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="managed_total_CWHvm_HW_CW_H_985523003" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_CW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_CW_H.CC">
+        <curve idref="au_CWHvm_HW_CW_H_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_HW_CW_H_managed_planted_yield_CW" />
       </attribute>
@@ -33394,6 +33838,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_DR_HW_H_985503004" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_DR_HW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_DR_HW_H.CC">
+        <curve idref="au_CWHvm_DR_HW_H_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.DR">
         <curve idref="au_CWHvm_DR_HW_H_managed_natural_yield_DR" />
       </attribute>
@@ -33588,6 +34038,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_DR_HW_H_985503004" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_DR_HW_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_DR_HW_H.CC">
+        <curve idref="au_CWHvm_DR_HW_H_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.DR">
         <curve idref="au_CWHvm_DR_HW_H_managed_planted_yield_DR" />
@@ -33784,6 +34240,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_HW_SS_H_985503005" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_SS_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_SS_H.CC">
+        <curve idref="au_CWHvm_HW_SS_H_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.HW">
         <curve idref="au_CWHvm_HW_SS_H_managed_natural_yield_HW" />
       </attribute>
@@ -33978,6 +34440,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_HW_SS_H_985503005" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_SS_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_SS_H.CC">
+        <curve idref="au_CWHvm_HW_SS_H_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.HW">
         <curve idref="au_CWHvm_HW_SS_H_managed_planted_yield_HW" />
@@ -34185,6 +34653,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_CW_YC_H_985503006" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_YC_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_YC_H.CC">
+        <curve idref="au_CWHvm_CW_YC_H_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_YC_H_managed_natural_yield_CW" />
@@ -34402,6 +34876,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_CW_YC_H_985503006" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_YC_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_YC_H.CC">
+        <curve idref="au_CWHvm_CW_YC_H_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_YC_H_managed_planted_yield_CW" />
       </attribute>
@@ -34606,6 +35086,12 @@
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_HW_BA_H_985503007" />
       </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_BA_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_BA_H.CC">
+        <curve idref="au_CWHvm_HW_BA_H_managed_qmd" />
+      </attribute>
       <attribute label="product.Yield.managed.BA">
         <curve idref="au_CWHvm_HW_BA_H_managed_natural_yield_BA" />
       </attribute>
@@ -34800,6 +35286,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_HW_BA_H_985503007" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_HW_BA_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_HW_BA_H.CC">
+        <curve idref="au_CWHvm_HW_BA_H_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.BA">
         <curve idref="au_CWHvm_HW_BA_H_managed_planted_yield_BA" />
@@ -35019,6 +35511,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_CW_PLC_H_985503008" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_PLC_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_PLC_H.CC">
+        <curve idref="au_CWHvm_CW_PLC_H_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_PLC_H_managed_natural_yield_CW" />
@@ -35256,6 +35754,12 @@
       </attribute>
       <attribute label="product.HarvestedVolume.managed.Total.CC">
         <curve idref="unmanaged_total_CWHvm_CW_PLC_H_985503008" />
+      </attribute>
+      <attribute label="product.Treated.managed.CWHvm_CW_PLC_H.CC">
+        <curve idref="unity" />
+      </attribute>
+      <attribute label="product.QMDNumerator.managed.CWHvm_CW_PLC_H.CC">
+        <curve idref="au_CWHvm_CW_PLC_H_managed_qmd" />
       </attribute>
       <attribute label="product.Yield.managed.CW">
         <curve idref="au_CWHvm_CW_PLC_H_managed_planted_yield_CW" />

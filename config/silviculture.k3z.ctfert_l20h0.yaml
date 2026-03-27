@@ -58,6 +58,7 @@ fertilization:
 
 qmd:
   enabled: true
+  harvested_product_accounts_enabled: true
 
 retention:
   default_retention_fraction: 0.05

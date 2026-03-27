@@ -19,3 +19,6 @@ pre_commercial_thinning:
     - "HW"
   remove_stems_per_ha:
     HW: 2000
+qmd:
+  enabled: true
+  harvested_product_accounts_enabled: true

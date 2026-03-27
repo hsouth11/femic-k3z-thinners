@@ -23,6 +23,8 @@ Safe to edit directly:
 - ``config/run_profile.k3z.yaml``
 - ``config/seral.k3z.yaml``
 - ``config/tipsy/tsak3z.yaml``
+- ``config/silviculture.k3z.base.yaml`` for optional baseline harvested-QMD
+  support-surface switches
 - ``config/silviculture.k3z.ctfert_l15h5.yaml`` for the optional CT/fert
   ``L15/M10/H5`` subvariant
 - ``config/silviculture.k3z.ctfert_l20h0.yaml`` for the optional CT/fert
@@ -71,6 +73,33 @@ Deep reference: :doc:`old-growth-attributes`
 These are inventory-state feature surfaces, not treatment-consequence products.
 They should appear automatically in compiled Patchworks accounts after Matrix
 Builder regenerates ``protoaccounts.csv`` / ``accounts.csv``.
+
+Baseline and Overlay Harvested-QMD Surface
+------------------------------------------
+
+The accepted K3Z baseline and the four baseline-derived overlay subvariants
+now also carry an AU-wise harvested-stem QMD account contract for ``CC``.
+
+Additional baseline/overlay support surfaces:
+
+- standing-stock approximate QMD outputs:
+  - ``feature.QMD.managed.<au_token>``
+  - ``feature.QMD.unmanaged.<au_token>``
+- harvested-QMD numerator attributes:
+  - ``product.QMDNumerator.managed.<au_token>.CC``
+- matching denominator attributes:
+  - ``product.Treated.managed.<au_token>.CC``
+
+The shipped XML/tracks define those numerator and denominator attributes. At
+launch time, ``analysis/base.pin`` and the overlay PIN family source the common
+ratio-account helper so Patchworks registers live:
+
+- ``product.QMD.managed.<au_token>.CC``
+
+Those live ratio accounts divide the matching
+``product.QMDNumerator.managed.<au_token>.CC`` account by the corresponding
+``product.Treated.managed.<au_token>.CC`` account with scale ``1``, so the
+live values resolve directly to mean harvested-stem diameter in ``cm``.
 
 Retention Surface
 -----------------
@@ -174,6 +203,9 @@ Additional state/config artifacts for that variant:
   - ``baseline``
   - ``cc_pl``
   - ``cc_pl_pct``
+- approximate QMD outputs:
+  - ``feature.QMD.managed.<au_token>``
+  - ``feature.QMD.unmanaged.<au_token>``
 
 Optional treatment surfaces for that variant:
 
@@ -189,6 +221,24 @@ Optional treatment surfaces for that variant:
   ``900 CW + 100 HW`` respectively
 - matching compiled treatment products/accounts such as:
   - ``product.Treated.managed.PCT``
+  - ``product.Treated.managed.<au_token>.PCT``
+  - ``product.Treated.managed.<au_token>.CC``
+  - ``product.QMDNumerator.managed.<au_token>.PCT``
+  - ``product.QMDNumerator.managed.<au_token>.CC``
+
+The shipped XML/tracks define AU-wise harvested-QMD numerator attributes for
+both ``PCT`` and the downstream planted-path ``CC`` treatment, plus the
+matching AU-wise treated-area denominator attributes. At launch time, the
+``pct_*`` PIN files register live Patchworks ratio accounts:
+
+- ``product.QMD.managed.<au_token>.PCT``
+- ``product.QMD.managed.<au_token>.CC``
+
+Those runtime ratio accounts divide the matching
+``product.QMDNumerator.managed.<au_token>.<treatment>`` account by the
+corresponding ``product.Treated.managed.<au_token>.<treatment>`` account with
+scale ``1``, so the live values resolve directly to mean harvested-stem
+diameter in ``cm``.
 
 This variant is intended as a teaching scaffold for PCT intensity comparison
 without the added complexity of CT or fertilization.

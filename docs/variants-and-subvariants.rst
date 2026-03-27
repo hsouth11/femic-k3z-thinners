@@ -56,8 +56,8 @@ Variant Matrix
    * - ``base``
      - ``config/patchworks.runtime.windows.yaml`` + ``analysis/base.pin``
      - ``tracks/`` + ``yield/forestmodel.xml`` + ``output/patchworks_k3z_validated/fragments/fragments.shp``
-     - Nothing beyond the accepted teaching baseline.
-     - Baseline managed/unmanaged accounts, species-wise managed yield, seral, and ``og1`` / ``og2``.
+     - Nothing beyond the accepted teaching baseline, plus AU-wise standing and harvested QMD support surfaces.
+     - Baseline managed/unmanaged accounts, species-wise managed yield, seral, ``og1`` / ``og2``, and AU-wise harvested-stem QMD numerator / treated-area / live ratio accounts for ``CC``.
      - Default teaching and comparison surface.
    * - ``ctfert_l15h5``
      - ``config/patchworks.runtime.ctfert_l15h5.windows.yaml`` + ``analysis/ctfert_l15h5.pin``
@@ -75,43 +75,43 @@ Variant Matrix
      - ``config/patchworks.runtime.pct_light.windows.yaml`` + ``analysis/pct_light.pin``
      - ``tracks_pct_light/`` + ``yield/forestmodel_pct_light.xml`` + ``output/patchworks_k3z_pct_light_validated/fragments/fragments.shp``
      - Adds ``SILV_STATE`` plus a planted-only light PCT gate, but no CT or fertilization chain.
-     - ``PCT`` treated products plus species-wise managed yield / harvest-volume surfaces.
+     - ``PCT`` treated products, AU-wise harvested-stem QMD numerator / treated-area / live ratio accounts for both ``PCT`` and ``CC``, plus species-wise managed yield / harvest-volume surfaces.
      - Light-intensity stand-tending teaching scaffold.
    * - ``pct_moderate``
      - ``config/patchworks.runtime.pct_moderate.windows.yaml`` + ``analysis/pct_moderate.pin``
      - ``tracks_pct_moderate/`` + ``yield/forestmodel_pct_moderate.xml`` + ``output/patchworks_k3z_pct_moderate_validated/fragments/fragments.shp``
      - Adds ``SILV_STATE`` plus a planted-only moderate PCT gate, but no CT or fertilization chain.
-     - ``PCT`` treated products plus species-wise managed yield / harvest-volume surfaces.
+     - ``PCT`` treated products, AU-wise harvested-stem QMD numerator / treated-area / live ratio accounts for both ``PCT`` and ``CC``, plus species-wise managed yield / harvest-volume surfaces.
      - Moderate-intensity stand-tending teaching scaffold.
    * - ``pct_heavy``
      - ``config/patchworks.runtime.pct_heavy.windows.yaml`` + ``analysis/pct_heavy.pin``
      - ``tracks_pct_heavy/`` + ``yield/forestmodel_pct_heavy.xml`` + ``output/patchworks_k3z_pct_heavy_validated/fragments/fragments.shp``
      - Adds ``SILV_STATE`` plus a planted-only heavy PCT gate, but no CT or fertilization chain.
-     - ``PCT`` treated products plus species-wise managed yield / harvest-volume surfaces.
+     - ``PCT`` treated products, AU-wise harvested-stem QMD numerator / treated-area / live ratio accounts for both ``PCT`` and ``CC``, plus species-wise managed yield / harvest-volume surfaces.
      - Heavy-intensity stand-tending teaching scaffold.
    * - ``basecase_riparian``
      - ``config/patchworks.runtime.overlay.basecase_riparian.windows.yaml`` + ``analysis/overlay_basecase_riparian.pin``
      - ``tracks_overlay_basecase_riparian/`` + baseline ``yield/forestmodel.xml`` + ``output/patchworks_k3z_overlay_basecase_riparian_validated/fragments/fragments.shp``
      - Baseline fragment ``RETENTION`` is replaced by the student's ``Basecase_Riparian`` field.
-     - Only the managed/unmanaged split should change relative to baseline.
+     - Only the managed/unmanaged split should change relative to baseline; the AU-wise harvested-QMD ``CC`` account contract should remain parallel to baseline.
      - Baseline subvariant for riparian-style retained-area comparison.
    * - ``basecase_sum``
      - ``config/patchworks.runtime.overlay.basecase_sum.windows.yaml`` + ``analysis/overlay_basecase_sum.pin``
      - ``tracks_overlay_basecase_sum/`` + baseline ``yield/forestmodel.xml`` + ``output/patchworks_k3z_overlay_basecase_sum_validated/fragments/fragments.shp``
      - Baseline fragment ``RETENTION`` is replaced by the student's ``BaseCase_Sum`` field.
-     - Only the managed/unmanaged split should change relative to baseline.
+     - Only the managed/unmanaged split should change relative to baseline; the AU-wise harvested-QMD ``CC`` account contract should remain parallel to baseline.
      - Baseline subvariant for the student's summed base-case retention.
    * - ``scenario1_sum``
      - ``config/patchworks.runtime.overlay.scenario1_sum.windows.yaml`` + ``analysis/overlay_scenario1_sum.pin``
      - ``tracks_overlay_scenario1_sum/`` + baseline ``yield/forestmodel.xml`` + ``output/patchworks_k3z_overlay_scenario1_sum_validated/fragments/fragments.shp``
      - Baseline fragment ``RETENTION`` is replaced by the student's ``Scenario1_Sum`` field.
-     - Only the managed/unmanaged split should change relative to baseline.
+     - Only the managed/unmanaged split should change relative to baseline; the AU-wise harvested-QMD ``CC`` account contract should remain parallel to baseline.
      - Baseline subvariant for the student's first scenario retention.
    * - ``scenario2_sum``
      - ``config/patchworks.runtime.overlay.scenario2_sum.windows.yaml`` + ``analysis/overlay_scenario2_sum.pin``
      - ``tracks_overlay_scenario2_sum/`` + baseline ``yield/forestmodel.xml`` + ``output/patchworks_k3z_overlay_scenario2_sum_validated/fragments/fragments.shp``
      - Baseline fragment ``RETENTION`` is replaced by the student's ``Scenario2_Sum`` field.
-     - Only the managed/unmanaged split should change relative to baseline.
+     - Only the managed/unmanaged split should change relative to baseline; the AU-wise harvested-QMD ``CC`` account contract should remain parallel to baseline.
      - Baseline subvariant for the student's second scenario retention.
 
 How to Choose a Surface

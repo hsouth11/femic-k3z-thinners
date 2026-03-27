@@ -157,6 +157,19 @@ Variant review points:
 - Each ``tracks_pct_*`` surface should materialize ``PCT`` and not ``CT``.
 - Each ``tracks_pct_*`` ``accounts.csv`` / ``products.csv`` should include
   ``product.Treated.managed.PCT`` and exclude ``product.Treated.managed.CT``.
+- Each ``tracks_pct_*`` surface should also expose AU-wise harvested-stem QMD
+  numerator rows:
+  - ``product.QMDNumerator.managed.<au_token>.PCT``
+  - ``product.QMDNumerator.managed.<au_token>.CC``
+- Matching denominator rows:
+  - ``product.Treated.managed.<au_token>.PCT``
+  - ``product.Treated.managed.<au_token>.CC``
+- The live ``pct_*`` Patchworks PIN files should register user-facing ratio
+  accounts:
+  - ``product.QMD.managed.<au_token>.PCT``
+  - ``product.QMD.managed.<au_token>.CC``
+- Read those live ``product.QMD.*`` ratio accounts directly as mean harvested
+  diameter in ``cm``.
 - Each ``output/patchworks_k3z_pct_*_validated/fragments/`` surface should
   preserve the accepted baseline 218-fragment geometry footprint exactly.
 - Patchworks smoke expectation: pulling on the ``PCT`` treated-area target
@@ -188,6 +201,8 @@ Review points:
 - confirm only fragment ``RETENTION`` differs from baseline;
 - confirm managed/unmanaged area shifts are explainable from the selected
   overlay retention column;
+- confirm the AU-wise harvested-stem QMD ``CC`` numerator / denominator /
+  ratio-account contract still matches baseline;
 - confirm any missing managed species accounts are consistent with high
   retained area, not with a bad tracks surface.
 

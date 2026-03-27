@@ -53,15 +53,20 @@ pull it.
 Recommended workflow:
 
 1. Start from a clean, accepted ``main`` baseline.
-2. If your group needs CT/fert, use the CT/fert variant spec and launch ``analysis/ctfert.pin``.
+2. If your group needs SI-specific CT/fert behavior, launch either
+   ``analysis/ctfert_l15h5.pin`` or ``analysis/ctfert_l20h0.pin``.
 3. If your group needs the PCT-only teaching scaffold, choose one of
    ``pct_light``, ``pct_moderate``, or ``pct_heavy`` and launch the
    matching ``analysis/pct_*.pin`` surface.
-4. Rebuild before interpreting any optional-variant surfaces.
-5. Keep variant choice explicit in reports, screenshots, and classroom notes.
-6. Use the overlay subvariants only when the question is about retained-area
+4. If your group needs the full ``PCT -> CT -> F1 -> F2 -> F3`` teaching
+   scaffold, choose one of ``intensive_light``, ``intensive_moderate``, or
+   ``intensive_heavy`` and launch the matching ``analysis/intensive_*.pin``
+   surface.
+5. Rebuild before interpreting any optional-variant surfaces.
+6. Keep variant choice explicit in reports, screenshots, and classroom notes.
+7. Use the overlay subvariants only when the question is about retained-area
    sensitivity on top of baseline.
-7. Keep any K3Z-specific VDYP fit exceptions in ``config/vdyp_fit_policy.yaml``
+8. Keep any K3Z-specific VDYP fit exceptions in ``config/vdyp_fit_policy.yaml``
    so DR+HW tail-policy changes remain auditable and do not require parent
    source edits.
 
@@ -73,6 +78,8 @@ Classroom Use Guidance
 - Preserve run manifests/reports for each scenario to support auditability.
 - Treat the optional CT/fert variant as a teaching/scenario scaffold, not a
   polished silviculture prescription package.
+- Treat the optional full-intensive family the same way: useful for classroom
+  comparison of compounded treatments, but still a teaching scaffold.
 
 How to Validate Reruns
 ----------------------
@@ -80,11 +87,15 @@ How to Validate Reruns
 1. Confirm matrix-build manifest success.
 2. Confirm rebuild report invariants pass.
 3. Confirm scenario deltas are explainable by intentional config edits.
-4. On the optional variant, confirm compiled tracks and live Patchworks behavior
-   agree about the ``CT`` -> ``F1`` -> ``F2`` -> ``F3`` chain.
+4. On the selected CT/fert surface, confirm compiled tracks and live Patchworks
+   behavior agree about the intended ``CT`` -> ``F1`` -> ``F2`` -> ``F3`` chain,
+   or CT-only behavior on ``H`` AUs for ``ctfert_l20h0``.
 5. On the selected ``pct_*`` subvariant, confirm compiled tracks and live
    Patchworks behavior agree about the ``PCT`` -> ``CC`` chain.
-6. On overlay subvariants, confirm the only intended behavioral change is the
+6. On the selected ``intensive_*`` subvariant, confirm compiled tracks and live
+   Patchworks behavior agree about the full
+   ``PCT`` -> ``CT`` -> ``F1`` -> ``F2`` -> ``F3`` chain.
+7. On overlay subvariants, confirm the only intended behavioral change is the
    managed-vs-unmanaged split driven by fragment ``RETENTION``.
 
 Deep references

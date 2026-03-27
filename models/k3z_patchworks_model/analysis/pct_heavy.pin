@@ -11,6 +11,7 @@ boolean useRoutes = false;
 boolean usePatches = false;
 
 sourceRelative("../scripts/targets/flowTargets.bsh");
+sourceRelative("../scripts/targets/qmdRatioAccounts.bsh");
 sourceRelative("../scripts/targets/seralStages.bsh");
 
 String tracks_path_prefix = "../tracks_pct_heavy/";
@@ -96,6 +97,7 @@ int Patchworks_TargetInit() {
 	new double [] {1, -1, -1,-1});
 
    setupYieldFlowTargets(control, periods, tracks_path_prefix);
+   setupHarvestedQmdRatioAccounts(control, tracks_path_prefix);
    validateSeralStageAttributes();
    control.inputTopology("../blocks/topology_blocks_200r.csv", 100d);
 

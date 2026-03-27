@@ -82,7 +82,8 @@ Actions:
    upstream.
 4. Treat this as a regression if the treatment path is otherwise correct. Do
    not reinterpret the result as intentional ``pct_*`` design.
-5. Compare against ``base`` or ``ctfert`` to confirm the missing surface is a
+5. Compare against ``base``, ``ctfert_l15h5``, or ``ctfert_l20h0`` to confirm
+   the missing surface is a
    variant-specific regression, not a repo-wide account failure.
 
 Patchworks Runtime Preflight Fails

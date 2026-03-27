@@ -1,8 +1,17 @@
 /*
- * Run the base scenario
+ NICF Future scenario
+    Additive on base case scenario (scenario_base.bsh)
+    Changes:
+    - Harvest volume targets:
+        - Allow range of 9,000-10,000 m3/year. Allows for some flexibility to achieve nrevenue target
+        - Remove non declining yield target that might hinder ability to achieve nrevenue target
+    - Old-growth target: minimum of 13% of land base old growth
+    - Net-revenue targets:
+        - Maximize 
+        - Non-declining
  */
 
-// Set targets
+// Template for setting targets
 // label = "foo"
 // setMinimumAnnual(label, 0);
 // setMaximumAnnual(label, 999999999);
@@ -15,16 +24,16 @@
 // Clear targets
 clearTargets();
 
-// Set total harvest volume target
+// Set harvest volume targets aligned with AAC determination
 label = "product.Yield.managed.Total";
-setMinimumPeriodic(label, 300000f);
-setMaximumPeriodic(label, 999999999f);
+setMinimumPeriodic(label, 90000f);
+setMaximumPeriodic(label, 100000f);
 setMinWeight(label, 1f);
-setMaxWeight(label, 1f);
-control.getTarget(label).setLinear(true);
-setActive(label, true, true, false);
+setMaxWeight(label, 100000f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, true);
 
-// run the scheduler for a little bit before activating the even flow constraints
+// Run the scheduler for a little bit before activating the even flow constraints
 gui.click("start");
 control.waitForIterations(1000);
 gui.clickAndWait("pause");
@@ -38,14 +47,51 @@ setMaxWeight(label, 1000f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, true, true);
 
-// Set total growing stock ndy target
-label = "flow.ndy.feature.Yield.managed.Total";
+// Set patch size target for 0-40 ha patches
+label = "patch.harvested.0_40.freqpercent";
+setMinimumPeriodic(label, 100f);
+setMaximumPeriodic(label, 9999999f);
+setMinWeight(label, 100000f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, false);
+
+// Set old growth area target
+label = "feature.Area.og2.percent";
+setMinimumPeriodic(label, 13f);
+setMaximumPeriodic(label, 9999999f);
+setMinWeight(label, 100000f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, false);
+
+// Set target that maximizes net revenue
+label = "value.nrevenue.total";
+setMinimumPeriodic(label, 5000000f);
+setMaximumPeriodic(label, 9999999f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, false);
+
+// Set target that non-declining net revenue
+label = "flow.ndy.value.nrevenue.total";
 setMinimumPeriodic(label, 0f);
-setMaximumPeriodic(label, 999999999f);
+setMaximumPeriodic(label, 9999999f);
 setMinWeight(label, 1000f);
 setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);
+
+// Activate revenue accounts in so they open in user interface (but don't set targets on them)
+label = "value.grevenue.total";
+setActive(label, true, false, false);
+
+label = "value.stumpage.total";
+setActive(label, true, false, false);
+
+label = "value.harvcost.total";
+setActive(label, true, false, false);
 
 // Start scheduler
 gui.click("start");
@@ -60,6 +106,33 @@ gui.click("start");
 gui.click("start");
 control.waitForIterations(100000);
 gui.clickAndWait("pause");
+
+// Set patch size target for 40-80 ha patches
+label = "patch.harvested.40_80.freqpercent";
+setMinimumPeriodic(label, 30f);
+setMaximumPeriodic(label, 40f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, true);
+
+// Set patch size target for 80-250 ha patches
+label = "patch.harvested.80_250.freqpercent";
+setMinimumPeriodic(label, 20f);
+setMaximumPeriodic(label, 40f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, true);
+
+// Set patch size target for 250+ ha patches
+label = "patch.harvested.250_plus.freqpercent";
+setMinimumPeriodic(label, 9999999f);
+setMaximumPeriodic(label, 0f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1000000f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, false, true);
 
 // Set target that total growing stock should not be less than initial inventory
 label = "feature.Yield.managed.Total";

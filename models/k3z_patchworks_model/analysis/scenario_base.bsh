@@ -1,8 +1,19 @@
 /*
- * Run the base scenario
+ Base Case scenario
+    Additive on base case scenario (scenario_base.bsh)
+    Changes:
+    - Additional net downs. 
+        - 3.5% retention in all AUs
+        - OGMAs and TAP polygons removed
+        - Riparian Buffers. All RRZ removed. 20% of RMZ removed. 
+        - Low productivity AUs (CwYc and CwPlc) removed
+    - Changed harvest volume target to 100,000 m3/year hard max and suggested min (aligned with AAC determination)
+    - Added patch size target. 40 ha hard max.
+    - Added target to minimize total costs
  */
 
-// Set targets
+
+// Template for setting targets
 // label = "foo"
 // setMinimumAnnual(label, 0);
 // setMaximumAnnual(label, 999999999);
@@ -15,24 +26,24 @@
 // Clear targets
 clearTargets();
 
-// Set total harvest volume target
+// Set harvest volume targets aligned with AAC determination
 label = "product.Yield.managed.Total";
-setMinimumPeriodic(label, 300000f);
-setMaximumPeriodic(label, 999999999f);
+setMinimumPeriodic(label, 100000f);
+setMaximumPeriodic(label, 100000f);
 setMinWeight(label, 1f);
-setMaxWeight(label, 1f);
-control.getTarget(label).setLinear(true);
-setActive(label, true, true, false);
+setMaxWeight(label, 1000f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, true);
 
-// run the scheduler for a little bit before activating the even flow constraints
+// Run the scheduler for a little bit before activating the even flow constraints
 gui.click("start");
 control.waitForIterations(1000);
 gui.clickAndWait("pause");
 
 // Set total harvest volume even flow target
 label = "flow.even.product.Yield.managed.Total";
-setMinimumPeriodic(label, -1f);
-setMaximumPeriodic(label, +1f);
+setMinimumPeriodic(label, -15f);
+setMaximumPeriodic(label, +15f);
 setMinWeight(label, 1000f);
 setMaxWeight(label, 1000f);
 control.getTarget(label).setLinear(false);
@@ -42,13 +53,10 @@ setActive(label, true, true, true);
 label = "flow.ndy.feature.Yield.managed.Total";
 setMinimumPeriodic(label, 0f);
 setMaximumPeriodic(label, 999999999f);
-setMinWeight(label, 10000f);
+setMinWeight(label, 1000f);
 setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);
-
-//END OF UNCONSTRAINED SCENARIO
-//START OF BASE SCENARIO
 
 // Set patch size target for 0-40 ha patches
 label = "patch.harvested.0_40.freqpercent";
@@ -59,11 +67,11 @@ setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);
 
-// Reserve all existing old growth stands from future harvest
-label = "feature.Area.og2.existing";
-setMinimumPeriodic(label, 251f);
-setMaximumPeriodic(label, 9999999f);
-setMinWeight(label, 100000f);
+// Set total cost target
+label = "value.totcost.total";
+setMinimumPeriodic(label, 0f);
+setMaximumPeriodic(label, 999999999f);
+setMinWeight(label, 1f);
 setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);
@@ -73,12 +81,6 @@ label = "value.grevenue.total";
 setActive(label, true, false, false);
 
 label = "value.nrevenue.total";
-setActive(label, true, false, false);
-
-label = "value.stumpage.total";
-setActive(label, true, false, false);
-
-label = "value.harvcost.total";
 setActive(label, true, false, false);
 
 // Start scheduler

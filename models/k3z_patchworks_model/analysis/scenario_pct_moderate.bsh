@@ -1,0 +1,243 @@
+/*
+ PCT moderate intensity scenario
+    Additive on the NICF future scenario
+    Changes:
+    - Area treated with PCT. Set to unatainably high minimum, forcing model
+    treat all eligible area with PCT.
+ */
+
+// Template for setting targets
+// label = "foo"
+// setMinimumAnnual(label, 0);
+// setMaximumAnnual(label, 999999999);
+// setMinWeight(label, 1f);
+// setMaxWeight(label, 1f);
+// control.getTarget(label).setLinear(true);
+// setActive(label, false, false, false);
+
+///////////////////////////////////////////////////////
+// Clear targets
+clearTargets();
+
+// Set harvest volume targets aligned with AAC determination
+label = "product.Yield.managed.Total";
+setMinimumPeriodic(label, 80000f);
+setMaximumPeriodic(label, 100000f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 100000f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, true);
+
+// Run the scheduler for a little bit before activating the even flow constraints
+gui.click("start");
+control.waitForIterations(1000);
+gui.clickAndWait("pause");
+
+// Set total harvest volume even flow target
+label = "flow.even.product.Yield.managed.Total";
+setMinimumPeriodic(label, -15f);
+setMaximumPeriodic(label, +15f);
+setMinWeight(label, 1000f);
+setMaxWeight(label, 1000f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, true);
+
+// Set patch size target for 0-40 ha patches
+label = "patch.harvested.0_40.freqpercent";
+setMinimumPeriodic(label, 100f);
+setMaximumPeriodic(label, 9999999f);
+setMinWeight(label, 100000f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, false);
+
+// Set old growth area target
+label = "feature.Area.og2.percent";
+setMinimumPeriodic(label, 13f);
+setMaximumPeriodic(label, 9999999f);
+setMinWeight(label, 100000f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, false);
+
+// Set target that maximizes net revenue
+label = "value.nrevenue.total";
+setMinimumPeriodic(label, 5000000f);
+setMaximumPeriodic(label, 9999999f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, false);
+
+// Set target that non-declining net revenue
+label = "flow.ndy.value.nrevenue.total";
+setMinimumPeriodic(label, 0f);
+setMaximumPeriodic(label, 9999999f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, false);
+
+// Set area treated with PCT to 500 ha
+label = "product.Treated.managed.PCT";
+setMinimumPeriodic(label, 200f);
+setMaximumPeriodic(label, 0f);
+setMinWeight(label, 10000000000f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, false);
+
+// Activate revenue accounts in so they open in user interface (but don't set targets on them)
+label = "value.grevenue.total";
+setActive(label, true, false, false);
+
+label = "value.cost.total";
+setActive(label, true, false, false);
+
+label = "product.Yield.managed.CW";
+setActive(label, true, false, false);
+
+// Start scheduler
+gui.click("start");
+
+//END OF SCENARIO
+
+/* 
+
+//OTHER USEFUL CODE CHUNKS FROM SCENARIO WE DID IN CLASS
+
+// run the scheduler for a little bit before activating the even flow constraints
+gui.click("start");
+control.waitForIterations(100000);
+gui.clickAndWait("pause");
+
+// Set patch size target for 40-80 ha patches
+label = "patch.harvested.40_80.freqpercent";
+setMinimumPeriodic(label, 30f);
+setMaximumPeriodic(label, 40f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, true);
+
+// Set patch size target for 80-250 ha patches
+label = "patch.harvested.80_250.freqpercent";
+setMinimumPeriodic(label, 20f);
+setMaximumPeriodic(label, 40f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, true);
+
+// Set patch size target for 250+ ha patches
+label = "patch.harvested.250_plus.freqpercent";
+setMinimumPeriodic(label, 9999999f);
+setMaximumPeriodic(label, 0f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1000000f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, false, true);
+
+// Set target that total growing stock should not be less than initial inventory
+label = "feature.Yield.managed.Total";
+setMinimumPeriodic(label, 1290000f);
+setMaximumPeriodic(label, 999999999f);
+setMinWeight(label, 1000f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(true);
+setActive(label, true, true, false);
+
+// set hardwood gorwing stock ndy target
+label = "flow.ndy.feature.Yield.Decid";
+setMinimumPeriodic(label, 0f);
+setMaximumPeriodic(label, 999999999f);
+setMinWeight(label, 1000000f);
+setMaxWeight(label, 1000000f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, false);
+
+
+// set industry profit target
+label = "value.ind.profit";
+setMinimumPeriodic(label, 17000000f);
+setMaximumPeriodic(label, 999999999f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, false);
+
+
+// cap early horizon road construction to $1000000
+label = "route.total.build";
+setMinimumPeriodic(label, 0f);
+setMaximumPeriodic(label, 1000000f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, false, true);
+
+
+// set cap on the size of cutblocks; no blocks > 150 ha
+label = "patch.harvested.150_plus.size";
+setMinimumPeriodic(label, 0f);
+setMaximumPeriodic(label, 0f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 10000f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, false, true);
+
+// set constraint that <= 50% of cutblocks can be in 50-150 ha size class
+label = "patch.harvested.50_150.size";
+setMinimumPeriodic(label, 0f);
+setMaximumPeriodic(label, 50f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 10000f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, false, true);
+
+// set constraint that delivered wood does not exceed mill 1 capcacity
+label = "destination.MILL1";
+setMinimumPeriodic(label, 400000f);
+setMaximumPeriodic(label, 500000f);
+setMinWeight(label, 100f);
+setMaxWeight(label, 100f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, true);
+
+
+// set constraint that delivered wood does not exceed mill 2 capcacity
+label = "destination.MILL2";
+setMinimumPeriodic(label, 320000f);
+setMaximumPeriodic(label, 400000f);
+setMinWeight(label, 100f);
+setMaxWeight(label, 100f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, true);
+
+// limit landscape disturbed area to 10000 ha
+label = "feature.young";
+setMinimumPeriodic(label, 0f);
+setMaximumPeriodic(label, 10000f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 100000f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, false, true);
+
+// concentrate harvesting in big patches for wildlife habitat considerations
+label = "patch.young.250_2500.size";
+setMinimumPeriodic(label, 80f);
+setMaximumPeriodic(label, 0f);
+setMinWeight(label, 5000f);
+setMaxWeight(label, 1f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, true, false);
+
+/* // start scheduler
+gui.click("start");
+ */
+
+/*
+////////////////////////////////////////////////////////
+// Run until convergence @ 1%
+analyze("scenarios/alt2", 50000, 1);
+ */

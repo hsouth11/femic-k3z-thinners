@@ -1,15 +1,16 @@
 /*
  Base Case scenario
-    Additive on base case scenario (scenario_base.bsh)
+    Additive on unconstrained scenario (scenario_unconstrained.bsh)
     Changes:
-    - Additional net downs. 
+    - Additional net downs: 
         - 3.5% retention in all AUs
         - OGMAs and TAP polygons removed
         - Riparian Buffers. All RRZ removed. 20% of RMZ removed. 
         - Low productivity AUs (CwYc and CwPlc) removed
-    - Changed harvest volume target to 100,000 m3/year hard max and suggested min (aligned with AAC determination)
+    - Changed harvest volume target to 10,000 m3/year hard max and suggested min (aligned with AAC determination)
     - Added patch size target. 40 ha hard max.
     - Added target to minimize total costs
+    - Added target to force no PCT
  */
 
 
@@ -68,7 +69,7 @@ control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);
 
 // Set total cost target
-label = "value.totcost.total";
+label = "value.cost.total";
 setMinimumPeriodic(label, 0f);
 setMaximumPeriodic(label, 999999999f);
 setMinWeight(label, 1f);
@@ -76,11 +77,24 @@ setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);
 
-// Activate revenue accounts in so they open in user interface (but don't set targets on them)
+// Set area treated with PCT to 0
+label = "product.Treated.managed.PCT";
+setMinimumPeriodic(label, 999999999f);
+setMaximumPeriodic(label, 0f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1000000000000f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, false, true);
+
+// Activate accounts that are relevant for plan objectives (but aren't targets) so 
+// they open in user interface
 label = "value.grevenue.total";
 setActive(label, true, false, false);
 
 label = "value.nrevenue.total";
+setActive(label, true, false, false);
+
+label = "product.Yield.managed.CW";
 setActive(label, true, false, false);
 
 // Start scheduler

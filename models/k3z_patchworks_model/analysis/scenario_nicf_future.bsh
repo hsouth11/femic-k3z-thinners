@@ -3,9 +3,9 @@
     Additive on base case scenario (scenario_base.bsh)
     Changes:
     - Harvest volume targets:
-        - Allow range of 9,000-10,000 m3/year. Allows for some flexibility to achieve nrevenue target
+        - Allow range of 8,000-10,000 m3/year. Allows for some flexibility to achieve nrevenue target
         - Remove non declining yield target that might hinder ability to achieve nrevenue target
-    - Old-growth target: minimum of 13% of land base old growth
+    - Old-growth target: minimum of 13% of land base old growth (in addition to existing old growth reserves)
     - Net-revenue targets:
         - Maximize 
         - Non-declining
@@ -26,7 +26,7 @@ clearTargets();
 
 // Set harvest volume targets aligned with AAC determination
 label = "product.Yield.managed.Total";
-setMinimumPeriodic(label, 90000f);
+setMinimumPeriodic(label, 80000f);
 setMaximumPeriodic(label, 100000f);
 setMinWeight(label, 1f);
 setMaxWeight(label, 100000f);
@@ -56,6 +56,15 @@ setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);
 
+// Set area treated with PCT to 0
+label = "product.Treated.managed.PCT";
+setMinimumPeriodic(label, 999999999f);
+setMaximumPeriodic(label, 0f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1000000000000f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, false, true);
+
 // Set old growth area target
 label = "feature.Area.og2.percent";
 setMinimumPeriodic(label, 13f);
@@ -78,7 +87,7 @@ setActive(label, true, true, false);
 label = "flow.ndy.value.nrevenue.total";
 setMinimumPeriodic(label, 0f);
 setMaximumPeriodic(label, 9999999f);
-setMinWeight(label, 1000f);
+setMinWeight(label, 1f);
 setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);
@@ -87,10 +96,10 @@ setActive(label, true, true, false);
 label = "value.grevenue.total";
 setActive(label, true, false, false);
 
-label = "value.stumpage.total";
+label = "value.cost.total";
 setActive(label, true, false, false);
 
-label = "value.harvcost.total";
+label = "product.Yield.managed.CW";
 setActive(label, true, false, false);
 
 // Start scheduler

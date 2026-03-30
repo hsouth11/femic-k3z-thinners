@@ -84,12 +84,13 @@ int Patchworks_TargetInit() {
    control.calculateGroups("IFM");
    control.inputGroups("../groups_thinners.csv");
 
-   setupYieldFlowTargets(control, periods);
-   validateSeralStageAttributes();
-
    /*
     * Summary accounts here
     */
+
+    // % old growth account
+    // Factor applied divides og area account by total land base area and multiplies by 100 to get percentage
+    control.duplicateAccount("feature.Area.og2.total", "feature.Area.og2.percent", 0.0561f);
 
 	// Stumpage accounts
 	control.duplicateAccount("product.Yield.managed.BA", "value.stumpage.BA" , 0.29f);
@@ -107,7 +108,12 @@ int Patchworks_TargetInit() {
 	control.duplicateAccount("value.stumpage.YC" , "value.stumpage.total" , 1f);	
 	
 	// Logging costs
-    control.duplicateAccount("product.Yield.managed.Total", "value.harvcost.total", 87.5f);
+    control.duplicateAccount("product.Yield.managed.Total", "value.cost.harvest", 87.5f);
+
+    // PCT costs
+    // This cost varies depending on the intensity of the treatment. Light: $2000/ha, 
+    // Moderate: $3000/ha, Heavy: $4000/ha. Assuming moderate intensity for base case.
+    control.duplicateAccount("product.Treated.managed.PCT", "value.cost.PCT", 3000f);
 
 	// Gross log revenue
 	control.duplicateAccount("product.Yield.managed.CW", "value.grevenue.CW", 254.15f);
@@ -124,12 +130,17 @@ int Patchworks_TargetInit() {
 	control.duplicateAccount("value.grevenue.SS" , "value.grevenue.total" , 1f);
 	control.duplicateAccount("value.grevenue.YC" , "value.grevenue.total" , 1f);
 
+    //Total cost
+    control.addMetaAccount("value.cost.total",
+	new String [] {"value.stumpage.total",
+	"value.cost.harvest", "value.cost.PCT"},
+	new double [] {1, 1, 1});
+    
     // Net revenue
 	control.addMetaAccount("value.nrevenue.total",
 	new String [] {"value.grevenue.total",
-	"value.harvcost.total",
-	"value.stumpage.total"},
-	new double [] {1, -1, -1});
+	"value.cost.total"},
+	new double [] {1, -1});
 
 	
    /*
@@ -156,6 +167,11 @@ int Patchworks_TargetInit() {
 	// Testing silviculture costs
 	// control.addMetaAccount ("value.silviculture.total" , "patch.harvested.Total.frequency", 1000f);
 
+   /*
+     * Load flow accounts
+     */
+    setupYieldFlowTargets(control, periods);
+    validateSeralStageAttributes();
 
    /*
     * Load road target definitions here

@@ -11,7 +11,7 @@ students can reach directly from the main guide flow.
 
 These figures compare the managed treated curve reconstructed directly from the
 current checked-in BatchTIPSY output file
-``data/04_output-tsak3z.out`` against the corresponding VDYP reference curve
+``data/04_output-tsak3z.csv`` against the corresponding VDYP reference curve
 for each treated AU shown here.
 
 Use this page when you want to answer questions such as:
@@ -135,7 +135,7 @@ Where These Figures Come From
 
 - Plot files live under ``plots/`` in this instance checkout.
 - The current overlays on this page were regenerated from
-  ``data/04_output-tsak3z.out`` plus ``data/vdyp_curves_smooth-tsak3z.feather``.
+  ``data/04_output-tsak3z.csv`` plus ``data/vdyp_curves_smooth-tsak3z.feather``.
 - The current rendered source filenames are retained in
   :ref:`k3z-figure-appendix`.
 - Rebuild and QA guidance for regenerating or checking these figures lives in

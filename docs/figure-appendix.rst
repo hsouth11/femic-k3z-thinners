@@ -255,7 +255,7 @@ For the student-facing explanation and direct guide entry point for these
 figures, use :doc:`yield-curve-comparisons`. This appendix remains the full
 catalog and filename-traceability surface. The currently rendered treated
 overlays have been regenerated from the checked-in raw BatchTIPSY output file
-``data/04_output-tsak3z.out``; VDYP is shown in these overlays as the
+``data/04_output-tsak3z.csv``; VDYP is shown in these overlays as the
 comparison/QA reference curve.
 
 .. figure:: ../plots/tipsy_vdyp_tsak3z-21000.png

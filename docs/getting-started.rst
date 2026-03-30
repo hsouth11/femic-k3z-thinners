@@ -118,16 +118,22 @@ Quickstart
 
       femic run --run-config config/run_profile.k3z.yaml --run-id k3z_stage01a
 
-3. Run BatchTIPSY manually on Windows using the freshly generated:
+3. Run the default unattended BTC seam on the freshly generated:
 
-   - `data/02_input-tsak3z.dat`
+   - `data/03_input-tsak3z.csv`
    - `data/tipsy_params_tsak3z.xlsx` (or the current timestamped fallback workbook if Excel had the canonical workbook locked)
+   - optional legacy mirror: `data/02_input-tsak3z.dat`
 
-4. Resume downstream from the fresh BatchTIPSY output:
+4. Resume downstream from the fresh BTC output:
 
    .. code-block:: bash
 
-      femic tsa post-tipsy --run-config config/run_profile.k3z.yaml --tsa k3z --run-id k3z_stage01a
+      femic tsa btc-post-tipsy --run-config config/run_profile.k3z.yaml --tsa k3z --run-id k3z_stage01a
+
+   Expected returned artifacts:
+
+   - `data/04_output-tsak3z.csv`
+   - `data/04_error-tsak3z.csv`
 
 5. Run the baseline Patchworks matrix build:
 
@@ -157,6 +163,12 @@ Quickstart
       femic patchworks matrix-build --config config/patchworks.runtime.pct_light.windows.yaml --run-id k3z_pct_light
       femic patchworks matrix-build --config config/patchworks.runtime.pct_moderate.windows.yaml --run-id k3z_pct_moderate
       femic patchworks matrix-build --config config/patchworks.runtime.pct_heavy.windows.yaml --run-id k3z_pct_heavy
+
+Legacy note:
+
+- The older `02_input-*.dat` / `04_output-*.out` seam remains compatibility-only.
+- The default supported K3Z rebuild path is now `03_input-tsak3z.csv` plus
+  `femic tsa btc-post-tipsy ...`.
 
 Variant-Specific Operator Inputs
 --------------------------------

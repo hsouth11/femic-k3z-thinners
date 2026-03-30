@@ -12,6 +12,7 @@ boolean usePatches = false;
 sourceRelative("../scripts/targets/flowTargets.bsh");
 sourceRelative("../scripts/targets/qmdRatioAccounts.bsh");
 sourceRelative("../scripts/targets/seralStages.bsh");
+sourceRelative("headless_runtime_common.bsh");
 
 blocks = tracks_path_prefix + "blocks.csv";
 curves = tracks_path_prefix + "curves.csv";
@@ -53,95 +54,99 @@ int Patchworks_TargetInit() {
 }
 
 int PatchWorks_Init() {
-   classic_GUI(control);
+   femicConfigureHeadlessFromArgs();
 
-    DefaultTheme def = new DefaultTheme(
-        blockData,
-        new PolygonSymbol(new Color(204, 204, 255))
-    );
-    Layer defLayer = new GeoRelLayer(blockData, def);
-    layers.add(defLayer);
+   if (!femicHeadlessMode) {
+      classic_GUI(control);
 
-    UniqueValueTheme currTreatTheme = new UniqueValueTheme(blockData);
-    currTreatTheme.setFieldname("CURRENTTREATMENT");
-    currTreatTheme.addElement(
-        new ThemeElement("CC", new PolygonSymbol(new Color(200, 60, 60))),
-        "CC"
-    );
-    currTreatTheme.addElement(
-        new ThemeElement("PCT", new PolygonSymbol(new Color(120, 170, 235))),
-        "PCT"
-    );
-    currTreatTheme.addElement(
-        new ThemeElement("CT", new PolygonSymbol(new Color(80, 170, 110))),
-        "CT"
-    );
-    currTreatTheme.addElement(
-        new ThemeElement("F1", new PolygonSymbol(new Color(80, 140, 220))),
-        "F1"
-    );
-    currTreatTheme.addElement(
-        new ThemeElement("F2", new PolygonSymbol(new Color(170, 110, 210))),
-        "F2"
-    );
-    currTreatTheme.addElement(
-        new ThemeElement("F3", new PolygonSymbol(new Color(230, 160, 70))),
-        "F3"
-    );
-    currTreatTheme.setCaption("Current Treatments");
-    currTreatTheme.setUnclassified(new ThemeElement("", PolygonSymbol.erase));
-    blockData.addTheme(currTreatTheme);
-    GeoRelLayer currTreatLayer = new GeoRelLayer(blockData, currTreatTheme);
-    currTreatLayer.setVisible(false);
-    layers.add(currTreatLayer);
+      DefaultTheme def = new DefaultTheme(
+          blockData,
+          new PolygonSymbol(new Color(204, 204, 255))
+      );
+      Layer defLayer = new GeoRelLayer(blockData, def);
+      layers.add(defLayer);
 
-    UniqueValueTheme latestTreatTheme = new UniqueValueTheme(blockData);
-    latestTreatTheme.setFieldname("LASTTREATMENT");
-    latestTreatTheme.addElement(
-        new ThemeElement("CC", new PolygonSymbol(new Color(200, 60, 60))),
-        "CC"
-    );
-    latestTreatTheme.addElement(
-        new ThemeElement("PCT", new PolygonSymbol(new Color(120, 170, 235))),
-        "PCT"
-    );
-    latestTreatTheme.addElement(
-        new ThemeElement("CT", new PolygonSymbol(new Color(80, 170, 110))),
-        "CT"
-    );
-    latestTreatTheme.addElement(
-        new ThemeElement("F1", new PolygonSymbol(new Color(80, 140, 220))),
-        "F1"
-    );
-    latestTreatTheme.addElement(
-        new ThemeElement("F2", new PolygonSymbol(new Color(170, 110, 210))),
-        "F2"
-    );
-    latestTreatTheme.addElement(
-        new ThemeElement("F3", new PolygonSymbol(new Color(230, 160, 70))),
-        "F3"
-    );
-    latestTreatTheme.setCaption("Latest Treatments");
-    latestTreatTheme.setUnclassified(new ThemeElement("", PolygonSymbol.erase));
-    blockData.addTheme(latestTreatTheme);
-    GeoRelLayer latestTreatLayer = new GeoRelLayer(blockData, latestTreatTheme);
-    latestTreatLayer.setVisible(false);
-    layers.add(latestTreatLayer);
+      UniqueValueTheme currTreatTheme = new UniqueValueTheme(blockData);
+      currTreatTheme.setFieldname("CURRENTTREATMENT");
+      currTreatTheme.addElement(
+          new ThemeElement("CC", new PolygonSymbol(new Color(200, 60, 60))),
+          "CC"
+      );
+      currTreatTheme.addElement(
+          new ThemeElement("PCT", new PolygonSymbol(new Color(120, 170, 235))),
+          "PCT"
+      );
+      currTreatTheme.addElement(
+          new ThemeElement("CT", new PolygonSymbol(new Color(80, 170, 110))),
+          "CT"
+      );
+      currTreatTheme.addElement(
+          new ThemeElement("F1", new PolygonSymbol(new Color(80, 140, 220))),
+          "F1"
+      );
+      currTreatTheme.addElement(
+          new ThemeElement("F2", new PolygonSymbol(new Color(170, 110, 210))),
+          "F2"
+      );
+      currTreatTheme.addElement(
+          new ThemeElement("F3", new PolygonSymbol(new Color(230, 160, 70))),
+          "F3"
+      );
+      currTreatTheme.setCaption("Current Treatments");
+      currTreatTheme.setUnclassified(new ThemeElement("", PolygonSymbol.erase));
+      blockData.addTheme(currTreatTheme);
+      GeoRelLayer currTreatLayer = new GeoRelLayer(blockData, currTreatTheme);
+      currTreatLayer.setVisible(false);
+      layers.add(currTreatLayer);
 
-    AlphaComposite alpha = AlphaComposite.SrcOver;
-    global.seral2 = new DitherTheme(blockData, "feature.Seral.");
-    seral2.setCaption("Dithered Seral Stage");
-    seral2.setAlpha(alpha);
-    seral2.setIsScaled(false);
-    seral2.addElement("Regen", new Color(250, 230, 0), "feature.Seral.regenerating");
-    seral2.addElement("Young", new Color(200, 250, 200), "feature.Seral.young");
-    seral2.addElement("Immature", new Color(160, 220, 160), "feature.Seral.immature");
-    seral2.addElement("Mature", new Color(100, 190, 100), "feature.Seral.mature");
-    seral2.addElement("Old", new Color(128, 64, 64), "feature.Seral.overmature");
-    blockData.addTheme(seral2, "Dithered Seral Stage");
-    Layer seral2Layer = new GeoRelLayer(blockData, seral2);
-    seral2Layer.setTitle("Seral Stages");
-    layers.add(seral2Layer);
+      UniqueValueTheme latestTreatTheme = new UniqueValueTheme(blockData);
+      latestTreatTheme.setFieldname("LASTTREATMENT");
+      latestTreatTheme.addElement(
+          new ThemeElement("CC", new PolygonSymbol(new Color(200, 60, 60))),
+          "CC"
+      );
+      latestTreatTheme.addElement(
+          new ThemeElement("PCT", new PolygonSymbol(new Color(120, 170, 235))),
+          "PCT"
+      );
+      latestTreatTheme.addElement(
+          new ThemeElement("CT", new PolygonSymbol(new Color(80, 170, 110))),
+          "CT"
+      );
+      latestTreatTheme.addElement(
+          new ThemeElement("F1", new PolygonSymbol(new Color(80, 140, 220))),
+          "F1"
+      );
+      latestTreatTheme.addElement(
+          new ThemeElement("F2", new PolygonSymbol(new Color(170, 110, 210))),
+          "F2"
+      );
+      latestTreatTheme.addElement(
+          new ThemeElement("F3", new PolygonSymbol(new Color(230, 160, 70))),
+          "F3"
+      );
+      latestTreatTheme.setCaption("Latest Treatments");
+      latestTreatTheme.setUnclassified(new ThemeElement("", PolygonSymbol.erase));
+      blockData.addTheme(latestTreatTheme);
+      GeoRelLayer latestTreatLayer = new GeoRelLayer(blockData, latestTreatTheme);
+      latestTreatLayer.setVisible(false);
+      layers.add(latestTreatLayer);
+
+      AlphaComposite alpha = AlphaComposite.SrcOver;
+      global.seral2 = new DitherTheme(blockData, "feature.Seral.");
+      seral2.setCaption("Dithered Seral Stage");
+      seral2.setAlpha(alpha);
+      seral2.setIsScaled(false);
+      seral2.addElement("Regen", new Color(250, 230, 0), "feature.Seral.regenerating");
+      seral2.addElement("Young", new Color(200, 250, 200), "feature.Seral.young");
+      seral2.addElement("Immature", new Color(160, 220, 160), "feature.Seral.immature");
+      seral2.addElement("Mature", new Color(100, 190, 100), "feature.Seral.mature");
+      seral2.addElement("Old", new Color(128, 64, 64), "feature.Seral.overmature");
+      blockData.addTheme(seral2, "Dithered Seral Stage");
+      Layer seral2Layer = new GeoRelLayer(blockData, seral2);
+      seral2Layer.setTitle("Seral Stages");
+      layers.add(seral2Layer);
+   }
 
     RangeLabel[] ageClass = new RangeLabel[] {
       new RangeLabel("Regen", -5, 0),
@@ -168,6 +173,9 @@ int PatchWorks_Init() {
          null,
          false
     ));
+
+    if (femicHeadlessMode)
+       femicQueueHeadlessStage();
 
     return 1;
 }

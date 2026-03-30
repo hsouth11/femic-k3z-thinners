@@ -24,6 +24,7 @@ boolean usePatches = false;
 sourceRelative("../scripts/targets/flowTargets.bsh");
 sourceRelative("../scripts/targets/qmdRatioAccounts.bsh");
 sourceRelative("../scripts/targets/seralStages.bsh");
+sourceRelative("headless_runtime_common.bsh");
 
 /*
  * Locate the input matrix data files
@@ -121,81 +122,85 @@ int PatchWorks_Init() {
    /*
     * Load the default user interface
     */
-   classic_GUI(control);
+   femicConfigureHeadlessFromArgs();
 
-   /*
-    * Set up the initial harvest targets
-    * Uncomment and edit these lines if required
-    */
-   // control.loadTargetSummary("initialTargetSummary.csv");
-   // control.loadTargetStatus("initialTargetStatus.csv");
+   if (!femicHeadlessMode) {
+      classic_GUI(control);
 
-   /*
-    * Establish the initial timing constraints
-    * Uncomment and edit these lines if required
-    */
-   // control.getAccessTable().setKey("COMPART");
-   // control.getAccessTable().load("access.csv");
-   // control.getAccessTable().apply();
+      /*
+       * Set up the initial harvest targets
+       * Uncomment and edit these lines if required
+       */
+      // control.loadTargetSummary("initialTargetSummary.csv");
+      // control.loadTargetStatus("initialTargetStatus.csv");
 
-   /*
-    * Add Map layer definitions here.  The first layer
-    * added will appear on the bottom of the legend.
-    */
+      /*
+       * Establish the initial timing constraints
+       * Uncomment and edit these lines if required
+       */
+      // control.getAccessTable().setKey("COMPART");
+      // control.getAccessTable().load("access.csv");
+      // control.getAccessTable().apply();
 
-   /*
-    * This is a single coloured theme that show the blocks
-    */
-    DefaultTheme def = new DefaultTheme(blockData, new PolygonSymbol(new Color(204, 204, 255)));
-    Layer defLayer = new GeoRelLayer(blockData, def);
-    layers.add(defLayer);
+      /*
+       * Add Map layer definitions here.  The first layer
+       * added will appear on the bottom of the legend.
+       */
 
-   /*
-    * This map layer shows the harvest treatments in the current period
-    */
-    UniqueValueTheme currTreatTheme = new UniqueValueTheme(blockData);
-    currTreatTheme.setFieldname("CURRENTTREATMENT");
-    currTreatTheme.addElement(new ThemeElement("CC",
-        PolygonSymbol.getDefault(Symbol.FILL, Symbol.GEMS, 0)),
-        "CC");
-    currTreatTheme.setCaption("Current Treatments");
-    currTreatTheme.setUnclassified(new ThemeElement("", PolygonSymbol.erase));
-    blockData.addTheme(currTreatTheme);
-    GeoRelLayer currTreatLayer = new GeoRelLayer(blockData, currTreatTheme);
-    currTreatLayer.setVisible(false);
-    layers.add(currTreatLayer);
+      /*
+       * This is a single coloured theme that show the blocks
+       */
+      DefaultTheme def = new DefaultTheme(blockData, new PolygonSymbol(new Color(204, 204, 255)));
+      Layer defLayer = new GeoRelLayer(blockData, def);
+      layers.add(defLayer);
 
-   /*
-    * This map layer shows the all harvest treatments applied up until the current period
-    */
-    UniqueValueTheme latestTreatTheme = new UniqueValueTheme(blockData);
-    latestTreatTheme.setFieldname("LASTTREATMENT");
-    latestTreatTheme.addElement(new ThemeElement("CC",
-        PolygonSymbol.getDefault(Symbol.FILL, Symbol.GEMS, 0)),
-        "CC");
-    latestTreatTheme.setCaption("Latest Treatments");
-    latestTreatTheme.setUnclassified(new ThemeElement("", PolygonSymbol.erase));
-    blockData.addTheme(latestTreatTheme);
-    GeoRelLayer latestTreatLayer = new GeoRelLayer(blockData, latestTreatTheme);
-    latestTreatLayer.setVisible(false);
-    layers.add(latestTreatLayer);
-   /*
-    * Create a dithered theme based on seral stage.
-    */
-    AlphaComposite alpha = AlphaComposite.SrcOver;
-    global.seral2 = new DitherTheme(blockData, "feature.Seral.");
-    seral2.setCaption("Dithered Seral Stage");
-    seral2.setAlpha(alpha);
-    seral2.setIsScaled(false);
-    seral2.addElement("Regen", new Color (250, 230, 0), "feature.Seral.regenerating");
-    seral2.addElement("Young", new Color (200, 250, 200), "feature.Seral.young");
-    seral2.addElement("Immature", new Color (160, 220, 160), "feature.Seral.immature");
-    seral2.addElement("Mature", new Color (100, 190, 100), "feature.Seral.mature");
-    seral2.addElement("Old", new Color (128, 64, 64), "feature.Seral.overmature");
-    blockData.addTheme(seral2, "Dithered Seral Stage");
-    Layer seral2Layer = new GeoRelLayer(blockData, seral2);
-    seral2Layer.setTitle("Seral Stages");
-    layers.add(seral2Layer);
+      /*
+       * This map layer shows the harvest treatments in the current period
+       */
+      UniqueValueTheme currTreatTheme = new UniqueValueTheme(blockData);
+      currTreatTheme.setFieldname("CURRENTTREATMENT");
+      currTreatTheme.addElement(new ThemeElement("CC",
+          PolygonSymbol.getDefault(Symbol.FILL, Symbol.GEMS, 0)),
+          "CC");
+      currTreatTheme.setCaption("Current Treatments");
+      currTreatTheme.setUnclassified(new ThemeElement("", PolygonSymbol.erase));
+      blockData.addTheme(currTreatTheme);
+      GeoRelLayer currTreatLayer = new GeoRelLayer(blockData, currTreatTheme);
+      currTreatLayer.setVisible(false);
+      layers.add(currTreatLayer);
+
+      /*
+       * This map layer shows the all harvest treatments applied up until the current period
+       */
+      UniqueValueTheme latestTreatTheme = new UniqueValueTheme(blockData);
+      latestTreatTheme.setFieldname("LASTTREATMENT");
+      latestTreatTheme.addElement(new ThemeElement("CC",
+          PolygonSymbol.getDefault(Symbol.FILL, Symbol.GEMS, 0)),
+          "CC");
+      latestTreatTheme.setCaption("Latest Treatments");
+      latestTreatTheme.setUnclassified(new ThemeElement("", PolygonSymbol.erase));
+      blockData.addTheme(latestTreatTheme);
+      GeoRelLayer latestTreatLayer = new GeoRelLayer(blockData, latestTreatTheme);
+      latestTreatLayer.setVisible(false);
+      layers.add(latestTreatLayer);
+      /*
+       * Create a dithered theme based on seral stage.
+       */
+      AlphaComposite alpha = AlphaComposite.SrcOver;
+      global.seral2 = new DitherTheme(blockData, "feature.Seral.");
+      seral2.setCaption("Dithered Seral Stage");
+      seral2.setAlpha(alpha);
+      seral2.setIsScaled(false);
+      seral2.addElement("Regen", new Color (250, 230, 0), "feature.Seral.regenerating");
+      seral2.addElement("Young", new Color (200, 250, 200), "feature.Seral.young");
+      seral2.addElement("Immature", new Color (160, 220, 160), "feature.Seral.immature");
+      seral2.addElement("Mature", new Color (100, 190, 100), "feature.Seral.mature");
+      seral2.addElement("Old", new Color (128, 64, 64), "feature.Seral.overmature");
+      blockData.addTheme(seral2, "Dithered Seral Stage");
+      Layer seral2Layer = new GeoRelLayer(blockData, seral2);
+      seral2Layer.setTitle("Seral Stages");
+      layers.add(seral2Layer);
+   }
 
    /*
     * Put patch maps here.
@@ -238,6 +243,9 @@ int PatchWorks_Init() {
          null,
          false
     ));
+
+   if (femicHeadlessMode)
+      femicQueueHeadlessStage();
 
    /*
     * Put route reports here.

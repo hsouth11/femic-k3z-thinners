@@ -30,17 +30,19 @@ Rebuild Workflow
 
    femic run --run-config config/run_profile.k3z.yaml --run-id k3z_full_rebuild
 
-At this point FEMIC is expected to stop at the BatchTIPSY freshness boundary.
+At this point FEMIC is expected to stop at the BTC freshness boundary.
 The canonical handoff files are:
 
-- `data/02_input-tsak3z.dat`
+- `data/03_input-tsak3z.csv`
 - `data/tipsy_params_tsak3z.xlsx`
+- optional legacy mirror: `data/02_input-tsak3z.dat`
 
-Run BatchTIPSY manually on Windows, refresh `data/04_output-tsak3z.out`, then resume:
+Run the default unattended BTC seam on Windows, refresh
+`data/04_output-tsak3z.csv` / `data/04_error-tsak3z.csv`, then resume:
 
 .. code-block:: bash
 
-   femic tsa post-tipsy --run-config config/run_profile.k3z.yaml --tsa k3z --run-id k3z_full_rebuild
+   femic tsa btc-post-tipsy --run-config config/run_profile.k3z.yaml --tsa k3z --run-id k3z_full_rebuild
    femic patchworks build-blocks --config config/patchworks.runtime.windows.yaml
    femic patchworks matrix-build --config config/patchworks.runtime.windows.yaml --run-id k3z_full_rebuild
 
@@ -50,8 +52,14 @@ Diagnostics Workflow
 .. code-block:: bash
 
    femic run --run-config config/run_profile.k3z.yaml --run-id k3z_reprocheck
-   femic tsa post-tipsy --run-config config/run_profile.k3z.yaml --tsa k3z --run-id k3z_reprocheck
+   femic tsa btc-post-tipsy --run-config config/run_profile.k3z.yaml --tsa k3z --run-id k3z_reprocheck
    femic patchworks matrix-build --config config/patchworks.runtime.windows.yaml --run-id k3z_reprocheck
+
+On the shipped Windows runtime configs, FEMIC now supervises the noninteractive
+Matrix Builder launch and automatically closes the spawned Matrix Builder GUI
+window after fresh output activity has stabilized. This is intended to remove
+the routine manual "close the Matrix Builder window so the workflow can
+continue" step from local rebuilds.
 
 Review:
 
@@ -114,6 +122,8 @@ Surface Selection Cheatsheet
      - ``config/patchworks.runtime.intensive_moderate.windows.yaml`` + ``analysis/intensive_moderate.pin``
    * - full-intensive heavy surface
      - ``config/patchworks.runtime.intensive_heavy.windows.yaml`` + ``analysis/intensive_heavy.pin``
+   * - stand-structure proving ground
+     - ``config/patchworks.runtime.intensive_light_standstructure.windows.yaml`` + ``analysis/intensive_light_standstructure.pin``
    * - retained-area sensitivity only
      - one of the overlay runtime configs + the matching ``analysis/overlay_*.pin``
 
@@ -296,6 +306,45 @@ Variant review points:
 - Patchworks smoke expectation: pulling on ``F3`` treated area should induce
   ``F2`` -> ``F1`` -> ``CT`` -> ``PCT`` -> ``CC``.
 - Deep reference: :doc:`silviculture-logic`
+
+Optional Stand-Structure Proving-Ground Workflow
+------------------------------------------------
+
+Use this only when you intentionally want the first optional unattended BTC
+stand-structure bank on a safe K3Z proving-ground surface rather than on the
+ordinary student-facing variants.
+
+.. code-block:: bash
+
+   femic patchworks matrix-build --config config/patchworks.runtime.intensive_light_standstructure.windows.yaml --run-id k3z_intensive_light_standstructure
+
+Variant review points:
+
+- ``config/patchworks.variant.intensive_light_standstructure.yaml`` is the
+  proving-ground variant spec.
+- ``config/silviculture.k3z.intensive_light_standstructure.yaml`` enables the
+  first optional BTC indicator bank:
+  - ``stand-structure-basic``
+- ``models/k3z_patchworks_model/analysis/intensive_light_standstructure.pin``
+  is the Patchworks launch entrypoint.
+- ``models/k3z_patchworks_model/tracks_intensive_light_standstructure/`` is
+  the compiled proving-ground surface.
+- The proving-ground tracks should now expose AU-wise managed stand-structure
+  feature rows:
+  - ``feature.MAI.managed.<au_token>``
+  - ``feature.BasalArea000.managed.<au_token>``
+  - ``feature.DBHg000.managed.<au_token>``
+  - ``feature.SPH000.managed.<au_token>``
+  - ``feature.StemCount000.managed.<au_token>``
+  - ``feature.StemCount125.managed.<au_token>``
+  - ``feature.StemCount175.managed.<au_token>``
+- These rows should appear only on the proving-ground surface during the first
+  rollout; the ordinary ``base``, ``ctfert_*``, ``pct_*``, and
+  ``intensive_*`` tracks should remain free of these new Patchworks bindings.
+- Read the live proving-ground accounts directly as AU-wise mean managed
+  feature values because the ``protoaccounts.csv -> accounts.csv`` promotion
+  layer applies the same area-normalization contract used by QMD, height, and
+  standing stems-per-ha feature surfaces.
 
 Baseline Overlay Subvariant Workflow
 ------------------------------------

@@ -96,7 +96,6 @@ int Patchworks_TargetInit() {
 	control.duplicateAccount("product.Yield.managed.CW", "value.stumpage.CW" , 0.47f);
 	control.duplicateAccount("product.Yield.managed.FDC", "value.stumpage.FDC" , 0.29f);
 	control.duplicateAccount("product.Yield.managed.HW", "value.stumpage.HW" , 0.35f);
-	control.duplicateAccount("product.Yield.managed.PLC", "value.stumpage.PLC" , 0.29f);
 	control.duplicateAccount("product.Yield.managed.SS", "value.stumpage.SS" , 0.25f);
 	control.duplicateAccount("product.Yield.managed.YC", "value.stumpage.YC" , 0.55f);
 	
@@ -104,7 +103,6 @@ int Patchworks_TargetInit() {
 	control.duplicateAccount("value.stumpage.CW" , "value.stumpage.total" , 1f);
 	control.duplicateAccount("value.stumpage.FDC" , "value.stumpage.total" , 1f);		
 	control.duplicateAccount("value.stumpage.HW" , "value.stumpage.total" , 1f);
-	control.duplicateAccount("value.stumpage.PLC" , "value.stumpage.total" , 1f);	
 	control.duplicateAccount("value.stumpage.SS" , "value.stumpage.total" , 1f);	
 	control.duplicateAccount("value.stumpage.YC" , "value.stumpage.total" , 1f);	
 	
@@ -118,7 +116,6 @@ int Patchworks_TargetInit() {
 	control.duplicateAccount("product.Yield.managed.BA", "value.grevenue.BA", 79.87f);
 	control.duplicateAccount("product.Yield.managed.SS", "value.grevenue.SS", 80.08f);
 	control.duplicateAccount("product.Yield.managed.YC", "value.grevenue.YC", 164.55f);
-	control.duplicateAccount("product.Yield.managed.PLC", "value.grevenue.PLC", 71.05f);
 	
 	control.duplicateAccount("value.grevenue.CW" , "value.grevenue.total" , 1f);
 	control.duplicateAccount("value.grevenue.FDC" , "value.grevenue.total" , 1f);
@@ -126,7 +123,6 @@ int Patchworks_TargetInit() {
 	control.duplicateAccount("value.grevenue.BA" , "value.grevenue.total" , 1f);
 	control.duplicateAccount("value.grevenue.SS" , "value.grevenue.total" , 1f);
 	control.duplicateAccount("value.grevenue.YC" , "value.grevenue.total" , 1f);
-	control.duplicateAccount("value.grevenue.PLC" , "value.grevenue.total" , 1f);
 
     // Net revenue
 	control.addMetaAccount("value.nrevenue.total",

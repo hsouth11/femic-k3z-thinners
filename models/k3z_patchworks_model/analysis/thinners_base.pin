@@ -84,6 +84,13 @@ int Patchworks_TargetInit() {
    control.calculateGroups("IFM");
    control.inputGroups("../groups_thinners.csv");
 
+   // Net revenue
+	control.addMetaAccount("value.nrevenue.total",
+	new String [] {"value.grevenue.total",
+	"value.harvcost.total",
+	"value.stumpage.total"},
+	new double [] {1, -1, -1});
+
    setupYieldFlowTargets(control, periods);
    validateSeralStageAttributes();
 
@@ -127,13 +134,6 @@ int Patchworks_TargetInit() {
 	control.duplicateAccount("value.grevenue.SS" , "value.grevenue.total" , 1f);
 	control.duplicateAccount("value.grevenue.YC" , "value.grevenue.total" , 1f);
 	control.duplicateAccount("value.grevenue.PLC" , "value.grevenue.total" , 1f);
-
-    // Net revenue
-	control.addMetaAccount("value.nrevenue.total",
-	new String [] {"value.grevenue.total",
-	"value.harvcost.total",
-	"value.stumpage.total"},
-	new double [] {1, -1, -1});
 
 	
    /*

@@ -10,10 +10,10 @@
 
 setupHarvestedQmdRatioAccounts(control, String tracksPathPrefix) {
    TreeSet numeratorAccounts = _collectAccounts(
-      "product.QMDNumerator.managed.", tracksPathPrefix
+      "product.QMDNumerator.managed.", "../"
    );
    TreeSet denominatorAccounts = _collectAccounts(
-      "product.Treated.managed.", tracksPathPrefix
+      "product.Treated.managed.", "../"
    );
 
    int configured = 0;

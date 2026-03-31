@@ -77,9 +77,12 @@ Treatment parameter table:
    * - SI-profiled fert growth speedup
      - ``ctfert_l15h5`` = ``L=0.15``, ``M=0.10``, ``H=0.05``; ``ctfert_l20h0`` = ``L=0.20``, ``M=0.10``, and no fert on ``H`` AUs
    * - QMD source
-     - reverse-engineered approximation from accepted stand yield, BatchTIPSY
-       height/TPH where available, and linear site-index height plus VDYP-side
-       stems-per-hectare proxies otherwise
+     - ordinary K3Z surfaces still fall back to the reverse-engineered
+       yield/height/stems approximation, but the dedicated
+       ``intensive_light_standstructure`` proving ground now prefers richer
+       BTC-native managed diameter signals when they are present:
+       ``DBHg000`` first, then ``BasalArea000`` plus
+       ``SPH000`` / ``StemCount000``, and only then the older approximation
 
 SI-profile notes:
 

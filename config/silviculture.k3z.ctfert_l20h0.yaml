@@ -63,6 +63,11 @@ height:
   enabled: true
 stems_per_ha:
   enabled: true
+btc_indicator_banks:
+  - log-grades
+btc_indicator_bank_compile_recipes:
+  log-grades:
+    include_all_grades: false
 
 retention:
   default_retention_fraction: 0.05

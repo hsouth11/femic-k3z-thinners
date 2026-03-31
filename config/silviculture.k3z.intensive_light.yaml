@@ -108,6 +108,8 @@ height:
   enabled: true
 stems_per_ha:
   enabled: true
+btc_indicator_banks:
+  - log-grades
 
 retention:
   default_retention_fraction: 0.05

@@ -74,10 +74,9 @@ setupYieldFlowTargets(control, int periods, String tracksPathPrefix) {
       String account = (String)it.next();
       control.addFlowRatioAccount("flow.ndy."+account, account, ndyflow, 100);
    }
-
    String revenueAccount = "value.nrevenue.total";
    control.addFlowRatioAccount("flow.even."+revenueAccount, revenueAccount, evenflow, 100);
    control.addFlowRatioAccount("flow.ndy."+revenueAccount, revenueAccount, ndyflow, 100);
-
+   
    print("Configured flow targets: even="+(productAccounts.size()+1)+" ndy="+(featureAccounts.size()+1));
 }

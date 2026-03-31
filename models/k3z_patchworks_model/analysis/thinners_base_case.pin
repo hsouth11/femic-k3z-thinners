@@ -14,7 +14,7 @@ sourceRelative("../scripts/targets/flowTargets.bsh");
 sourceRelative("../scripts/targets/seralStages.bsh");
 sourceRelative("../scripts/targets/qmdRatioAccounts.bsh");
 
-String tracks_path_prefix = "../tracks_nicf_future/";
+String tracks_path_prefix = "../tracks_thinners_base_case/";
 
 blocks = tracks_path_prefix+"blocks.csv";
 curves = tracks_path_prefix+"curves.csv";
@@ -22,7 +22,7 @@ features = tracks_path_prefix+"features.csv";
 products = tracks_path_prefix+"products.csv";
 tracknames = tracks_path_prefix+"tracknames.csv";
 treatments = tracks_path_prefix+"treatments.csv";
-accounts = tracks_path_prefix+"accounts_test.csv";
+accounts = tracks_path_prefix+"accounts.csv";
 stratas = tracks_path_prefix+"strata.csv";
 if (AttributeStore.absoluteFile(tracks_path_prefix+"packages.csv").exists() &&
     AttributeStore.absoluteFile(tracks_path_prefix+"packageSequences.csv").exists()) {

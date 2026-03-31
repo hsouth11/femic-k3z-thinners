@@ -76,8 +76,8 @@ int Patchworks_TargetInit() {
 
     // PCT costs
     // This cost varies depending on the intensity of the treatment. Light: $2000/ha, 
-    // Moderate: $3000/ha, Heavy: $4000/ha. Assuming moderate intensity for base case.
-    control.duplicateAccount("product.Treated.managed.PCT", "value.cost.PCT", 3000f);
+    // Moderate: $3000/ha, Heavy: $4000/ha.
+    control.duplicateAccount("product.Treated.managed.PCT", "value.cost.PCT", 2000f);
 
 	// Gross log revenue
 	control.duplicateAccount("product.Yield.managed.CW", "value.grevenue.CW", 254.15f);

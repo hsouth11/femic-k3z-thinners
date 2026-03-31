@@ -76,7 +76,7 @@ setActive(label, true, true, false);
 
 // Set target that maximizes net revenue
 label = "value.nrevenue.total";
-setMinimumPeriodic(label, 5000000f);
+setMinimumPeriodic(label, 10000000f);
 setMaximumPeriodic(label, 9999999f);
 setMinWeight(label, 1f);
 setMaxWeight(label, 1f);

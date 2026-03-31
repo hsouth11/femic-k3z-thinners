@@ -38,6 +38,12 @@ Actions:
      species label signal.
    - Inspect matrix manifest ``accounts_sync.excluded_patterns`` for accidental
      over-filtering.
+   - Inspect `data/model_input_bundle/curve_table.csv` for missing
+     ``treated_species_prop_*`` / ``untreated_species_prop_*`` rows; if they
+     are absent, confirm the active post-TIPSY species-universe loader can see
+     the shipped checkpoint artifact (for K3Z this is now
+     ``data/ria_vri_vclr1p_checkpoint1-tsak3z.feather`` rather than only the
+     old generic ``checkpoint8`` path).
 3. Re-run deterministic rebuild with Patchworks enabled:
 
    .. code-block:: bash

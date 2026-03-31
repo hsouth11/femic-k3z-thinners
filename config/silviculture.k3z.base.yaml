@@ -5,3 +5,5 @@ height:
   enabled: true
 stems_per_ha:
   enabled: true
+btc_indicator_banks:
+  - log-grades

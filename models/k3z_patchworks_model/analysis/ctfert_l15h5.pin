@@ -29,6 +29,7 @@ boolean usePatches = false;
 sourceRelative("../scripts/targets/flowTargets.bsh");
 sourceRelative("../scripts/targets/qmdRatioAccounts.bsh");
 sourceRelative("../scripts/targets/seralStages.bsh");
+sourceRelative("headless_runtime_common.bsh");
 
 
 
@@ -131,6 +132,9 @@ int PatchWorks_Init() {
    /*
     * Load the default user interface
     */
+   femicConfigureHeadlessFromArgs();
+
+   if (!femicHeadlessMode) {
    classic_GUI(control);
 
 
@@ -232,6 +236,7 @@ int PatchWorks_Init() {
     Layer seral2Layer = new GeoRelLayer(blockData,seral2);
     seral2Layer.setTitle("Seral Stages");
     layers.add(seral2Layer);
+   }
 
    /*
     * Put patch maps here.
@@ -274,6 +279,9 @@ int PatchWorks_Init() {
 	     null,
 	     false));
 
+
+   if (femicHeadlessMode)
+      femicQueueHeadlessStage();
 
    /*
     * Put route reports here.

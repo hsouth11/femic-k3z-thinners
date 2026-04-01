@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="html/sps.ico">
+    <script src="html/jquery-3.4.1.min.js"></script>
+    <script src="html/jquery-ui-1.12.1.custom.min.js"></script>
+    <link type="text/css" href="html/pw.css" rel="stylesheet">
+    <script src="html/pw.js"></script>
+    <script src="html/tree_items.js"></script>
+    <title>Scenario results</title>
+  </head>
+  <body style="margin: 0px;" onload="addTitleChangeListener()">
+    <div class="split">
+      <div  style="margin: 4px;" id="leftSplit">
+        <script>
+         new tree (TREE_ITEMS, TREE_TPL);
+        </script>
+      </div>
+      <div id="rightSplit">
+        <iframe id="main" name="main" src="index.html"></iframe>
+      </div>
+    </div>
+  </body>
+</html>

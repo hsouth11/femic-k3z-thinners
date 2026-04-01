@@ -1,0 +1,17 @@
+Fieldname,DataType,Description
+,_TITLE_,Managed area by age class and period
+,_XCAPTION_,Year
+,_YCAPTION_,hectares
+PERIOD,Integer,The period for each row
+YEAR,Integer,The final year of the planning period that this row represents
+PERIODWIDTH,Integer,The number of years in the planning period that this row represents
+Regen,Number,The sum in category Regen for this row
+1 - 20,Number,The sum in category 1 - 20 for this row
+20 - 40,Number,The sum in category 20 - 40 for this row
+40 - 60,Number,The sum in category 40 - 60 for this row
+60 - 80,Number,The sum in category 60 - 80 for this row
+80 - 100,Number,The sum in category 80 - 100 for this row
+100 - 120,Number,The sum in category 100 - 120 for this row
+120 - 140,Number,The sum in category 120 - 140 for this row
+140+,Number,The sum in category 140+ for this row
+TOTAL,Number,The row total

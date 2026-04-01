@@ -1,0 +1,13 @@
+Fieldname,DataType,Description
+,_TITLE_,Target values
+TARGET,String,The target that the row applies to
+PERIOD,Integer,The period that the row applies to
+YEAR,Integer,The final year of the planning period that this row represents
+PERIODWIDTH,Integer,The number of years in the planning period that this row represents
+MINIMUM,Number,The minimum target for the period
+MAXIMUM,Number,The maximum target for the period
+MINWEIGHT,Number,The weight on the minimum target
+MAXWEIGHT,Number,The weight on the maximum target
+CURRENT,Number,The current value of the target for the period
+INITIAL,Number,The initial value of the target for the period
+OBJECTIVE,Number,The objective function value for the period

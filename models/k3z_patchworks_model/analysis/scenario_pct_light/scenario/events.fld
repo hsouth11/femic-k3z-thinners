@@ -1,0 +1,7 @@
+Fieldname,DataType,Description
+,_TITLE_,Event timeline
+TIME,String,The time when the event occurred
+ITERATION,Integer,The number of iterations that had passed when the event occurred
+OBJECTIVE,Number,The value of the objective function after the event occurred
+TYPE,String,The type of event
+DETAILS,String,More information about the event

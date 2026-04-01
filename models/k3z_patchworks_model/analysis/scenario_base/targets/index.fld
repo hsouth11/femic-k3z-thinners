@@ -1,0 +1,7 @@
+Fieldname,DataType,Description
+,_TITLE_,Targets
+Name,String,The report file name
+Title,String,The report title
+Class,String,The classname of the report
+Source,String,The datasource of the report
+Extensions,List,The list of valid extensions that can be appended to the report name

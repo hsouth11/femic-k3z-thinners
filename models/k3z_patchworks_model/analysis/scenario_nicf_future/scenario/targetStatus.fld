@@ -1,0 +1,10 @@
+Fieldname,DataType,Description
+,_TITLE_,Target status
+TARGET,String,The name of the target that the row applies to
+PERIODS,Integer,The number of periods in the simulation
+ACTIVE,Boolean,The active status of the target
+MINACTIVE,Boolean,The active status of the minimum target
+MAXACTIVE,Boolean,The active status of the maximum target
+DISCOUNT,Number,The discount rate applied to this target
+LINEAR,Boolean,Flag for linear scaling
+PREMULTIPLY,Boolean,Flag for premultiplication of weight values

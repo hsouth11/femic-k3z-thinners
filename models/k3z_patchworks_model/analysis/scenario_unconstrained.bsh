@@ -60,6 +60,9 @@ setActive(label, true, false, true);
 // Start scheduler
 gui.click("start");
 
+// Run until convergence @ 0.1%
+//analyze("scenario_unconstrained", 50000, 0.1);
+
 //END OF SCENARIO
 
 /* 

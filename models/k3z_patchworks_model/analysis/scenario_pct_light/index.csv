@@ -1,0 +1,4 @@
+Name,Title,Class,Source,Extensions
+ageClass,Managed area by age class and period,ca.spatial.reportwriter.RangePeriodReport,Block attributes,html;csv;png
+scenario/index,Scenario data files,ca.spatial.reportwriter.IndexReport,null,html;csv
+targets/index,Targets,ca.spatial.reportwriter.IndexReport,null,html;csv

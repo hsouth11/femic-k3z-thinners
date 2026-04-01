@@ -1,0 +1,6 @@
+Name,Title,Class,Source,Extensions
+blockavail.csv.gz,Available blocks,ca.spatial.patchworks.BlockAvailReport,Block attributes,
+events,Event timeline,ca.spatial.patchworks.ScenarioEventReport,null,html;csv;png
+schedule.csv,Scheduled treatments,ca.spatial.patchworks.TreatmentReport,Block attributes,
+targetStatus.csv,Target status,ca.spatial.reportwriter.TargetStatusReport,Target table,
+targetSummary.csv,Target values,ca.spatial.reportwriter.TargetSummaryReport,Target table,

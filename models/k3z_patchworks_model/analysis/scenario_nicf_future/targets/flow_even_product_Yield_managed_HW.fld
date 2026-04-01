@@ -1,0 +1,13 @@
+Fieldname,DataType,Description
+,_TITLE_,Targets for flow.even.product.Yield.managed.HW
+,_XCAPTION_,Year
+,_YCAPTION_,Y
+PERIOD,Integer,The period that the row applies to
+YEAR,Integer,The final year of the planning period that this row represents
+PERIODWIDTH,Integer,The number of years in the planning period that this row represents
+MINIMUM,Number,The minimum target for the period
+MINWEIGHT,Number,The weight on the minimum target
+MAXIMUM,Number,The maximum target for the period
+MAXWEIGHT,Number,The weight on the maximum target
+CURRENT,Number,The current value for this period
+SUMMARY,Number,The summary value for this period

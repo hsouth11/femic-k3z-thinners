@@ -84,7 +84,7 @@ setMinimumPeriodic(label, 999999999f);
 setMaximumPeriodic(label, 0f);
 setMinWeight(label, 1f);
 setMaxWeight(label, 1f);
-control.getTarget(label).setLinear(false);
+control.getTarget(label).setLinear(true);
 setActive(label, true, false, true);
 
 // Set area treated with PCT to 0
@@ -109,6 +109,9 @@ setActive(label, true, false, false);
 
 // Start scheduler
 gui.click("start");
+
+// Run until convergence @ 0.1%
+//analyze("scenario_base", 50000, 0.1);
 
 //END OF SCENARIO
 

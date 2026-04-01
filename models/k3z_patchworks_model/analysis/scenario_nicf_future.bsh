@@ -62,7 +62,7 @@ label = "patch.harvested.0_40.frequency";
 setMinimumPeriodic(label, 0f);
 setMaximumPeriodic(label, 5f);
 setMinWeight(label, 1f);
-setMaxWeight(label, 1000f);
+setMaxWeight(label, 1000000f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, false, true);
 

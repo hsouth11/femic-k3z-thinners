@@ -68,14 +68,24 @@ setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);
 
+// Set patch frequency target for 0-40 ha patches
+// Restricts the # of blocks developed per cut control period (5 years) to somehting reasonable
+label = "patch.harvested.0_40.frequency";
+setMinimumPeriodic(label, 0f);
+setMaximumPeriodic(label, 5f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1000f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, false, true);
+
 // Set total cost target
 label = "value.cost.total";
-setMinimumPeriodic(label, 0f);
-setMaximumPeriodic(label, 999999999f);
+setMinimumPeriodic(label, 999999999f);
+setMaximumPeriodic(label, 0f);
 setMinWeight(label, 1f);
 setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(false);
-setActive(label, true, true, false);
+setActive(label, true, false, true);
 
 // Set area treated with PCT to 0
 label = "product.Treated.managed.PCT";

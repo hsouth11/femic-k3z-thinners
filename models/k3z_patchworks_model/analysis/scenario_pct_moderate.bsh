@@ -51,6 +51,16 @@ setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);
 
+// Set patch frequency target for 0-40 ha patches
+// Restricts the # of blocks developed per cut control period (5 years) to somehting reasonable
+label = "patch.harvested.0_40.frequency";
+setMinimumPeriodic(label, 0f);
+setMaximumPeriodic(label, 5f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1000f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, false, true);
+
 // Set old growth area target
 label = "feature.Area.og2.percent";
 setMinimumPeriodic(label, 13f);

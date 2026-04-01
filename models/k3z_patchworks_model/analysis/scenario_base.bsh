@@ -31,7 +31,7 @@ clearTargets();
 label = "product.Yield.managed.Total";
 setMinimumPeriodic(label, 100000f);
 setMaximumPeriodic(label, 100000f);
-setMinWeight(label, 1f);
+setMinWeight(label, 1000f);
 setMaxWeight(label, 1000f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, true, true);

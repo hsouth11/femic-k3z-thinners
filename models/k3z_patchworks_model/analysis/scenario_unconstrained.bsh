@@ -1,5 +1,6 @@
 /*
- * Run the base scenario
+ Unconstrained scenario
+    Determines productive capacity of the NICF landbase
  */
 
 // Set targets

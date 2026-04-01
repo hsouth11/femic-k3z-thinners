@@ -1,10 +1,10 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 product.HarvestedVolume.managed.YC.CC,0,0,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,1,10,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.HarvestedVolume.managed.YC.CC,2,20,10.0,0.0,10000.0,1.0,1.0,4.761000156402588,0.0
+product.HarvestedVolume.managed.YC.CC,2,20,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.HarvestedVolume.managed.YC.CC,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+product.HarvestedVolume.managed.YC.CC,5,50,10.0,0.0,10000.0,1.0,1.0,4.7870001792907715,0.0
 product.HarvestedVolume.managed.YC.CC,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,8,80,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
@@ -27,6 +27,6 @@ product.HarvestedVolume.managed.YC.CC,24,240,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,25,250,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,26,260,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,27,270,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.HarvestedVolume.managed.YC.CC,28,280,10.0,0.0,10000.0,1.0,1.0,3.2219998836517334,0.0
+product.HarvestedVolume.managed.YC.CC,28,280,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,29,290,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,30,300,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

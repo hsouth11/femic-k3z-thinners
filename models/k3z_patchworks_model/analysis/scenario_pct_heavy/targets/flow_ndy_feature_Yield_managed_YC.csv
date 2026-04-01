@@ -21,12 +21,12 @@ flow.ndy.feature.Yield.managed.YC,18,180,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 flow.ndy.feature.Yield.managed.YC,19,190,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 flow.ndy.feature.Yield.managed.YC,20,200,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 flow.ndy.feature.Yield.managed.YC,21,210,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-flow.ndy.feature.Yield.managed.YC,22,220,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+flow.ndy.feature.Yield.managed.YC,22,220,10.0,0.0,10000.0,1.0,1.0,-100.0,0.0
 flow.ndy.feature.Yield.managed.YC,23,230,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 flow.ndy.feature.Yield.managed.YC,24,240,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 flow.ndy.feature.Yield.managed.YC,25,250,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 flow.ndy.feature.Yield.managed.YC,26,260,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 flow.ndy.feature.Yield.managed.YC,27,270,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-flow.ndy.feature.Yield.managed.YC,28,280,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-flow.ndy.feature.Yield.managed.YC,29,290,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-flow.ndy.feature.Yield.managed.YC,30,300,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+flow.ndy.feature.Yield.managed.YC,28,280,10.0,0.0,10000.0,1.0,1.0,614.2849731445312,0.0
+flow.ndy.feature.Yield.managed.YC,29,290,10.0,0.0,10000.0,1.0,1.0,165.99899291992188,0.0
+flow.ndy.feature.Yield.managed.YC,30,300,10.0,0.0,10000.0,1.0,1.0,78.9469985961914,0.0

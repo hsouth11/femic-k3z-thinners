@@ -1,11 +1,11 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 feature.Yield.managed.SS,0,0,10.0,0.0,10000.0,1.0,1.0,4139.9248046875,0.0
 feature.Yield.managed.SS,1,10,10.0,0.0,10000.0,1.0,1.0,4896.498046875,0.0
-feature.Yield.managed.SS,2,20,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-feature.Yield.managed.SS,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-feature.Yield.managed.SS,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-feature.Yield.managed.SS,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-feature.Yield.managed.SS,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+feature.Yield.managed.SS,2,20,10.0,0.0,10000.0,1.0,1.0,5602.85888671875,0.0
+feature.Yield.managed.SS,3,30,10.0,0.0,10000.0,1.0,1.0,6273.0771484375,0.0
+feature.Yield.managed.SS,4,40,10.0,0.0,10000.0,1.0,1.0,6471.7412109375,0.0
+feature.Yield.managed.SS,5,50,10.0,0.0,10000.0,1.0,1.0,6471.7412109375,0.0
+feature.Yield.managed.SS,6,60,10.0,0.0,10000.0,1.0,1.0,6471.7412109375,0.0
 feature.Yield.managed.SS,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 feature.Yield.managed.SS,8,80,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 feature.Yield.managed.SS,9,90,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

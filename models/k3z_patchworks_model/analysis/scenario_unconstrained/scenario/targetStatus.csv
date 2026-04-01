@@ -420,6 +420,13 @@ value.grevenue.SS,31,false,false,false,1.0,false,false
 value.grevenue.YC,31,false,false,false,1.0,false,false
 value.grevenue.total,31,false,false,false,1.0,false,false
 value.nrevenue.total,31,false,false,false,1.0,false,false
+value.standing.BA,31,false,false,false,1.0,false,false
+value.standing.CW,31,false,false,false,1.0,false,false
+value.standing.FDC,31,false,false,false,1.0,false,false
+value.standing.HW,31,false,false,false,1.0,false,false
+value.standing.SS,31,false,false,false,1.0,false,false
+value.standing.YC,31,false,false,false,1.0,false,false
+value.standing.total,31,false,false,false,1.0,false,false
 value.stumpage.BA,31,false,false,false,1.0,false,false
 value.stumpage.CW,31,false,false,false,1.0,false,false
 value.stumpage.FDC,31,false,false,false,1.0,false,false

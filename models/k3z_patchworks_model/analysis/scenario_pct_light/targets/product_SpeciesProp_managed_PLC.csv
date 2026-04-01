@@ -4,7 +4,7 @@ product.SpeciesProp.managed.PLC,1,10,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.PLC,2,20,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.PLC,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.PLC,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.SpeciesProp.managed.PLC,5,50,10.0,0.0,10000.0,1.0,1.0,0.035999998450279236,0.0
+product.SpeciesProp.managed.PLC,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.PLC,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.PLC,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.PLC,8,80,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
@@ -27,6 +27,6 @@ product.SpeciesProp.managed.PLC,24,240,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.PLC,25,250,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.PLC,26,260,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.PLC,27,270,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.SpeciesProp.managed.PLC,28,280,10.0,0.0,10000.0,1.0,1.0,0.07500000298023224,0.0
+product.SpeciesProp.managed.PLC,28,280,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.PLC,29,290,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.PLC,30,300,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

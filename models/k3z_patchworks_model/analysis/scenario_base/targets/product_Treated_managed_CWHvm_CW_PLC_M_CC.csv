@@ -1,7 +1,7 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 product.Treated.managed.CWHvm_CW_PLC_M.CC,0,0,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.CWHvm_CW_PLC_M.CC,1,10,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Treated.managed.CWHvm_CW_PLC_M.CC,2,20,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+product.Treated.managed.CWHvm_CW_PLC_M.CC,2,20,10.0,0.0,10000.0,1.0,1.0,0.10700000077486038,0.0
 product.Treated.managed.CWHvm_CW_PLC_M.CC,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.CWHvm_CW_PLC_M.CC,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.CWHvm_CW_PLC_M.CC,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
@@ -24,7 +24,7 @@ product.Treated.managed.CWHvm_CW_PLC_M.CC,21,210,10.0,0.0,10000.0,1.0,1.0,0.0,0.
 product.Treated.managed.CWHvm_CW_PLC_M.CC,22,220,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.CWHvm_CW_PLC_M.CC,23,230,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.CWHvm_CW_PLC_M.CC,24,240,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Treated.managed.CWHvm_CW_PLC_M.CC,25,250,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+product.Treated.managed.CWHvm_CW_PLC_M.CC,25,250,10.0,0.0,10000.0,1.0,1.0,0.10700000077486038,0.0
 product.Treated.managed.CWHvm_CW_PLC_M.CC,26,260,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.CWHvm_CW_PLC_M.CC,27,270,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.CWHvm_CW_PLC_M.CC,28,280,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

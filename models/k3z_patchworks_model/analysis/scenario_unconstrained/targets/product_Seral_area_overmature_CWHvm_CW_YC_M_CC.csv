@@ -1,13 +1,13 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 product.Seral.area.overmature.CWHvm_CW_YC_M.CC,0,0,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Seral.area.overmature.CWHvm_CW_YC_M.CC,1,10,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+product.Seral.area.overmature.CWHvm_CW_YC_M.CC,1,10,10.0,0.0,10000.0,1.0,1.0,4.927999973297119,0.0
 product.Seral.area.overmature.CWHvm_CW_YC_M.CC,2,20,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_CW_YC_M.CC,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_CW_YC_M.CC,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_CW_YC_M.CC,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_CW_YC_M.CC,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Seral.area.overmature.CWHvm_CW_YC_M.CC,7,70,10.0,0.0,10000.0,1.0,1.0,25.927000045776367,0.0
-product.Seral.area.overmature.CWHvm_CW_YC_M.CC,8,80,10.0,0.0,10000.0,1.0,1.0,14.809000015258789,0.0
+product.Seral.area.overmature.CWHvm_CW_YC_M.CC,7,70,10.0,0.0,10000.0,1.0,1.0,27.753000259399414,0.0
+product.Seral.area.overmature.CWHvm_CW_YC_M.CC,8,80,10.0,0.0,10000.0,1.0,1.0,8.055000305175781,0.0
 product.Seral.area.overmature.CWHvm_CW_YC_M.CC,9,90,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_CW_YC_M.CC,10,100,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_CW_YC_M.CC,11,110,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
@@ -27,6 +27,6 @@ product.Seral.area.overmature.CWHvm_CW_YC_M.CC,24,240,10.0,0.0,10000.0,1.0,1.0,0
 product.Seral.area.overmature.CWHvm_CW_YC_M.CC,25,250,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_CW_YC_M.CC,26,260,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_CW_YC_M.CC,27,270,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Seral.area.overmature.CWHvm_CW_YC_M.CC,28,280,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+product.Seral.area.overmature.CWHvm_CW_YC_M.CC,28,280,10.0,0.0,10000.0,1.0,1.0,12.034000396728516,0.0
 product.Seral.area.overmature.CWHvm_CW_YC_M.CC,29,290,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_CW_YC_M.CC,30,300,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

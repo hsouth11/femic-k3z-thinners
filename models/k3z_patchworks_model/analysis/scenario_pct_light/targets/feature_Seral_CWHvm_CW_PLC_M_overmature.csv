@@ -4,8 +4,8 @@ feature.Seral.CWHvm_CW_PLC_M.overmature,1,10,10.0,0.0,10000.0,1.0,1.0,32.4720001
 feature.Seral.CWHvm_CW_PLC_M.overmature,2,20,10.0,0.0,10000.0,1.0,1.0,32.47200012207031,0.0
 feature.Seral.CWHvm_CW_PLC_M.overmature,3,30,10.0,0.0,10000.0,1.0,1.0,32.47200012207031,0.0
 feature.Seral.CWHvm_CW_PLC_M.overmature,4,40,10.0,0.0,10000.0,1.0,1.0,32.47200012207031,0.0
-feature.Seral.CWHvm_CW_PLC_M.overmature,5,50,10.0,0.0,10000.0,1.0,1.0,32.3650016784668,0.0
-feature.Seral.CWHvm_CW_PLC_M.overmature,6,60,10.0,0.0,10000.0,1.0,1.0,32.3650016784668,0.0
+feature.Seral.CWHvm_CW_PLC_M.overmature,5,50,10.0,0.0,10000.0,1.0,1.0,32.47200012207031,0.0
+feature.Seral.CWHvm_CW_PLC_M.overmature,6,60,10.0,0.0,10000.0,1.0,1.0,32.47200012207031,0.0
 feature.Seral.CWHvm_CW_PLC_M.overmature,7,70,10.0,0.0,10000.0,1.0,1.0,32.47200012207031,0.0
 feature.Seral.CWHvm_CW_PLC_M.overmature,8,80,10.0,0.0,10000.0,1.0,1.0,32.47200012207031,0.0
 feature.Seral.CWHvm_CW_PLC_M.overmature,9,90,10.0,0.0,10000.0,1.0,1.0,32.47200012207031,0.0
@@ -27,6 +27,6 @@ feature.Seral.CWHvm_CW_PLC_M.overmature,24,240,10.0,0.0,10000.0,1.0,1.0,32.47200
 feature.Seral.CWHvm_CW_PLC_M.overmature,25,250,10.0,0.0,10000.0,1.0,1.0,32.47200012207031,0.0
 feature.Seral.CWHvm_CW_PLC_M.overmature,26,260,10.0,0.0,10000.0,1.0,1.0,32.47200012207031,0.0
 feature.Seral.CWHvm_CW_PLC_M.overmature,27,270,10.0,0.0,10000.0,1.0,1.0,32.47200012207031,0.0
-feature.Seral.CWHvm_CW_PLC_M.overmature,28,280,10.0,0.0,10000.0,1.0,1.0,32.3650016784668,0.0
-feature.Seral.CWHvm_CW_PLC_M.overmature,29,290,10.0,0.0,10000.0,1.0,1.0,32.3650016784668,0.0
-feature.Seral.CWHvm_CW_PLC_M.overmature,30,300,10.0,0.0,10000.0,1.0,1.0,32.3650016784668,0.0
+feature.Seral.CWHvm_CW_PLC_M.overmature,28,280,10.0,0.0,10000.0,1.0,1.0,32.47200012207031,0.0
+feature.Seral.CWHvm_CW_PLC_M.overmature,29,290,10.0,0.0,10000.0,1.0,1.0,32.47200012207031,0.0
+feature.Seral.CWHvm_CW_PLC_M.overmature,30,300,10.0,0.0,10000.0,1.0,1.0,32.47200012207031,0.0

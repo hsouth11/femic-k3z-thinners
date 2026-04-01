@@ -94,6 +94,21 @@ int Patchworks_TargetInit() {
 	control.duplicateAccount("value.grevenue.SS" , "value.grevenue.total" , 1f);
 	control.duplicateAccount("value.grevenue.YC" , "value.grevenue.total" , 1f);
  
+// Standing inventory value
+	control.duplicateAccount("feature.Yield.managed.CW", "value.standing.CW", 254.15f);
+	control.duplicateAccount("feature.Yield.managed.FDC", "value.standing.FDC", 113.24f);	
+	control.duplicateAccount("feature.Yield.managed.HW", "value.standing.HW", 79.87f);
+	control.duplicateAccount("feature.Yield.managed.BA", "value.standing.BA", 79.87f);
+	control.duplicateAccount("feature.Yield.managed.SS", "value.standing.SS", 80.08f);
+	control.duplicateAccount("feature.Yield.managed.YC", "value.standing.YC", 164.55f);
+	
+	control.duplicateAccount("value.standing.CW" , "value.standing.total" , 1f);
+	control.duplicateAccount("value.standing.FDC" , "value.standing.total" , 1f);
+	control.duplicateAccount("value.standing.HW" , "value.standing.total" , 1f);
+	control.duplicateAccount("value.standing.BA" , "value.standing.total" , 1f);
+	control.duplicateAccount("value.standing.SS" , "value.standing.total" , 1f);
+	control.duplicateAccount("value.standing.YC" , "value.standing.total" , 1f);
+
     //Total cost
     control.addMetaAccount("value.cost.total",
 	new String [] {"value.stumpage.total",

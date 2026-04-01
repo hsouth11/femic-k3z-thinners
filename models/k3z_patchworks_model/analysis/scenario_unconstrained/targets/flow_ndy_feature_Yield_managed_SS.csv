@@ -1,12 +1,12 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 flow.ndy.feature.Yield.managed.SS,0,0,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 flow.ndy.feature.Yield.managed.SS,1,10,10.0,0.0,10000.0,1.0,1.0,18.274999618530273,0.0
-flow.ndy.feature.Yield.managed.SS,2,20,10.0,0.0,10000.0,1.0,1.0,-100.0,0.0
-flow.ndy.feature.Yield.managed.SS,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-flow.ndy.feature.Yield.managed.SS,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+flow.ndy.feature.Yield.managed.SS,2,20,10.0,0.0,10000.0,1.0,1.0,14.425000190734863,0.0
+flow.ndy.feature.Yield.managed.SS,3,30,10.0,0.0,10000.0,1.0,1.0,11.961999893188477,0.0
+flow.ndy.feature.Yield.managed.SS,4,40,10.0,0.0,10000.0,1.0,1.0,3.1659998893737793,0.0
 flow.ndy.feature.Yield.managed.SS,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 flow.ndy.feature.Yield.managed.SS,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-flow.ndy.feature.Yield.managed.SS,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+flow.ndy.feature.Yield.managed.SS,7,70,10.0,0.0,10000.0,1.0,1.0,-100.0,0.0
 flow.ndy.feature.Yield.managed.SS,8,80,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 flow.ndy.feature.Yield.managed.SS,9,90,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 flow.ndy.feature.Yield.managed.SS,10,100,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

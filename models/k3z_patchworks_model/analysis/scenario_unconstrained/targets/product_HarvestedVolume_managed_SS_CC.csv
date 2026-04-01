@@ -1,12 +1,12 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 product.HarvestedVolume.managed.SS.CC,0,0,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.SS.CC,1,10,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.HarvestedVolume.managed.SS.CC,2,20,10.0,0.0,10000.0,1.0,1.0,4352.537109375,0.0
+product.HarvestedVolume.managed.SS.CC,2,20,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.SS.CC,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.SS.CC,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.SS.CC,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.SS.CC,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.HarvestedVolume.managed.SS.CC,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+product.HarvestedVolume.managed.SS.CC,7,70,10.0,0.0,10000.0,1.0,1.0,5500.97900390625,0.0
 product.HarvestedVolume.managed.SS.CC,8,80,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.SS.CC,9,90,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.SS.CC,10,100,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

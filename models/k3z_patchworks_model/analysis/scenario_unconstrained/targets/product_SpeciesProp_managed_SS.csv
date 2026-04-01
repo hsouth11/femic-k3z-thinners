@@ -1,12 +1,12 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 product.SpeciesProp.managed.SS,0,0,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.SS,1,10,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.SpeciesProp.managed.SS,2,20,10.0,0.0,10000.0,1.0,1.0,5.578999996185303,0.0
+product.SpeciesProp.managed.SS,2,20,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.SS,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.SS,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.SS,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.SS,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.SpeciesProp.managed.SS,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+product.SpeciesProp.managed.SS,7,70,10.0,0.0,10000.0,1.0,1.0,5.578999996185303,0.0
 product.SpeciesProp.managed.SS,8,80,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.SS,9,90,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.SpeciesProp.managed.SS,10,100,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

@@ -1,10 +1,10 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 product.Seral.area.immature.CWHvm_FDC_HW_M.CC,0,0,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Seral.area.immature.CWHvm_FDC_HW_M.CC,1,10,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Seral.area.immature.CWHvm_FDC_HW_M.CC,2,20,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Seral.area.immature.CWHvm_FDC_HW_M.CC,3,30,10.0,0.0,10000.0,1.0,1.0,24.916000366210938,0.0
-product.Seral.area.immature.CWHvm_FDC_HW_M.CC,4,40,10.0,0.0,10000.0,1.0,1.0,11.074999809265137,0.0
-product.Seral.area.immature.CWHvm_FDC_HW_M.CC,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+product.Seral.area.immature.CWHvm_FDC_HW_M.CC,1,10,10.0,0.0,10000.0,1.0,1.0,6.934999942779541,0.0
+product.Seral.area.immature.CWHvm_FDC_HW_M.CC,2,20,10.0,0.0,10000.0,1.0,1.0,47.237998962402344,0.0
+product.Seral.area.immature.CWHvm_FDC_HW_M.CC,3,30,10.0,0.0,10000.0,1.0,1.0,19.3700008392334,0.0
+product.Seral.area.immature.CWHvm_FDC_HW_M.CC,4,40,10.0,0.0,10000.0,1.0,1.0,3.1679999828338623,0.0
+product.Seral.area.immature.CWHvm_FDC_HW_M.CC,5,50,10.0,0.0,10000.0,1.0,1.0,24.916000366210938,0.0
 product.Seral.area.immature.CWHvm_FDC_HW_M.CC,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.immature.CWHvm_FDC_HW_M.CC,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.immature.CWHvm_FDC_HW_M.CC,8,80,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

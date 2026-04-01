@@ -1,7 +1,7 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 flow.ndy.feature.Yield.managed.BA,0,0,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-flow.ndy.feature.Yield.managed.BA,1,10,10.0,0.0,10000.0,1.0,1.0,-61.85200119018555,0.0
-flow.ndy.feature.Yield.managed.BA,2,20,10.0,0.0,10000.0,1.0,1.0,-72.60199737548828,0.0
+flow.ndy.feature.Yield.managed.BA,1,10,10.0,0.0,10000.0,1.0,1.0,-72.3030014038086,0.0
+flow.ndy.feature.Yield.managed.BA,2,20,10.0,0.0,10000.0,1.0,1.0,-100.0,0.0
 flow.ndy.feature.Yield.managed.BA,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 flow.ndy.feature.Yield.managed.BA,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 flow.ndy.feature.Yield.managed.BA,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

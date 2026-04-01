@@ -1,9 +1,9 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 feature.Seral.CWHvm_FDC_HW_H.immature,0,0,10.0,0.0,10000.0,1.0,1.0,182.9949951171875,0.0
-feature.Seral.CWHvm_FDC_HW_H.immature,1,10,10.0,0.0,10000.0,1.0,1.0,177.30299377441406,0.0
-feature.Seral.CWHvm_FDC_HW_H.immature,2,20,10.0,0.0,10000.0,1.0,1.0,147.56500244140625,0.0
-feature.Seral.CWHvm_FDC_HW_H.immature,3,30,10.0,0.0,10000.0,1.0,1.0,122.29299926757812,0.0
-feature.Seral.CWHvm_FDC_HW_H.immature,4,40,10.0,0.0,10000.0,1.0,1.0,87.27100372314453,0.0
+feature.Seral.CWHvm_FDC_HW_H.immature,1,10,10.0,0.0,10000.0,1.0,1.0,182.9949951171875,0.0
+feature.Seral.CWHvm_FDC_HW_H.immature,2,20,10.0,0.0,10000.0,1.0,1.0,164.74099731445312,0.0
+feature.Seral.CWHvm_FDC_HW_H.immature,3,30,10.0,0.0,10000.0,1.0,1.0,137.11500549316406,0.0
+feature.Seral.CWHvm_FDC_HW_H.immature,4,40,10.0,0.0,10000.0,1.0,1.0,53.77299880981445,0.0
 feature.Seral.CWHvm_FDC_HW_H.immature,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 feature.Seral.CWHvm_FDC_HW_H.immature,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 feature.Seral.CWHvm_FDC_HW_H.immature,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
@@ -27,6 +27,6 @@ feature.Seral.CWHvm_FDC_HW_H.immature,24,240,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 feature.Seral.CWHvm_FDC_HW_H.immature,25,250,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 feature.Seral.CWHvm_FDC_HW_H.immature,26,260,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 feature.Seral.CWHvm_FDC_HW_H.immature,27,270,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-feature.Seral.CWHvm_FDC_HW_H.immature,28,280,10.0,0.0,10000.0,1.0,1.0,35.43000030517578,0.0
-feature.Seral.CWHvm_FDC_HW_H.immature,29,290,10.0,0.0,10000.0,1.0,1.0,42.242000579833984,0.0
-feature.Seral.CWHvm_FDC_HW_H.immature,30,300,10.0,0.0,10000.0,1.0,1.0,60.49599838256836,0.0
+feature.Seral.CWHvm_FDC_HW_H.immature,28,280,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+feature.Seral.CWHvm_FDC_HW_H.immature,29,290,10.0,0.0,10000.0,1.0,1.0,18.253999710083008,0.0
+feature.Seral.CWHvm_FDC_HW_H.immature,30,300,10.0,0.0,10000.0,1.0,1.0,18.253999710083008,0.0

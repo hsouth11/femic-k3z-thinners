@@ -1,13 +1,13 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 product.HarvestedVolume.managed.YC.CC,0,0,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.HarvestedVolume.managed.YC.CC,1,10,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+product.HarvestedVolume.managed.YC.CC,1,10,10.0,0.0,10000.0,1.0,1.0,442.3699951171875,0.0
 product.HarvestedVolume.managed.YC.CC,2,20,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.HarvestedVolume.managed.YC.CC,7,70,10.0,0.0,10000.0,1.0,1.0,2327.196044921875,0.0
-product.HarvestedVolume.managed.YC.CC,8,80,10.0,0.0,10000.0,1.0,1.0,1329.31103515625,0.0
+product.HarvestedVolume.managed.YC.CC,7,70,10.0,0.0,10000.0,1.0,1.0,2491.160888671875,0.0
+product.HarvestedVolume.managed.YC.CC,8,80,10.0,0.0,10000.0,1.0,1.0,722.9760131835938,0.0
 product.HarvestedVolume.managed.YC.CC,9,90,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,10,100,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,11,110,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
@@ -26,7 +26,7 @@ product.HarvestedVolume.managed.YC.CC,23,230,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,24,240,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,25,250,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,26,260,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.HarvestedVolume.managed.YC.CC,27,270,10.0,0.0,10000.0,1.0,1.0,1966.199951171875,0.0
-product.HarvestedVolume.managed.YC.CC,28,280,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+product.HarvestedVolume.managed.YC.CC,27,270,10.0,0.0,10000.0,1.0,1.0,1391.0909423828125,0.0
+product.HarvestedVolume.managed.YC.CC,28,280,10.0,0.0,10000.0,1.0,1.0,670.4310302734375,0.0
 product.HarvestedVolume.managed.YC.CC,29,290,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.HarvestedVolume.managed.YC.CC,30,300,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

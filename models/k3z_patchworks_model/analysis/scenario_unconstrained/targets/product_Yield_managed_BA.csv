@@ -1,12 +1,12 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 product.Yield.managed.BA,0,0,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Yield.managed.BA,1,10,10.0,0.0,10000.0,1.0,1.0,723.6389770507812,0.0
+product.Yield.managed.BA,1,10,10.0,0.0,10000.0,1.0,1.0,2585.821044921875,0.0
 product.Yield.managed.BA,2,20,10.0,0.0,10000.0,1.0,1.0,559.447021484375,0.0
 product.Yield.managed.BA,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.BA,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.BA,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.BA,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Yield.managed.BA,7,70,10.0,0.0,10000.0,1.0,1.0,2310.18505859375,0.0
+product.Yield.managed.BA,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.BA,8,80,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.BA,9,90,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.BA,10,100,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

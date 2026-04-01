@@ -422,6 +422,13 @@ value_grevenue_SS,Targets for value.grevenue.SS,ca.spatial.reportwriter.TargetLi
 value_grevenue_YC,Targets for value.grevenue.YC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 value_grevenue_total,Targets for value.grevenue.total,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 value_nrevenue_total,Targets for value.nrevenue.total,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+value_standing_BA,Targets for value.standing.BA,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+value_standing_CW,Targets for value.standing.CW,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+value_standing_FDC,Targets for value.standing.FDC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+value_standing_HW,Targets for value.standing.HW,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+value_standing_SS,Targets for value.standing.SS,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+value_standing_YC,Targets for value.standing.YC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+value_standing_total,Targets for value.standing.total,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 value_stumpage_BA,Targets for value.stumpage.BA,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 value_stumpage_CW,Targets for value.stumpage.CW,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 value_stumpage_FDC,Targets for value.stumpage.FDC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png

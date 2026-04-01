@@ -1,9 +1,9 @@
 /*
- PCT moderate intensity scenario
+ PCT optional scenario (using PCT heavy model)
     Additive on the NICF future scenario
     Changes:
-    - Area treated with PCT. Set to unatainably high minimum, forcing model
-    treat all eligible area with PCT.
+    - Area treated with PCT. No target for PCT, allowing model to decide how much PCT
+     to complete.
  */
 
 // Template for setting targets

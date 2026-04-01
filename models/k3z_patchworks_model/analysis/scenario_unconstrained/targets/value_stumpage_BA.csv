@@ -1,12 +1,12 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 value.stumpage.BA,0,0,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-value.stumpage.BA,1,10,10.0,0.0,10000.0,1.0,1.0,209.85400390625,0.0
+value.stumpage.BA,1,10,10.0,0.0,10000.0,1.0,1.0,749.885986328125,0.0
 value.stumpage.BA,2,20,10.0,0.0,10000.0,1.0,1.0,162.23899841308594,0.0
 value.stumpage.BA,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 value.stumpage.BA,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 value.stumpage.BA,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 value.stumpage.BA,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-value.stumpage.BA,7,70,10.0,0.0,10000.0,1.0,1.0,669.9530029296875,0.0
+value.stumpage.BA,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 value.stumpage.BA,8,80,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 value.stumpage.BA,9,90,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 value.stumpage.BA,10,100,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

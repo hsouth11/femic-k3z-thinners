@@ -1,10 +1,10 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 product.Yield.managed.YC,0,0,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.YC,1,10,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Yield.managed.YC,2,20,10.0,0.0,10000.0,1.0,1.0,5.6020002365112305,0.0
+product.Yield.managed.YC,2,20,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.YC,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.YC,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Yield.managed.YC,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+product.Yield.managed.YC,5,50,10.0,0.0,10000.0,1.0,1.0,5.631999969482422,0.0
 product.Yield.managed.YC,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.YC,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.YC,8,80,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
@@ -27,6 +27,6 @@ product.Yield.managed.YC,24,240,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.YC,25,250,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.YC,26,260,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.YC,27,270,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Yield.managed.YC,28,280,10.0,0.0,10000.0,1.0,1.0,3.7909998893737793,0.0
+product.Yield.managed.YC,28,280,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.YC,29,290,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Yield.managed.YC,30,300,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

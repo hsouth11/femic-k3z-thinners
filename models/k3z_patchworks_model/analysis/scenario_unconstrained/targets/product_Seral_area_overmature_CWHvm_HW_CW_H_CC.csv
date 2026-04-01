@@ -1,13 +1,13 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 product.Seral.area.overmature.CWHvm_HW_CW_H.CC,0,0,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_HW_CW_H.CC,1,10,10.0,0.0,10000.0,1.0,1.0,4.230000019073486,0.0
-product.Seral.area.overmature.CWHvm_HW_CW_H.CC,2,20,10.0,0.0,10000.0,1.0,1.0,19.010000228881836,0.0
+product.Seral.area.overmature.CWHvm_HW_CW_H.CC,2,20,10.0,0.0,10000.0,1.0,1.0,30.299999237060547,0.0
 product.Seral.area.overmature.CWHvm_HW_CW_H.CC,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_HW_CW_H.CC,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_HW_CW_H.CC,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_HW_CW_H.CC,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_HW_CW_H.CC,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Seral.area.overmature.CWHvm_HW_CW_H.CC,8,80,10.0,0.0,10000.0,1.0,1.0,14.704999923706055,0.0
+product.Seral.area.overmature.CWHvm_HW_CW_H.CC,8,80,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_HW_CW_H.CC,9,90,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_HW_CW_H.CC,10,100,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Seral.area.overmature.CWHvm_HW_CW_H.CC,11,110,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

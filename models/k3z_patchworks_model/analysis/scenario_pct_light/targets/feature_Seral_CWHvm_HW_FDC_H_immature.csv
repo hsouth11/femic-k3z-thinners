@@ -1,9 +1,9 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 feature.Seral.CWHvm_HW_FDC_H.immature,0,0,10.0,0.0,10000.0,1.0,1.0,329.45098876953125,0.0
 feature.Seral.CWHvm_HW_FDC_H.immature,1,10,10.0,0.0,10000.0,1.0,1.0,314.55499267578125,0.0
-feature.Seral.CWHvm_HW_FDC_H.immature,2,20,10.0,0.0,10000.0,1.0,1.0,254.80599975585938,0.0
-feature.Seral.CWHvm_HW_FDC_H.immature,3,30,10.0,0.0,10000.0,1.0,1.0,183.86900329589844,0.0
-feature.Seral.CWHvm_HW_FDC_H.immature,4,40,10.0,0.0,10000.0,1.0,1.0,101.54299926757812,0.0
+feature.Seral.CWHvm_HW_FDC_H.immature,2,20,10.0,0.0,10000.0,1.0,1.0,258.3559875488281,0.0
+feature.Seral.CWHvm_HW_FDC_H.immature,3,30,10.0,0.0,10000.0,1.0,1.0,190.9239959716797,0.0
+feature.Seral.CWHvm_HW_FDC_H.immature,4,40,10.0,0.0,10000.0,1.0,1.0,77.9469985961914,0.0
 feature.Seral.CWHvm_HW_FDC_H.immature,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 feature.Seral.CWHvm_HW_FDC_H.immature,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 feature.Seral.CWHvm_HW_FDC_H.immature,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
@@ -25,8 +25,8 @@ feature.Seral.CWHvm_HW_FDC_H.immature,22,220,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 feature.Seral.CWHvm_HW_FDC_H.immature,23,230,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 feature.Seral.CWHvm_HW_FDC_H.immature,24,240,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 feature.Seral.CWHvm_HW_FDC_H.immature,25,250,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-feature.Seral.CWHvm_HW_FDC_H.immature,26,260,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-feature.Seral.CWHvm_HW_FDC_H.immature,27,270,10.0,0.0,10000.0,1.0,1.0,37.2400016784668,0.0
-feature.Seral.CWHvm_HW_FDC_H.immature,28,280,10.0,0.0,10000.0,1.0,1.0,74.14299774169922,0.0
-feature.Seral.CWHvm_HW_FDC_H.immature,29,290,10.0,0.0,10000.0,1.0,1.0,116.44999694824219,0.0
-feature.Seral.CWHvm_HW_FDC_H.immature,30,300,10.0,0.0,10000.0,1.0,1.0,139.63999938964844,0.0
+feature.Seral.CWHvm_HW_FDC_H.immature,26,260,10.0,0.0,10000.0,1.0,1.0,15.442000389099121,0.0
+feature.Seral.CWHvm_HW_FDC_H.immature,27,270,10.0,0.0,10000.0,1.0,1.0,57.808998107910156,0.0
+feature.Seral.CWHvm_HW_FDC_H.immature,28,280,10.0,0.0,10000.0,1.0,1.0,88.83399963378906,0.0
+feature.Seral.CWHvm_HW_FDC_H.immature,29,290,10.0,0.0,10000.0,1.0,1.0,144.6199951171875,0.0
+feature.Seral.CWHvm_HW_FDC_H.immature,30,300,10.0,0.0,10000.0,1.0,1.0,182.31199645996094,0.0

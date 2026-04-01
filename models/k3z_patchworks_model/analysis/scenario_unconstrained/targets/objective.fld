@@ -1,0 +1,33 @@
+Fieldname,DataType,Description
+,_TITLE_,Active target objective summary
+TARGET,String,The name of the target
+PERIOD1,Integer,The 'OBJECTIVE' values for period 1
+PERIOD2,Integer,The 'OBJECTIVE' values for period 2
+PERIOD3,Integer,The 'OBJECTIVE' values for period 3
+PERIOD4,Integer,The 'OBJECTIVE' values for period 4
+PERIOD5,Integer,The 'OBJECTIVE' values for period 5
+PERIOD6,Integer,The 'OBJECTIVE' values for period 6
+PERIOD7,Integer,The 'OBJECTIVE' values for period 7
+PERIOD8,Integer,The 'OBJECTIVE' values for period 8
+PERIOD9,Integer,The 'OBJECTIVE' values for period 9
+PERIOD10,Integer,The 'OBJECTIVE' values for period 10
+PERIOD11,Integer,The 'OBJECTIVE' values for period 11
+PERIOD12,Integer,The 'OBJECTIVE' values for period 12
+PERIOD13,Integer,The 'OBJECTIVE' values for period 13
+PERIOD14,Integer,The 'OBJECTIVE' values for period 14
+PERIOD15,Integer,The 'OBJECTIVE' values for period 15
+PERIOD16,Integer,The 'OBJECTIVE' values for period 16
+PERIOD17,Integer,The 'OBJECTIVE' values for period 17
+PERIOD18,Integer,The 'OBJECTIVE' values for period 18
+PERIOD19,Integer,The 'OBJECTIVE' values for period 19
+PERIOD20,Integer,The 'OBJECTIVE' values for period 20
+PERIOD21,Integer,The 'OBJECTIVE' values for period 21
+PERIOD22,Integer,The 'OBJECTIVE' values for period 22
+PERIOD23,Integer,The 'OBJECTIVE' values for period 23
+PERIOD24,Integer,The 'OBJECTIVE' values for period 24
+PERIOD25,Integer,The 'OBJECTIVE' values for period 25
+PERIOD26,Integer,The 'OBJECTIVE' values for period 26
+PERIOD27,Integer,The 'OBJECTIVE' values for period 27
+PERIOD28,Integer,The 'OBJECTIVE' values for period 28
+PERIOD29,Integer,The 'OBJECTIVE' values for period 29
+PERIOD30,Integer,The 'OBJECTIVE' values for period 30

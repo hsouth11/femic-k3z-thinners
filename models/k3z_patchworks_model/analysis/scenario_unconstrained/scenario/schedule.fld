@@ -1,0 +1,7 @@
+Fieldname,DataType,Description
+,_TITLE_,Scheduled treatments
+BLOCK,String,The id label for the block
+DELTA,Integer,The time in the future of the proposed treatment
+AGE,Integer,The age of the stand at the time of the proposed treatment
+TYPE,String,'MANAGED' or 'UNMANAGED'
+TREATMENT,String,The treatment name

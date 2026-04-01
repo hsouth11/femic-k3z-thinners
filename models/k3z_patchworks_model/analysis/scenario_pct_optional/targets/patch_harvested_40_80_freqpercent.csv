@@ -6,7 +6,7 @@ patch.harvested.40_80.freqpercent,3,30,10.0,0.0,100.0,1.0,1.0,0.0,1.0
 patch.harvested.40_80.freqpercent,4,40,10.0,0.0,100.0,1.0,1.0,0.0,1.0
 patch.harvested.40_80.freqpercent,5,50,10.0,0.0,100.0,1.0,1.0,0.0,1.0
 patch.harvested.40_80.freqpercent,6,60,10.0,0.0,100.0,1.0,1.0,0.0,1.0
-patch.harvested.40_80.freqpercent,7,70,10.0,0.0,100.0,1.0,1.0,12.5,1.0
+patch.harvested.40_80.freqpercent,7,70,10.0,0.0,100.0,1.0,1.0,0.0,1.0
 patch.harvested.40_80.freqpercent,8,80,10.0,0.0,100.0,1.0,1.0,0.0,1.0
 patch.harvested.40_80.freqpercent,9,90,10.0,0.0,100.0,1.0,1.0,0.0,1.0
 patch.harvested.40_80.freqpercent,10,100,10.0,0.0,100.0,1.0,1.0,0.0,1.0
@@ -19,7 +19,7 @@ patch.harvested.40_80.freqpercent,16,160,10.0,0.0,100.0,1.0,1.0,0.0,1.0
 patch.harvested.40_80.freqpercent,17,170,10.0,0.0,100.0,1.0,1.0,0.0,1.0
 patch.harvested.40_80.freqpercent,18,180,10.0,0.0,100.0,1.0,1.0,0.0,1.0
 patch.harvested.40_80.freqpercent,19,190,10.0,0.0,100.0,1.0,1.0,0.0,1.0
-patch.harvested.40_80.freqpercent,20,200,10.0,0.0,100.0,1.0,1.0,12.5,1.0
+patch.harvested.40_80.freqpercent,20,200,10.0,0.0,100.0,1.0,1.0,0.0,1.0
 patch.harvested.40_80.freqpercent,21,210,10.0,0.0,100.0,1.0,1.0,0.0,1.0
 patch.harvested.40_80.freqpercent,22,220,10.0,0.0,100.0,1.0,1.0,0.0,1.0
 patch.harvested.40_80.freqpercent,23,230,10.0,0.0,100.0,1.0,1.0,0.0,1.0

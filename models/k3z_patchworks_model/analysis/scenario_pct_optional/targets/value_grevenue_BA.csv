@@ -1,6 +1,6 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 value.grevenue.BA,0,0,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-value.grevenue.BA,1,10,10.0,0.0,10000.0,1.0,1.0,34899.35546875,0.0
+value.grevenue.BA,1,10,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 value.grevenue.BA,2,20,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 value.grevenue.BA,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 value.grevenue.BA,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
@@ -8,7 +8,7 @@ value.grevenue.BA,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 value.grevenue.BA,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 value.grevenue.BA,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 value.grevenue.BA,8,80,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-value.grevenue.BA,9,90,10.0,0.0,10000.0,1.0,1.0,160199.171875,0.0
+value.grevenue.BA,9,90,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 value.grevenue.BA,10,100,10.0,0.0,10000.0,1.0,1.0,19574.220703125,0.0
 value.grevenue.BA,11,110,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 value.grevenue.BA,12,120,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

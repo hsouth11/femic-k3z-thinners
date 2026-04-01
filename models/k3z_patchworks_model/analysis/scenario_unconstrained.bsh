@@ -48,6 +48,15 @@ setMaxWeight(label, 1f);
 control.getTarget(label).setLinear(false);
 setActive(label, true, true, false);
 
+// Set area treated with PCT to 0
+label = "product.Treated.managed.PCT";
+setMinimumPeriodic(label, 999999999f);
+setMaximumPeriodic(label, 0f);
+setMinWeight(label, 1f);
+setMaxWeight(label, 1000000000000f);
+control.getTarget(label).setLinear(false);
+setActive(label, true, false, true);
+
 // Start scheduler
 gui.click("start");
 
